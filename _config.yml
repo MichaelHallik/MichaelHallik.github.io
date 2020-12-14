@@ -1,0 +1,5 @@
+theme: jekyll-theme-hacker
+title: MichaelHallik
+markdown: kramdown
+include: [_pages]
+permalink: /blog/:year/:month/:day/:title

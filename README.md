@@ -1,2 +1,3 @@
-# MichaelHallik.github.io
-Repo for my personal Github pages.
+# Home
+
+Under construction. More will follow soon.
