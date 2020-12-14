@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact information
+title: Contact
 
 ---
 
