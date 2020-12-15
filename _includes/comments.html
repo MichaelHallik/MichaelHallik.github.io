@@ -46,11 +46,9 @@ function createCommentEl( response ) {
 	comment.setAttribute( 'data-author-avatar', response.user.avatar_url );
 	comment.setAttribute( 'data-user-url', response.user.url );
 
-	comment.appendChild( 'hr' );
 	comment.appendChild( user );
 	comment.appendChild( commentContents );
 	comment.appendChild( commentLink );
-	comment.appendChild( 'br' );
 
 	return comment;
 }
