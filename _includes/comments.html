@@ -32,6 +32,7 @@ function createCommentEl( response ) {
 
 	let commentLink = document.createElement( 'a' );
 	commentLink.setAttribute( 'href', response.html_url );
+	commentLink.setAttribute( 'target', '_blank' );
 	commentLink.classList.add( 'comment-url' );
 	date = response.created_at;
 	date = date.split('T')[0]
