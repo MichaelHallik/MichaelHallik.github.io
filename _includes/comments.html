@@ -47,8 +47,8 @@ function createCommentEl( response ) {
 	comment.setAttribute( 'data-user-url', response.user.url );
 
 	comment.appendChild( user );
-	comment.appendChild( commentContents );
 	comment.appendChild( commentLink );
+	comment.appendChild( commentContents );
 
 	return comment;
 }
