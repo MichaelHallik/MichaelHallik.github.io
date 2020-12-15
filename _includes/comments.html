@@ -46,6 +46,7 @@ function createCommentEl( response ) {
 	comment.setAttribute( 'data-created', response.created_at );
 	comment.setAttribute( 'data-author-avatar', response.user.avatar_url );
 	comment.setAttribute( 'data-user-url', response.user.url );
+	comment.setAttribute( 'style', 'width: 90%; border: 2px solid white; margin: 1px' );
 
 	comment.appendChild( user );
 	comment.appendChild( commentLink );
@@ -58,7 +59,7 @@ request.send();
 
 <hr>
 
-<div class="github-comments" style="background-color: #333; width: 900px; border: 2px solid white; margin: 1px;>
+<div class="github-comments">
 	<center>
 		<h1>Comments</h1>
 		<br>
