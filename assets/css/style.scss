@@ -57,6 +57,6 @@ h1{
   width: 75px;
 }
 
-.commentli {
+li[data-author-avatar] {
   list-style-type: none;
 }
