@@ -10,4 +10,4 @@ title: Bio
 
 I have created my biographical timeline, using:<br>
 
-<div><a style="font-size: 12px; text-decoration: none;" title="Office timeline" href="https://time.graphics">Office timeline</a></div>
+<div><a title="Office timeline" href="https://time.graphics">Office timeline</a></div>
