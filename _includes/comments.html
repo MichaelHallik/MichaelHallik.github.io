@@ -9,6 +9,7 @@ request.onload = function() {
 
 		for ( var i = 0; i < response.length; i++ ) {
 			document.getElementById( 'gh-comments-list' ).appendChild( createCommentEl( response[ i ] ) );
+			document.getElementById( 'gh-comments-list' ).appendChild( 'br' );
 		}
 
 		if ( 0 === response.length ) {
