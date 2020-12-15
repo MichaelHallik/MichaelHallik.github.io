@@ -56,3 +56,9 @@ h1{
   padding: 5px;
   width: 75px;
 }
+
+/* Remove the bullet.png (and also the default bullets) from lists */
+/* list - style - image: url("../images/bullet.png")
+ul li {
+  list-style-type: none
+}
