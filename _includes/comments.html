@@ -35,7 +35,7 @@ function createCommentEl( response ) {
 	commentLink.classList.add( 'comment-url' );
 	date = response.created_at;
 	date = date.split('T')[0]
-	commentLink.innerHTML = '#' + response.id + ' - ' + date;
+	commentLink.innerHTML = '#' + '       ' + 'Comment: ' + response.id + ' - ' + date + ':';
 
 	let commentContents = document.createElement( 'div' );
 	commentContents.classList.add( 'comment-content' );
