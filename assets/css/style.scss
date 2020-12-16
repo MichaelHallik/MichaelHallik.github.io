@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-/* BODY
+/* BODY */
 
 body{
     margin:0;
@@ -15,7 +15,7 @@ body{
     font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
 }
 
-/* HTML HEADERS
+/* HTML HEADERS */
 
 h1,h2,h3,h4,h5,h6{
     color:#97B918;
@@ -26,7 +26,7 @@ h1{
     text-transform: uppercase;
 }
 
-/* TOP NAVIGATION BAR
+/* TOP NAVIGATION BAR */
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -59,7 +59,7 @@ h1{
   color: white;
 }
 
-/* BLOG POST COMMENT
+/* BLOG POST -> COMMENT */
 
 .avatar {
   border: 1px solid #ddd;
@@ -88,10 +88,10 @@ a.comment-url {
   padding: 0px;
 }
 
-/*BLOG POST MAIN/INDEX PAGE
+/*BLOG POST MAIN/INDEX PAGE */
 
-/* The list items with links to the posts
+/* The list items with links to the posts */
 
-p.postlink {
+li.postlink {
   padding-bottom: 50px;
 }
