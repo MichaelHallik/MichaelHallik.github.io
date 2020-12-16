@@ -24,6 +24,14 @@
 				{% if p.url contains "css" or p.url contains "atom" %}
 					{% continue %}
 				{% endif %}
+				{% if p.url contains "/blog/" %}
+					<style>
+						.topnav a[href*="/blog/"] {
+						  background-color: #97B918;
+						  color: white;
+						}
+					</style>
+				{% endif %}
 					<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title | upcase }}</a>
 				{% endfor %}
 			</div>
