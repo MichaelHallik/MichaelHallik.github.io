@@ -14,7 +14,7 @@ Topics may include:
 
 I had been publishing posts before, always using the blog space of the organization I worked for at that time. So those posts are kinda scattered around. By creating this space, I hope to keep things more tidy.
 
-To achieve this I chose for <a hrfe="https://pages.github.com/">Github pages</a> and <a href="https://jekyllrb.com/">Jekyll</a>.
+To achieve this I chose for <a href="https://pages.github.com/">Github pages</a> and <a href="https://jekyllrb.com/">Jekyll</a>.
 
 Since I am just starting, there isn't much in the way of content. Also, the design and layout is still pretty basic.
 
