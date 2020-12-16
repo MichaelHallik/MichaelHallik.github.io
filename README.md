@@ -1,3 +1,23 @@
 # Home
 
-Under construction. More will follow soon.
+At long last I have created my own blog space. Been thinking about that for ages.
+
+Yeah, that's right, this site exists primarily to host future blog posts. Posts related to software testing and, in particular, test automation. Some of them will be text, others video.
+
+Topics may include:
+
+* Test automation strategy.
+* Test automation architecture and design.
+* Test automation tools.
+* Test automation interfaces.
+* Et alia.
+
+I had been publishing posts before, always using the blog space of the organization I worked for at that time. So those posts are kinda scattered around. By creating this space, I hope to keep things more tidy.
+
+To achieve this I chose for <a hrfe="https://pages.github.com/">Github pages</a> and <a href="https://jekyllrb.com/">Jekyll</a>.
+
+Since I am just starting, there isn't much in the way of content. Also, the design and layout is still pretty basic.
+
+There is some content though, since I have added links to some of my older posts (which are still relevant) in the <a href="https://michaelhallik.github.io/blog/">blog section</a>.
+
+So, take a look around and and, if you feel like it, leave me a comment. Tell me what you think and what you would like to read about.
