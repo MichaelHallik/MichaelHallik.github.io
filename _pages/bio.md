@@ -4,8 +4,6 @@ title: Bio
 
 ---
 
-# {{ page.title }}
-
 See the timeline for some basic biographical events.
 
 You can move and maximize the timeline, zoom in or out and search for specific events.
