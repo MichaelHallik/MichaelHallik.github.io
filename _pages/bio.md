@@ -7,9 +7,9 @@ title: Bio
 # {{ page.title }}
 See the timeline for some basic biographical events.
 
-You can move the timeline, zoom in and out (or maximize) and search for specific events.
+You can move and maximize the timeline, zoom in or out and search for specific events.
 
-If you click on an event, a 'time widget' may pop up, showing a description and a map. To close the widget, simply left-click somewhere in the timeline frame.
+If you click on an event, a 'time widget' will pop up, showing a description and (sometimes) a map. To close the widget, simply left-click somewhere in the timeline frame.
 
 <br>
 
