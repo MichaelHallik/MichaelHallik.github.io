@@ -3,6 +3,7 @@ layout: default
 title: Bio
 
 ---
+
 # {{ page.title }}
 
 See the timeline for some basic biographical events.
