@@ -25,6 +25,6 @@ title: Blog
 
 	<ul class="posts">
 	  {% for post in site.posts %}
-	    <li class="postlink"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li><a href="{{ post.url }}"><img border="0" alt="rf-icon" src="rf.png" width="10" height="10"></a>
+	    <li class="postlink"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>     <a href="{{ post.url }}"><img border="0" alt="rf-icon" src="rf.png" width="10" height="10"></a></li>
 	  {% endfor %}
 	</ul>
