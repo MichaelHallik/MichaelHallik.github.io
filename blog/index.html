@@ -15,7 +15,7 @@ title: Blog
 
 				All of these sites are perfectly safe. The sites involved are:<br><br>
 
-				<a href="https://www.xebia.com" title="Xebia home page" target="_blank" tyle="font-size:40px;>https://www.xebia.com</a> <br>
+				<a href="https://www.xebia.com" title="Xebia home page" target="_blank">https://www.xebia.com</a> <br>
 				<a href="https://www.deagiletesters.nl/" title="DAT home page" target="_blank">https://www.deagiletesters.nl/</a> <br>
 				<a href="https://www.linkedin.com/" title="Linkedin home page" target="_blank">https://www.linkedin.com/</a> <br>
 				<a href="https://github.com/" title="Github home page" target="_blank">https://github.com/</a> <br><br>
@@ -26,6 +26,6 @@ title: Blog
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    <li style="font-size:40px;><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	</ul>
