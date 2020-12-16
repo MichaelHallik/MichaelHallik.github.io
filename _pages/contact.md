@@ -4,8 +4,6 @@ title: Contact
 
 ---
 
-# {{ page.title }}
-
 For now, see:
 
 <a href="https://www.linkedin.com/in/michaelhallik/" title="Linkedin profile" target="_blank">My Linkedin profile</a><br><br>
