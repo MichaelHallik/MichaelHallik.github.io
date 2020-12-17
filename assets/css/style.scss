@@ -92,6 +92,10 @@ ul[id="gh-comments-list"] {
   list-style-type: none;
 }
 
+ul li[data-author-avatar] {
+  list-style-type: none;
+}
+
 /*BLOG POST MAIN/INDEX PAGE */
 
 /* The list items with links to the posts */
