@@ -20,10 +20,11 @@
 		<body>
 
 			<div class="topnav">
-				{% for p in site.pages %}
-				{% if p.url contains "css" or p.url contains "atom" %}
-					{% continue %}
-				{% endif %}
+				{% assign page_array = site.pages | sort %}
+				{% for p in page_array %}
+					{% if p.url contains "css" or p.url contains "atom" %}
+						{% continue %}
+					{% endif %}
 					<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title | upcase }}</a>
 				{% endfor %}
 				{% if page.url contains "/blog/20" %}
