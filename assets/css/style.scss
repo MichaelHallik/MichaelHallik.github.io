@@ -88,6 +88,10 @@ a.comment-url {
   padding: 0px;
 }
 
+ul[id="gh-comments-list"] {
+  list-style-type: none;
+}
+
 /*BLOG POST MAIN/INDEX PAGE */
 
 /* The list items with links to the posts */
