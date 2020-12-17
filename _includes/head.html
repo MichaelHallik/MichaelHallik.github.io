@@ -20,7 +20,7 @@
 		<body>
 
 			<div class="topnav">
-				{% assign page_array = site.pages | sort:"value" %}
+				{% assign page_array = site.pages | sort:"title" %}
 				{% for p in page_array %}
 					{% if p.url contains "css" or p.url contains "atom" %}
 						{% continue %}
