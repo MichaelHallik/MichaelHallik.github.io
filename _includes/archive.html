@@ -11,7 +11,7 @@
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
   {% if count < 10 %}
-  <p> &nbsp; {{ count }}. <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a> </p>
+  <p> &nbsp; {{ count }}. <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code>: {{ tagitems[2] }}</a> </p>
   {% endif %}
   {% if count > 9 %}
   <p> {{ count }}. <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a> </p>
