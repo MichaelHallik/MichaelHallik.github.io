@@ -1,2 +1,3 @@
 _site/
-tag_page_gen.py
+tag_page_gen_html.py
+tag_page_gen_md.py
