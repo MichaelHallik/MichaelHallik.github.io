@@ -20,7 +20,7 @@ title: Contact
   
   <tr>
      <td align="center">
-      <a href="mailto:mhallik@immune.it" title="Contact me through e-mail" target="_blank"><img width="40%" src="/assets/images/email_tr.png"></a>
+      <a href="mailto:mhallik@immune.it" title="Contact me through e-mail" target="_blank"><img width="35%" src="/assets/images/email_tr.png"></a>
      </td>
      <td align="center">
       <a href="https://www.immune.it" title="My current home" target="_blank"><img width="100%" src="/assets/images/immune.svg"></a>
