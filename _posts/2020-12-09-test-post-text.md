@@ -4,7 +4,6 @@ tags: robotframework testautomation
 
 ---
 
-<br><br>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae neque posuere, gravida orci sed, pellentesque ante. Ut nec nibh ante. Mauris ligula diam, ornare vel finibus at, volutpat at enim. Nunc euismod ex non magna ultrices gravida. Curabitur dignissim tortor sit amet quam tempus hendrerit. Mauris ultrices dignissim sodales. Vestibulum auctor sem in enim eleifend posuere. Sed consequat, est malesuada accumsan luctus, sapien nunc aliquam lectus, eu rhoncus nibh velit ut augue. Sed varius at felis sit amet aliquam. Etiam dictum placerat turpis, lobortis egestas sapien fermentum at. Cras vitae finibus nibh.
 
