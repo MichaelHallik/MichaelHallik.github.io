@@ -12,7 +12,7 @@ title: Contact
     <a href="https://www.linkedin.com/in/michaelhallik/" title="Linkedin profile" target="_blank"><img width="50%" src="/assets/images/linkedin.jpg"></a>
      </td>
      <td>
-    <a href="https://github.com/MichaelHallik" title="Linkedin profile" target="_blank"><img width="50%" src="/assets/images/github.png"></a>
+    <a href="https://github.com/MichaelHallik" title="Linkedin profile" target="_blank"><img width="75%" src="/assets/images/github.png"></a>
      </td>
   </tr>
 </table>
