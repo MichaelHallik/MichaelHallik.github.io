@@ -6,7 +6,7 @@ title: Contact
 
 # {{ page.title }}
 
-<table border="1" bordercolor="#aaa" cellspacing="0" cellpadding="0">
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
      <td>
     <a href="https://www.linkedin.com/in/michaelhallik/" title="Linkedin profile" target="_blank"><img width="10%" height="10%" src="https://www.ondernemersbelang.nl/wp-content/uploads/2019/04/linkedin-logo.png"></a>
