@@ -26,7 +26,7 @@
 			<div class="topnav">
 				{% assign page_array = site.pages | sort:"title" %}
 				{% for p in page_array %}
-					{% if p.url contains "css" or p.url contains "atom" %}
+					{% if p.url contains "css" or p.url contains "atom" or p.url contains "tagpage" %}
 						{% continue %}
 					{% endif %}
 					<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title | upcase }}</a>
