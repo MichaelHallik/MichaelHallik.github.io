@@ -15,7 +15,7 @@ title: Contact
     <a href="https://github.com/MichaelHallik" title="My (rather modest) Github repositories" target="_blank"><img width="75%" src="/assets/images/github.png"></a>
      </td>
   </tr>
-  <tr height="50px"> <td> </td> <td> </td> <\tr>
+  <tr height="50px"> <td> </td> <td> </td> </tr>
   <tr>
      <td align="center">
     <a href="mailto:mhallik@immune.it" title="Contact me through e-mail" target="_blank"><img width="25%" src="/assets/images/email.jpg"></a>
