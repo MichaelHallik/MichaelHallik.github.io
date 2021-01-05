@@ -4,9 +4,11 @@
   {% endfor %}
 {% endcapture %}
 
+{% assign count = 0 %}
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
 {% for temptag in sortedtemptags %}
+  {% assign count = count | plus: 1 %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-  <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
+  <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ count }}. {{ tagname }}</nobr></code></a>
 {% endfor %}
