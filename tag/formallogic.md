@@ -1,7 +1,0 @@
----
-layout: tagpage
-title: "Topic: formallogic"
-tag: formallogic
-robots: noindex
-
----
