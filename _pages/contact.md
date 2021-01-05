@@ -9,7 +9,7 @@ title: Contact
 <table border="1" bordercolor="#aaa" cellspacing="0" cellpadding="0">
   <tr>
      <td>
-    <a href="https://www.linkedin.com/in/michaelhallik/" title="Linkedin profile" target="_blank"><img width="10%" height="10%" src="https://logos-world.net/wp-content/uploads/2020/04/Linkedin-Logo.png"></a>
+    <a href="https://www.linkedin.com/in/michaelhallik/" title="Linkedin profile" target="_blank"><img width="10%" height="10%" src="https://www.ondernemersbelang.nl/wp-content/uploads/2019/04/linkedin-logo.png"></a>
      </td>
   </tr>
 </table>
