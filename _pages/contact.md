@@ -5,7 +5,6 @@ title: Contact
 ---
 
 # {{ page.title }}
-<br>
 <table border="0" cellspacing="0" cellpadding="0">
   
   <tr>
