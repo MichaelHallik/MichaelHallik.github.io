@@ -30,6 +30,6 @@ title: Blog posts - By date
 	<ul class="posts">
 	  {% for post in site.posts %}
 	    <!-- <li class="postlink"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> {% if post.url contains "Robot-Framework" %} <a href="{{ post.url }}"><img border="0" src="/assets/images/rf.JPG" width="15" height="15"></a> {% endif %} {% unless post.url contains "2020" %} <a href="{{ post.url }}"><img border="0" src="/assets/images/redirect.JPG" width="15" height="15"></a> {% endunless %} </li> -->
-		 <li class="postlink"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> {% unless post.url contains "2020" %} <a href="{{ post.url }}"><img border="0" src="/assets/images/redirect.JPG" width="15" height="15"></a> {% endunless %} </li>
+		 <li class="postlink"><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> {% unless post.url contains "2020" or post.url contains "2021" %} <a href="{{ post.url }}"><img border="0" src="/assets/images/redirect.JPG" width="15" height="15"></a> {% endunless %} </li>
 	  {% endfor %}
 	</ul>
