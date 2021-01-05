@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bio
+title: Blog archive
 
 ---
 
