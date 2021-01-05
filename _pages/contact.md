@@ -9,7 +9,7 @@ title: Contact
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
      <td align="center">
-    <a href="https://www.linkedin.com/in/michaelhallik/" title="My Linkedin profile" target="_blank"><img width="50%" src="/assets/images/linkedin_tr.png"></a>
+    <a href="https://www.linkedin.com/in/michaelhallik/" title="My Linkedin profile" target="_blank"><img width="45%" src="/assets/images/linkedin_tr.png"></a>
      </td>
      <td align="center">
     <a href="https://github.com/MichaelHallik" title="My (rather modest) Github repositories" target="_blank"><img width="75%" src="/assets/images/github.png"></a>
