@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog archive
+title: Blog posts - By subject
 
 ---
 
