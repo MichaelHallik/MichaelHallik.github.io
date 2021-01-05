@@ -18,7 +18,7 @@ title: Contact
   <tr height="50px"> <td> </td> <td> </td> </tr>
   <tr>
      <td align="center">
-    <a href="mailto:mhallik@immune.it" title="Contact me through e-mail" target="_blank"><img width="25%" src="/assets/images/email.jpg"></a>
+    <a href="mailto:mhallik@immune.it" title="Contact me through e-mail" target="_blank"><img width="50%" src="/assets/images/email.jpg"></a>
      </td>
      <td align="center">
     <a href="https://www.immune.it" title="My current home" target="_blank"><img width="100%" src="/assets/images/immune.svg"></a>
