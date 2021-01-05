@@ -8,6 +8,6 @@ title: Blog posts - By subject
 
 Click a subject in the list to see all related posts.
 <br><br>
-The list is sorted in terms of number of occurences of the subject within the collection of posts.
+The list is sorted in terms of the number of occurences of the subjects within the collection of posts.
 
 {% include archive.html %}
