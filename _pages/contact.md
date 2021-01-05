@@ -13,7 +13,7 @@ title: Contact
     <a href="https://www.linkedin.com/in/michaelhallik/" title="My Linkedin profile" target="_blank"><img width="45%" src="/assets/images/linkedin_tr.png"></a>
      </td>
      <td align="center">
-      <a href="mailto:mhallik@immune.it" title="Contact me through e-mail" target="_blank"><img width="40%" src="/assets/images/email_tr.png"></a>
+      <a href="https://github.com/MichaelHallik" title="My (rather modest) Github repositories" target="_blank"><img width="75%" src="/assets/images/github.png"></a>
      </td>
   </tr>
   
@@ -21,7 +21,7 @@ title: Contact
   
   <tr>
      <td align="center">
-      <a href="https://github.com/MichaelHallik" title="My (rather modest) Github repositories" target="_blank"><img width="75%" src="/assets/images/github.png"></a>    
+      <a href="mailto:mhallik@immune.it" title="Contact me through e-mail" target="_blank"><img width="40%" src="/assets/images/email_tr.png"></a>
      </td>
      <td align="center">
       <a href="https://www.immune.it" title="My current home" target="_blank"><img width="100%" src="/assets/images/immune.svg"></a>
