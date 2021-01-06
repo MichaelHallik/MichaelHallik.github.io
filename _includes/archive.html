@@ -12,6 +12,7 @@
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
   {% if tagname == "dutch" %}
     {% continue %}
+  {% endif %}
   {% if count < 10 %}
   <p>&nbsp;{{ count }}. <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>: {{ tagitems[2] }} post(s).</p>
   {% endif %}
