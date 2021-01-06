@@ -7,12 +7,12 @@
 {% assign count = 0 %}
 {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
 {% for temptag in sortedtemptags %}
-  {% assign count = count | plus: 1 %}
   {% assign tagitems = temptag | split: '#' %}
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
   {% if tagname == "dutch" %}
     {% continue %}
   {% endif %}
+  {% assign count = count | plus: 1 %}
   {% if count < 10 %}
   <p>&nbsp;{{ count }}. <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>: {{ tagitems[2] }} post(s).</p>
   {% endif %}
