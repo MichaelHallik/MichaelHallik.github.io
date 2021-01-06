@@ -1,5 +1,3 @@
-# Home
-
 At long last I have created my own blog space. Been thinking about that for ages.
 
 Yeah, that's right, this site exists primarily to host future blog posts. Posts related to software testing and, in particular, test automation. Some of them will be text, others video.
