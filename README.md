@@ -2,7 +2,7 @@
 
 At long last I have created my own blog space. Been thinking about that for ages.
 
-Yeah, that's right, this site exists primarily to host future blog posts. Posts related to software testing and, in particular, test automation. Some of them will be text, others video.
+That's right, this site exists primarily to host future blog posts. Posts related to software testing and, in particular, test automation. Some of them will be text, others video.
 
 Topics may include:
 
@@ -18,6 +18,9 @@ To achieve this I chose for <a href="https://pages.github.com/" target="_blank">
 
 Since I am just starting, there isn't much in the way of content. Also, the design and layout is still pretty basic.
 
-There is some content though, since I have added links to some of my older posts (which are still relevant) in the <a href="https://michaelhallik.github.io/blog/">blog section</a>.
+There is some content though, since I have added links to some of my older posts (most of which are still relevant):
 
-So, take a look around and and, if you feel like it, leave me a comment. Tell me what you think and what you would like to read about.
+- See <a href="https://michaelhallik.github.io/blog/">posts by date</a>.
+- Or see <a href="https://michaelhallik.github.io/_pages/blogarchive">posts by topic</a> for posts by topic.
+
+Take a look around and and, if you feel like it, leave me a comment. Tell me what you think and what you would like to read about.
