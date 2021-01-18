@@ -17,15 +17,21 @@ As is usually the case with Python, the task of creating and managing virtual en
 
 But what exactly is a virtual environment?
 
-Well, you might look at it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual environments (and their configurations) installed.
+Well, you might look at it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations).
 
 A virtual environment consists of three major components:
 
-- A Python excutable (with a version that you specified). This might be a copy of the system executable or a so-called symlink.
-- The Python \Scripts folder (\bin on Unix/Linux). For tools.
-- The Python \Lib\site-packages folder. For third-party libraries/packages.
+1. A Python excutable (with a version that you specified).
 
+This might be a copy of the system executable or a so-called symlink.
 
+2. The Python \Scripts folder (\bin on Unix/Linux).
+
+This folder is mainly used by third-party packages (that are installed in \Lib\site-packages) to store scripts that are associated with them. As this folder (together with the root installation folder) is inserted into the PATH operating system variable (provided you chose that option during installation), you can run these scripts from the command line. For instance, when you invoke pip install <package_name> from the command line, the pip.exe script is called which acts as a wrapper for the pip module in \Lib\site-packages.
+
+3. The Python \Lib\site-packages folder.
+
+For third-party libraries/packages.
 
 2) Decide on a tool (set).
 
