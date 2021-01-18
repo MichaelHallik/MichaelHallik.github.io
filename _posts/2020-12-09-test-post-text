@@ -4,7 +4,7 @@ tags: testposttext
 
 ---
 
-Introduction.
+<h1> Introduction. </h1>
 
 Creating a virtual Python environment for your test automation project can be beneficial for many reasons. Among those reasons are:
 
@@ -15,23 +15,23 @@ Creating a virtual Python environment for your test automation project can be be
 
 As is usually the case with Python, the task of creating and managing virtual environments is nothing but a breeze.
 
-But what exactly is a virtual environment?
+<h1> But what exactly is a virtual environment? </h1>
 
-Well, you might look at it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations).
+You can see it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations).
 
-Creating a virtual environment creates, foremost, a small directory structure. Depending on the tool, there are slight variations in these structures. However, regardless the tool, all virt envs basically consist of the following three fundamental components:
+Creating a virtual environment generates a (relatively small) directory structure. Depending on the tool and depending on the parameters you apply when creating the environment, there are some variations within this structure. However, regardless the tool, all virtual environments basically consist of the following three fundamental components:
 
 1. A Python excutable (with a version that you specified).
 
-This might be a copy of the system executable or a so-called symlink.
+This might be a copy of the system executable that you based your environment on or a so-called symlink to that system executable. Again, this will depend on the tool used and on the parameters you selected.
 
 2. The Python \Scripts folder (\bin on Unix/Linux).
 
-This folder is mainly used by third-party packages (that are installed in \Lib\site-packages) to store scripts that are associated with them. As this folder (together with the root installation folder) is inserted into the PATH operating system variable (provided you chose that option during installation), you can run these scripts from the command line. For instance, when you invoke pip install <package_name> from the command line, the pip.exe script is called which acts as a wrapper for the pip module in \Lib\site-packages.
+This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and executables that are associated with them. As this folder (together with the root installation folder) usually gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts and executables from the command line. For instance, when you invoke pip install robotframework from the command line, pip.exe in the Scripts folder is called, which acts as a wrapper for the pip module in \Lib\site-packages.
 
 3. The Python \Lib\site-packages folder.
 
-For third-party libraries/packages.
+This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder.
 
 2) Decide on a tool (set).
 
