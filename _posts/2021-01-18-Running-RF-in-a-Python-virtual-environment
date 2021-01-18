@@ -5,7 +5,7 @@ tags: testposttext
 ---
 
 <h1> Introduction: why virtual environments? </h1>
-
+<br><br>
 Creating a virtual Python environment for your test automation project (and for any kind of development project, for that matter) can be beneficial for many reasons. Among those reasons are:
 
 1. Avoiding dependency hell.
