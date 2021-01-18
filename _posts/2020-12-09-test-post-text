@@ -4,13 +4,47 @@ tags: testposttext
 
 ---
 
+Introduction.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae neque posuere, gravida orci sed, pellentesque ante. Ut nec nibh ante. Mauris ligula diam, ornare vel finibus at, volutpat at enim. Nunc euismod ex non magna ultrices gravida. Curabitur dignissim tortor sit amet quam tempus hendrerit. Mauris ultrices dignissim sodales. Vestibulum auctor sem in enim eleifend posuere. Sed consequat, est malesuada accumsan luctus, sapien nunc aliquam lectus, eu rhoncus nibh velit ut augue. Sed varius at felis sit amet aliquam. Etiam dictum placerat turpis, lobortis egestas sapien fermentum at. Cras vitae finibus nibh.
+Creating a virtual Python environment for your test automation project can be beneficial for many reasons. Among those reasons are:
 
-Praesent odio sem, facilisis ut mauris ut, varius luctus lorem. Nam at tellus quis lacus elementum maximus. Phasellus lacinia erat faucibus nulla eleifend egestas. Praesent massa ligula, ultricies eget sem ut, rutrum semper velit. Aliquam pharetra ipsum est, nec cursus turpis accumsan consequat. Ut consequat aliquet nibh, et scelerisque orci sodales quis. Aenean vitae massa ac diam gravida pulvinar. Fusce egestas hendrerit consequat. Donec porta euismod nulla, sit amet suscipit ante imperdiet sit amet. Proin aliquet turpis ut molestie dictum. Donec tempus libero placerat quam blandit vehicula. Fusce sed nunc ac leo maximus dictum. Praesent et libero vitae sem congue pulvinar sed vitae odio. Donec in lacus id arcu cursus viverra.
+1. Avoiding dependency hell: a project may contain dependencies to specific versions of third party libraries. This may conflict with required dependencies within one or more other projects, for instance those that might not only require the same Python version, but also diverget versions of the same third-party libraries. Good luck with manageing that!
+2. Keeping your global/base Python installation clean: you won't have to clutter your site-packages and Scripts folders when installing third-party libraries and tools for various projects.
+3. Being able to easily share a specific Python environment. For instance, in order to facilitate that every contributing team member uses the same Python version and tool stack.
+4. Being able to quickly recreating/restoring your environment in case of problems related to that environment.
 
-Morbi tristique sagittis velit sit amet luctus. Mauris sed lacus sit amet ligula rutrum vestibulum vel vel nulla. Vivamus lacus nisl, vestibulum eu neque id, condimentum consectetur eros. Aenean risus nunc, condimentum quis nulla a, scelerisque laoreet dolor. Phasellus ut velit nec nisi scelerisque dignissim sit amet non eros. Maecenas semper nisl vitae sollicitudin semper. Suspendisse suscipit ante at molestie pretium. Integer lacus sapien, rhoncus at augue sit amet, laoreet varius ligula.
+As is usually the case with Python, the task of creating and managing virtual environments is nothing but a breeze.
 
-Aliquam erat volutpat. Nunc in ipsum magna. Donec ut eleifend mauris. Quisque ut elit faucibus, mattis quam et, facilisis orci. Donec at leo quis odio venenatis porta eu feugiat erat. Ut vel dui vitae leo dapibus porta sed a risus. Nulla ac erat velit. Aenean eu aliquam sapien. Cras lacinia, enim et laoreet lacinia, lectus quam condimentum mi, vel efficitur leo ex in mi. Suspendisse et sem ullamcorper, porta arcu sit amet, pulvinar enim. Duis vulputate erat ac nunc eleifend, eu volutpat metus ornare. Integer tristique tellus vitae tempor aliquet. Praesent dignissim laoreet porttitor. Pellentesque ac nulla velit. Sed non aliquet ex, quis elementum libero. Aenean ornare, orci at ultricies auctor, justo nisi dignissim magna, non scelerisque libero nisi lacinia augue.
+But what exactly is a virtual environment?
 
-Phasellus laoreet, elit eu lacinia finibus, ex magna suscipit enim, id finibus ex nunc et nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet dui porttitor, feugiat quam nec, commodo ante. Nunc molestie leo vel enim viverra congue sed sed magna. Nulla facilisi. Ut ut consequat odio, eget luctus mauris. Vestibulum metus velit, rutrum non sagittis at, venenatis sit amet nisl. Morbi facilisis augue eget tellus semper, eget molestie magna mattis.
+Well, you might look at it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual environments (and their configurations) installed.
+
+A virtual environment consists of three major components:
+
+- A Python excutable (with a version that you specified). This might be a copy of the system executable or a so-called symlink.
+- The Python \Scripts folder (\bin on Unix/Linux). For tools.
+- The Python \Lib\site-packages folder. For third-party libraries/packages.
+
+
+
+2) Decide on a tool (set).
+
+First we need to decide on our tool set for creating and managing virtual Python environments. There are quite a few candidates. For instance:
+
+- the venv mpdule, that is Python comes shipped with the venv module. However
+
+2) Install one or more Python versions.
+
+When creating virtual environments, you might have the need to be able todevelop, run and test code against multiple Python versions. Maybe you need or want to explicietly support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not.
+
+With 
+
+1. Install one or more python versions.
+2. Install the 
+3 Install virtual env, e.g. in the most recent Py version installed (think PATH!).
+- install virtualenvwrapper-win.
+- Optionally: Set de WORK_HOME dir. This is a default dir for virt envs (when creating one, you don't have to specify a path, merely the name).
+- Create a virt env (this will also activate the env; this means that the current command line session will have the relevant Py version on it's path)
+(- Activate the env)
+- install third-party libraries (site-packages), in our case: rf, etc.
+- re-use the env in/with PyCharm.
