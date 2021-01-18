@@ -1,6 +1,6 @@
 ---
 tags: testposttext
-layout: post
+tags: Python virtualenvironments virtualenv testautomation testframeworks robotframework
 
 ---
 
