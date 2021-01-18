@@ -4,7 +4,8 @@
 				<div class="container">
 					<h1 align="center">{{ page.title }}</h1>
 					<h2 class="meta" align="center" style="border:2px; border-style:solid; border-color:#97B918;">{{ page.date | date_to_string }}</h2>
-					<span>[
+					<br>
+					<span align="center">[
 						{% for tag in page.tags %}
 							{% capture tag_name %}{{ tag }}{% endcapture %}
 							<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
