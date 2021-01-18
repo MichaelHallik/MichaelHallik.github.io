@@ -14,7 +14,7 @@ A project may contain dependencies towards specific versions of certain third pa
 
 2. Keeping your global/base Python installation clean.
 
-You won't have to clutter your site-packages and Scripts folders when installing third-party libraries and tools for various your various projects. Usually an average project will require quite a few packages to be installed. Consequently, the mentioned folders will fill up fast and become rather hulking and unwieldy.
+You won't have to clutter your global site-packages and Scripts folders when installing third-party libraries and tools for your various projects. Usually an average project will require quite a few packages to be installed. Consequently, the mentioned folders will fill up fast and become rather hulking and unwieldy.
 
 3. Being able to easily share a specific Python environment.
 
@@ -22,11 +22,13 @@ For instance, in order to facilitate that every contributing team member uses th
 
 4. Being able to quickly restore/recreate your environment, in case of problems related to your environment.
 
-Let's say, for instance, that you updated a couple of libraries and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment? Later on we will see just how effortless thiscan be done with a virtual environment.
+Let's say, for instance, that you updated a couple of libraries and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment? Later on we will see just how effortless this can be done with a virtual environment.
 
 <h1> But what exactly is a virtual environment? </h1>
 
-You can see it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations).
+You can see it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations). Within that environment, you can create an eco-system of third party libraries/packages that will all be specific and dedicated to that environment (although you can optionally share between environments). The installed packages will only be accessible to the Python interpreter of that specific environment. And no other packages (outside the environment) will be accessible. (Again, depending on how you rig your environment(s), you <i>could</i> share artifacts between environments.)
+
+Once you have created an environment that fullfills the requirements of your specific project, you can then proceed and bind the environment to that project. Or to multiple projects that have identical requirements.
 
 Creating a virtual environment generates a (relatively small) directory structure. Depending on the tool and depending on the parameters you apply when creating the environment, there are some variations within this structure. However, regardless the tool, all virtual environments basically consist of the following three fundamental components:
 
@@ -52,14 +54,4 @@ First we need to decide on our tool set for creating and managing virtual Python
 
 When creating virtual environments, you might have the need to be able todevelop, run and test code against multiple Python versions. Maybe you need or want to explicietly support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not.
 
-With 
 
-1. Install one or more python versions.
-2. Install the 
-3 Install virtual env, e.g. in the most recent Py version installed (think PATH!).
-- install virtualenvwrapper-win.
-- Optionally: Set de WORK_HOME dir. This is a default dir for virt envs (when creating one, you don't have to specify a path, merely the name).
-- Create a virt env (this will also activate the env; this means that the current command line session will have the relevant Py version on it's path)
-(- Activate the env)
-- install third-party libraries (site-packages), in our case: rf, etc.
-- re-use the env in/with PyCharm.
