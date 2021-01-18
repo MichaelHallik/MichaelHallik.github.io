@@ -19,7 +19,7 @@ But what exactly is a virtual environment?
 
 Well, you might look at it as a self-contained, isolated Python installation that, as such, is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations).
 
-A virtual environment consists of three major components:
+Creating a virtual environment creates, foremost, a small directory structure. Depending on the tool, there are slight variations in these structures. However, regardless the tool, all virt envs basically consist of the following three fundamental components:
 
 1. A Python excutable (with a version that you specified).
 
