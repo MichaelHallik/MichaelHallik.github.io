@@ -17,6 +17,7 @@ This post will provide you with a thorough rundown. As such, it will also dive s
 <ol>
   <li><a href="#Why virtual environments?">Why virtual environments?</a> </li>
   <li><a href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a> </li>
+  <li><a href="#What does a virtual environment look like?">What does a virtual environment look like?</a> </li>
   <li><a href="#Create a virtual environment.">Create a virtual environment.</a> </li>
 </ol>
 
@@ -44,31 +45,31 @@ The installed packages will only be accessible to the Python interpreter of that
 
 Once you have created an environment that fullfills the requirements of your specific project, you can then proceed and bind the environment to that project. Or to multiple projects that have identical requirements.
 
+<h2> <a name="What does a virtual environment look like?"> What does a virtual environment look like? </a> </h2>
+
 Creating a virtual environment generates a (relatively small) directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. However, regardless the tool, all virtual environments basically consist of the following three fundamental components:
 
 <ol>
-<li> A Python excutable (with a version that you specified). <br><br> This might be a copy of the system executable that you based your environment on or a so-called symlink to that system executable. Again, this will depend on the tool used and on the parameters you selected. </li><br>
+<li> A Python excutable (with a version that you specified). <br><br> This might be a copy of the system executable that you based your environment on or a so-called 'symlink' to that system executable. Again, this will depend on the tool used and on the parameters you selected. </li><br>
 
-<li> The Python \Scripts folder (\bin on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and executables that are associated with them. As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. For instance, when you invoke pip install robotframework from the Windows command line, the excutable pip.exe in the Scripts folder is called, which acts as a wrapper for the pip module in \Lib\site-packages. The same goes for the script ride.py, which is called when you use the command line to start RIDE (Robot Framework Integrated Development Environment) and which, in turn, acts as an entry point to the RIDE package in the \Lib\site-packages folder. </li><br>
+<li> The Python <code class="folder">\Scripts</code> folder (<code class="folder">\bin</code> on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and executables that are associated with them. As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. For instance, when you invoke <code class="folder">pip install robotframework</code> from the Windows command line, the excutable <code class="folder">pip.exe</code> in the <code class="folder">Scripts</code> folder is called, which acts as a wrapper for the pip module in <code class="folder">\Lib\site-packages</code>. The same goes for the script <code class="folder">ride.py</code>, which is called when you use the command line to start RIDE (Robot Framework Integrated Development Environment) and which, in turn, acts as an entry point to the RIDE package in the <code class="folder">\Lib\site-packages</code> folder. </li><br>
 
-<li> The Python \Lib\site-packages folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li>
+<li> The Python <code class="folder">\Lib\site-packages</code> folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li>
 
 </ol><br>
 
-Now that we have some background, let's get started! <br>
+Now that we have some idea of what a virtual environment is, let's create one! <br>
 
 <h2> <a name="Create a virtual environment."> Create a virtual environment. </a> </h2>
 
-Follow these steps to run Robot Franework within it's own, dedicated environment.
+To get ourselves anice  virtual environment, we have to take several steps.
   
 <h3> Decide on a tool (set). </h3>
 
-First we need to decide on our tool set for creating and managing virtual Python environments. There are quite a few candidates. For instance:
+First of all, we need to decide on our tool (set) for creating and managing our virtual Python environments. There are quite a few candidates. For instance:
 
 - the venv mpdule, that is Python comes shipped with the venv module. However
 
 <h3> Install one or more Python versions. </h3>
 
-When creating virtual environments, you might have the need to be able todevelop, run and test code against multiple Python versions. Maybe you need or want to explicietly support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not.
-
-
+When creating virtual environments, you might have the need to be able to develop, run and test code against multiple Python versions. Maybe you need or want to explicietly support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not.
