@@ -10,9 +10,9 @@ tags: Python virtualenvironments virtualenv testautomation testframeworks robotf
 
 A lot has been written on Python virtual environments. There also is an abundance of information on the web concerning the various Python tools to create and manage these environments.
 
-However, there isn't much information on running the Robot Framework in such an environment. That is rather odd, since the Robot Framework is the most prominent (generic) test auotomation framework within the Python eco-system. There are <i>some</i> articles on the topic, but they are all rather sketchy.
+However, there isn't much information on running the Robot Framework in such an environment. That is rather odd, since the Robot Framework is the most prominent (generic) test automation framework within the Python eco-system. There are <i>some</i> articles on the topic, but they are all rather sketchy.
 
-This post will provide you with a thorough rundown. As such, it will also dive somewhat into the theory behind virtual environments. I believe knowing the internals of our tool stack makes us more efficient and effective as test (automation) engineers. However, if you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the theory and jump ahead to section <todo>.
+This post will provide you with a thorough rundown. As such, it will also dive somewhat into the theory behind virtual environments. I believe knowing the internals of our tool stack makes us more efficient and effective as test (automation) engineers. However, if you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the theory and jump ahead to <a href="#Create a virtual environment."> 'Create a virtual environment.' </a>.
   
 Contents:
 
@@ -40,7 +40,7 @@ Creating a virtual Python environment for your test automation project (and for 
 
 <h2> <a name="But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </h2>
 
-You can see it as a self-contained, isolated Python installation that (as such) is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations). Within that environment, you can create an eco-system of third party libraries/packages that will be specific and dedicated to that environment (although you <i>can</i> share between environments if necessary).
+A virtual environment is a self-contained, isolated Python installation that (as such) is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations). Within that environment, you can create an eco-system of third party libraries/packages that will be specific and dedicated to that environment (although you <i>can</i> share between environments if necessary).
 
 The installed packages will only be accessible to the Python interpreter of that specific environment. Vice versa, no packages from outside the environment will be accessible to that interpreter. (Again, depending on how you rig your environment(s), you <i>could</i> share artifacts between environments if needed.)
 
@@ -51,12 +51,13 @@ Creating a virtual environment generates a (relatively small) directory structur
 <ol>
 <li> A Python excutable (with a version that you specified). <br><br> This might be a copy of the system executable that you based your environment on or a so-called symlink to that system executable. Again, this will depend on the tool used and on the parameters you selected. </li><br>
 
-<li> The Python \Scripts folder (\bin on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and executables that are associated with them. As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. For instance, when you invoke pip install robotframework from the Windows command line, the excutable pip.exe in the Scripts folder is called, which acts as a wrapper for the pip module in \Lib\site-packages. The same goes for the script ride.py, which is called when you use the command line to start RIDE (Robot Framework Integrated Development Environment) and which, in turn, acts as an entry point to the RIDE package in the \Lib\site-packages folder. /li><br>
+<li> The Python \Scripts folder (\bin on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and executables that are associated with them. As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. For instance, when you invoke pip install robotframework from the Windows command line, the excutable pip.exe in the Scripts folder is called, which acts as a wrapper for the pip module in \Lib\site-packages. The same goes for the script ride.py, which is called when you use the command line to start RIDE (Robot Framework Integrated Development Environment) and which, in turn, acts as an entry point to the RIDE package in the \Lib\site-packages folder. </li><br>
 
 <li> The Python \Lib\site-packages folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li>
-</ol>
 
-Now that we have some background, let's get started!
+</ol><br>
+
+Now that we have some background, let's get started! <br>
 
 <h2> <a name="Create a virtual environment."> Create a virtual environment. </a> </h2>
 
