@@ -9,13 +9,15 @@ tags: Python virtualenvironments virtualenv testautomation testframeworks robotf
 <br>
 Creating a virtual Python environment for your test automation project (and for any kind of development project, for that matter) can be beneficial for many reasons. Among those reasons are:
 
-<li> Avoiding dependency hell. <br><br> A project may contain dependencies towards specific versions of certain third party libraries. This may conflict with dependencies within one or more of your other projects. For instance, it may conflict with a project that might require the same Python version, but at the same time requires divergent versions of the same third-party libraries.</li>
-<br><br>
-<li> Keeping your global/base Python installation clean. <br><br> You won't have to clutter your global <code>site-packages</code> and <code>Scripts</code> folders when installing third-party libraries and tools for your various projects. Usually an average project will require quite a few packages to be installed. Consequently, the mentioned folders will fill up fast and become rather hulking and unwieldy.
-<br><br>
-<li> Being able to easily share a specific Python environment. <br><br> For instance, in order to facilitate that every contributing team member uses the same Python version and tool/library stack. As we will see in the remainder of this post, utilizing virtual environments makes sharing these environments very easy.
-<br><br>
-<li> Being able to restore your environment, in case of problems related to your environment. <br><br> Let's say, for instance, that you updated a couple of libraries in one step and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment and try again? Later on we will see just how effortless this can be done with a virtual environment.
+<ul>
+<li> Avoiding dependency hell. <br><br> A project may contain dependencies towards specific versions of certain third party libraries. This may conflict with dependencies within one or more of your other projects. For instance, it may conflict with a project that might require the same Python version, but at the same time requires divergent versions of the same third-party libraries.</li><br><br>
+
+<li> Keeping your global/base Python installation clean. <br><br> You won't have to clutter your global <code>site-packages</code> and <code>Scripts</code> folders when installing third-party libraries and tools for your various projects. Usually an average project will require quite a few packages to be installed. Consequently, the mentioned folders will fill up fast and become rather hulking and unwieldy.</li><br><br>
+
+<li> Being able to easily share a specific Python environment. <br><br> For instance, in order to facilitate that every contributing team member uses the same Python version and tool/library stack. As we will see in the remainder of this post, utilizing virtual environments makes sharing these environments very easy.</li><br><br>
+
+<li> Being able to restore your environment, in case of problems related to your environment. <br><br> Let's say, for instance, that you updated a couple of libraries in one step and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment and try again? Later on we will see just how effortless this can be done with a virtual environment.</li>
+</ul>
 <br>
 
 <h2> But what exactly is a virtual environment? </h2>
