@@ -61,7 +61,7 @@ Regardless the tool, all virtual environments basically consist of three compone
 
 </ol>
 
-So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just mentioned. <br><br> These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations. They only have each other.
+So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just mentioned. <br><br> These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations.
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
@@ -75,8 +75,19 @@ First of all, we need to decide on our tool (set) for creating and managing our 
 
 <ul>
   <li>The <code class="folder">venv</code> module, that comes shipped with Python (i.e., is part of the standard library).</li>
-  <li>The <code class="folder">venv</code> module, that comes shipped with Python (i.e., is part of the standard library).</li>
-  
+  <li>The <code class="folder">virtualenv</code> module.</li>
+  <li>The <code class="folder">pipenv</code> module.</li>
+  <li>The <code class="folder">anaconda</code> module.</li>
+  <li>And many more ...</li>
+</ul>
+
+I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics.
+
+Here we will simply choose <code class="folder">virtualenv</code>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <code class="folder">virtualenvwrapper</code> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of our environment management.
+
+Finally, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it.
+
+<h3> Install a tool (set). </h3>
 
 <h3> Install one or more Python versions. </h3>
 
