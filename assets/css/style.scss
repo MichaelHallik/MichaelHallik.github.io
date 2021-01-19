@@ -132,11 +132,20 @@ a[href^="/tag/"]{
     color:#97B918;
 }
 
-/* Images in the post text. Note that this css is not used currently. If needed, give img tags the class 'postimage'. */
+/* Images in the post text. */
 
 img.postimage {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
+}
+
+/* Images in the post text, that need to be reduced in size. */
+
+img.small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
 }
