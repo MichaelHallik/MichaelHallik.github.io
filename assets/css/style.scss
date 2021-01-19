@@ -100,11 +100,17 @@ ul li {
   list-style-image: none;
 }
 
-/*BLOG POST MAIN/INDEX PAGE */
+/*BLOG POST -> MAIN/INDEX PAGE */
 
 /* The list items with links to the posts */
 
 li.postlink {
   padding-bottom: 25px;
   font-size:15px;
+}
+
+/*BLOG POST -> POST */
+
+code {
+  background-color: #63c0f5;
 }
