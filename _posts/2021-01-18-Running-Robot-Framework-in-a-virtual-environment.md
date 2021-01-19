@@ -115,19 +115,19 @@ To install <code class="folder">virtualenv</code>, simply open a command line an
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
-<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" alt="Contents of Scripts folder."></a><br>
 
 So, what we did just now is equivalent to:
 
-<code class="folder">pip install virtualen</code><br>
+<code class="folder">pip install virtualenv</code><br>
 <code class="folder">pip install virtualenvwrapper-win</code>
 
 <h3> Optional: create an environment variable WORKON_HOME. </h3>
 
-This step is optional, but recommended. We can set a default or home directory for our environments. That way we do not have to specify the full path for each environment that we create.
+This step is optional, but recommended. We can set a default target or home directory for our environments. Then we do not have to specify a target directory each time we create a new environment. Additionally, we will not have to specify that path when we activate an environment (activation will be explained later on).
 
-I have chosen the following directory myself:
+We set a default environment directory by creating a user environment variable. I have chosen the following directory myself:
 
+<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" alt="Contents of Scripts folder."></a><br>
 
-
-(ask Google 'add environment variable <your_os>')
+If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
