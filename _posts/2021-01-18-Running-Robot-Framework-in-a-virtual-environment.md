@@ -69,7 +69,7 @@ See again my own environment as an example:<br><br>
 
 </ol>
 
-So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just explained. <br><br> These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations.
+So the three basic types of artifacts, that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just explained. <br><br> These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations.
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
@@ -79,9 +79,9 @@ To get ourselves a nice virtual environment, we have to take several steps. Thes
 
 <h3> Install one or more Python versions. </h3>
 
-When creating virtual environments, you might have the need to be able to develop, run and test code against multiple Python versions. Maybe you need or want to explicitly support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not.
+You might have a need to develop, run and test your project code against multiple Python versions. Maybe you need to support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not. Or some of your projects depend on external libraries that need some specific (for instance older) Python version.
 
-When such a requirement is aplicable, install the needed Python versions. For the sake of this post, I have installed:
+When such a situation is aplicable, install the required Python versions. For the sake of this post, I have installed:
 
 <a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
   
@@ -99,9 +99,24 @@ First of all, we need to decide on our tool (set) for creating and managing our 
 
 I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics. For instance <a href="https://www.pluralsight.com/tech-blog/managing-python-environments/" target="_blank">this one<a> or <a href="https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe" target="_blank">this one.
 
-Here we will simply choose <code class="folder">virtualenv</code>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <code class="folder">virtualenvwrapper</code> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of our environment management.
-
-Finally, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it.
+Here we will simply choose <code class="folder">virtualenv</code>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <code class="folder">virtualenvwrapper</code> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of our environment management. Finally, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it.
 
 <h3> Install the chosen tool (set). </h3>
+
+Assuming you have installed Python, you probably will have <a href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available, which is one of the most used Python package managers and that comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library.
+
+To install <code class="folder">virtualenv</code>, simply open a command line and type:
+
+<code class="folder">pip install virtualenvwrapper-win</code>
+
+Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
+
+<a href="/assets/images/install_tool.JPG"><img class="postimage" src="/assets/images/install_tool.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+
+So, what we did just now is equivalent to:
+
+<code class="folder">pip install virtualen</code>
+<code class="folder">pip install virtualenvwrapper-win</code>
+
+<h3> Create environment varaible WORK_HOME. </h3>
 
