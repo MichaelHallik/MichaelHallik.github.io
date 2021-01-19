@@ -119,8 +119,15 @@ Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on
 
 So, what we did just now is equivalent to:
 
-<code class="folder">pip install virtualen</code>
+<code class="folder">pip install virtualen</code><br>
 <code class="folder">pip install virtualenvwrapper-win</code>
 
-<h3> Create environment varaible WORKON_HOME. </h3>
+<h3> Optional: create an environment variable WORKON_HOME. </h3>
 
+This step is optional, but recommended. We can set a default or home directory for our environments. That way we do not have to specify the full path for each environment that we create.
+
+I have chosen the following directory myself:
+
+
+
+(ask Google 'add environment variable <your_os>')
