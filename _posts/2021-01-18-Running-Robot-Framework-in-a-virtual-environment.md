@@ -14,10 +14,18 @@ However, there isn't much information on running the Robot Framework in a virtua
 This post will provide you with a thorough rundown. As such, it will also dive somewhat into the theory behind virtual environments. I believe knowing the internals of our tool stack makes us more efficient and effective as test (automation) engineers. Therefore, this article will cover the following topics:
 
 <ol>
-  <li><a href="#Why virtual environments?">Why virtual environments?</a> </li>
-  <li><a href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a> </li>
-  <li><a href="#What does a virtual environment look like?">What does a virtual environment look like?</a> </li>
-  <li><a href="#Create a virtual environment.">Create a virtual environment.</a> </li>
+  <li><a href="#Why virtual environments?">Why virtual environments?</a></li>
+  <li><a href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a></li>
+  <li><a href="#What does a virtual environment look like?">What does a virtual environment look like?</a></li>
+  <li><a href="#Create a virtual environment using virtualenv.">Create a virtual environment using virtualenv.</a>
+    <ol type="a">
+      <li><a href="#Install one or more Python versions.">Install one or more Python versions.</a> </li>
+      <li><a href="#Decide on a tool (set).">Decide on a tool (set).</a> </li>
+      <li><a href="#Install the chosen tool (set).">Install the chosen tool (set).</a> </li>
+      <li><a href="#Optional: create an environment variable WORKON_HOME.">Optional: create an environment variable WORKON_HOME.</a> </li>
+      <li><a href="#Create a virtual Python environment.">Create a virtual Python environment.</a> </li>
+    </ol>
+  </li>
 </ol>
 
 If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
@@ -73,13 +81,15 @@ So the three basic types of artifacts, that every virtual Python environment is 
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
-<h2> <a name="Create a virtual environment."> Create a virtual environment. </a> </h2>
+<h2> <a name="Create a virtual environment using virtualenv."> Create a virtual environment using virtualenv. </a> </h2>
 
-To get ourselves a nice virtual environment, we have to take several steps. These will be outlined in the remainder of this post. Please note that the instructions have been written for Windows (in my case Win 10 Pro). But the whole process is very similar on Linux.
+To get ourselves a nice virtual environment, we have to take several steps.
+
+These will be outlined in the remainder of this post. Please note that the instructions have been written for Windows (in my case Win 10 Pro). But the whole process is very similar on Linux.
 
 Here we go . . .
 
-<h3> Install one or more Python versions. </h3>
+<h3> <a name="Install one or more Python versions."> Install one or more Python versions. </a> </h3>
 
 You might have a need to develop, run and test your project code against multiple Python versions. Maybe you need to support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not. Or some of your projects depend on external libraries that need some specific (for instance older) Python version.
 
@@ -89,7 +99,7 @@ When such a situation is aplicable, install the required Python versions. For th
 
 I will not elaborate on the Python installation process, since it is pretty straightforward. Just make sure to add the root (= installation) folder as well as the \Scripts folder to the PATH environment variable of your operating system. The installer can do this for you or you must do it manually (ask Google 'add environment variable <your_os>').
   
-<h3> Decide on a tool (set). </h3>
+<h3> <a name="Decide on a tool (set)."> Decide on a tool (set). </a> </h3>
 
 First of all, we need to decide on our tool (set) for creating and managing our virtual Python environments. There are quite a few candidates. For instance:
 
@@ -105,7 +115,7 @@ I will not go into the differences in capabilities nor into the specific compara
 
 Here we will simply choose <code class="folder">virtualenv</code>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <code class="folder">virtualenvwrapper</code> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of our environment management. Finally, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it.
 
-<h3> Install the chosen tool (set). </h3>
+<h3> <a name="Install the chosen tool (set)."> Install the chosen tool (set). </a> </h3>
 
 Assuming you have installed Python, you probably will have <a href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available, which is one of the most used Python package managers and that comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library.
 
@@ -122,7 +132,7 @@ So, what we did just now is equivalent to:
 <code class="folder">pip install virtualenv</code><br>
 <code class="folder">pip install virtualenvwrapper-win</code>
 
-<h3> Optional: create an environment variable WORKON_HOME. </h3>
+<h3> <a name="Optional: create an environment variable WORKON_HOME."> Optional: create an environment variable WORKON_HOME. </a> </h3>
 
 This step is optional, but recommended. We can set a default target or home directory for our environments. Then we do not have to specify a target directory each time we create a new environment. Additionally, we will not have to specify that path when we activate an environment (activation will be explained later on).
 
@@ -132,4 +142,4 @@ We set a default environment directory by creating a user environment variable. 
 
 If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
 
-<h3> Create a virtual Python environment. </h3>
+<h3> <a name="Create a virtual Python environment."> Create a virtual Python environment. </a> </h3>
