@@ -131,3 +131,5 @@ We set a default environment directory by creating a user environment variable. 
 <a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" class="small" alt="Setting the workon_home environment variable." style="border:2px solid black"></a><br>
 
 If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
+
+<h3> Create a virtual Python environment. </h3>
