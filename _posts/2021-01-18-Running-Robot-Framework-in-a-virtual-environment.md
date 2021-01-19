@@ -17,10 +17,9 @@ This post will provide you with a thorough rundown. As such, it will also dive s
 Contents:
 
 <ol>
-  
   <li><a href="#Why virtual environments?"> Why virtual environments? </a> </li>
-  <li><a href="#WBut what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </li>
-
+  <li><a href="#But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </li>
+  <li><a href="#Create a virtual environment."> Create a virtual environment. </a> </li>
 </ol>
 
 <br>
@@ -59,7 +58,7 @@ Creating a virtual environment generates a (relatively small) directory structur
 
 Now that we have some background, let's get started!
 
-<h2> Create a virtual environment. </h2>
+<h2> <a name="Create a virtual environment."> Create a virtual environment. </a> </h2>
 
 Follow these steps to run Robot Franework within it's own, dedicated environment.
   
