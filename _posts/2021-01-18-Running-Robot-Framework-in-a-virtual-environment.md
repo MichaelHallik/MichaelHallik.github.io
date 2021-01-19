@@ -47,7 +47,11 @@ Once you have created an environment that fullfills the requirements of your spe
 
 <h2> <a name="What does a virtual environment look like?"> What does a virtual environment look like? </a> </h2>
 
-Creating a virtual environment generates a (relatively small) directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. However, regardless the tool, all virtual environments basically consist of the following three fundamental components:
+Creating a virtual environment generates a (relatively small) directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one my virtual envs, created with virtualenv:
+
+<img>
+
+However, regardless the tool, all virtual environments basically consist of the following three fundamental components:
 
 <ol>
 <li> A Python excutable (with a version that you specified). <br><br> This might be a copy of the system executable that you based your environment on or a so-called 'symlink' to that system executable. Again, this will depend on the tool used and on the parameters you selected. </li><br>
