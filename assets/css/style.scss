@@ -119,14 +119,20 @@ li.postlink {
 
 /*BLOG POST -> POST */
 
+/* Code snippets and the like */
+
 code.folder{
   background-color: darkgray;
   color: black;
 }
 
+/* The tags just below the title */
+
 a[href^="/tag/"]{
     color:#97B918;
 }
+
+/* Images in the post text. Note that this css is not used currently. If needed, give img tags the class 'postimage'. */
 
 img.postimage {
   display: block;
