@@ -20,20 +20,20 @@ This post will provide you with a thorough rundown. As such, it will also dive s
   <li><a href="#Create a virtual environment.">Create a virtual environment.</a> </li>
 </ol>
 
-If you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the third topic. But please note, that even there you may run into information that may be to detailed for your taste. Well, you just will have to suffer a bit, I guess. &#128124;
+If you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth topic. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
 
 <h2> <a name="Why virtual environments?"> Why virtual environments? </a> </h2>
 
 Creating a virtual Python environment for your test automation project (and for any kind of development project, for that matter) can be beneficial for many reasons. Among those reasons are:
 
 <ul>
-<li> Avoiding dependency hell. <br><br> A project may contain dependencies towards specific versions of Python and/or of certain third party libraries. This may conflict with dependencies within one or more of your other projects. For instance, it may conflict with a project that might require the same Python version, but at the same time requires divergent versions of the same third-party libraries.</li><br>
+<li> Avoiding dependency hell. <br><br> A project may contain dependencies towards specific versions of Python and/or third party libraries. This may conflict with dependencies within one or more of your other projects. For instance, it may conflict with a project that might require the same Python version, but at the same time requires divergent versions of the same third-party libraries.</li><br>
 
-<li> Keeping your global/base Python installation clean. <br><br> You won't have to clutter your global <code class="folder">site-packages</code> and <code class="folder">Scripts</code> folders when installing third-party libraries and tools for your various projects. Usually an average project will require quite a few packages to be installed. Consequently, the mentioned folders will fill up fast and become rather hulking and unwieldy.</li><br>
+<li> Keeping your system/global/base Python installation clean. <br><br> You won't have to clutter your global <code class="folder">site-packages</code> and <code class="folder">Scripts</code> folders when installing third-party libraries and tools for your various projects. Usually an average project will require quite a few packages to be installed. Consequently, the mentioned folders will fill up fast and become rather hulking and unwieldy.</li><br>
 
 <li> Being able to easily share a specific Python environment. <br><br> For instance, in order to facilitate that every contributing team member uses the same Python version and tool/library stack. As we will see in the remainder of this post, utilizing virtual environments makes sharing these environments very easy.</li><br>
 
-<li> Being able to restore your environment, in case of problems related to your environment. <br><br> Let's say, for instance, that you updated a couple of libraries in one step and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment and try again? Later on we will see just how effortless this can be done with a virtual environment.</li>
+<li> Being able to restore your environment, in case of problems related to your environment. <br><br> Let's say, for instance, that you updated multiple libraries in one, single step and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment and try your updates anew in a less rash fashion? Later on we will see just how effortless this can be done with a virtual environment!</li>
 </ul>
 
 <h2> <a name="But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </h2>
@@ -42,7 +42,7 @@ A virtual environment is a self-contained, isolated Python installation that (as
 
 The installed packages will only be accessible to the Python interpreter of that specific environment. Vice versa, no packages from outside the environment will be accessible to that interpreter. (Again, depending on how you rig your environment(s), you <i>could</i> share artifacts between environments if needed.)
 
-Once you have created an environment that fullfills the requirements of your specific project, you can then proceed and bind the environment to that project. Or to multiple projects that have identical requirements.
+Once you have created an environment that fullfills the requirements of your specific development project, you can then proceed and bind the environment to that project. Or to multiple projects that have identical requirements.
 
 <h2> <a name="What does a virtual environment look like?"> What does a virtual environment look like? </a> </h2>
 
@@ -53,19 +53,21 @@ Creating a virtual environment generates a (relatively) small directory structur
 Regardless the tool, all virtual environments basically consist of three components:
 
 <ol>
-<li> A Python excutable (with a version that you specified). <br><br> This might be a copy of the system executable that you based your environment on or a so-called 'symlink' to that system executable. Again, this will depend on the tool used and on the parameters you selected. </li><br>
+<li> The Python interpreter (with a version that you specified). <br><br> This might be a copy of the system interpreter that you based your environment on or a so-called 'symlink' to that system interpreter. Again, this will depend on the tool used and/or on the parameters you select upon creating the env. </li><br>
 
-<li> The Python <code class="folder">\Scripts</code> folder (<code class="folder">\bin</code> on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and executables that are associated with them. As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. For instance, when you invoke <code class="folder">pip install robotframework</code> from the Windows command line, the excutable <code class="folder">pip.exe</code> in the <code class="folder">Scripts</code> folder is called, which acts as a wrapper for the pip module in <code class="folder">\Lib\site-packages</code>. The same goes for the script <code class="folder">ride.py</code>, which is called when you use the command line to start RIDE (Robot Framework Integrated Development Environment) and which, in turn, acts as an entry point to the RIDE package in the <code class="folder">\Lib\site-packages</code> folder. </li><br>
+<li> The Python <code class="folder">\Scripts</code> folder (<code class="folder">\bin</code> on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and/or executables that are associated with them. <br><br> As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. <br><br> For instance, when you invoke <code class="folder">pip install robotframework</code> from the Windows command line, the excutable <code class="folder">pip.exe</code> in the <code class="folder">Scripts</code> folder is called, which acts as a wrapper for the pip module in <code class="folder">\Lib\site-packages</code>. The same goes for the script <code class="folder">ride.py</code>, which is called when you start RIDE (Robot Framework Integrated Development Environment) from the command line and which, in turn, acts as an entry point to the RIDE package in the <code class="folder">\Lib\site-packages</code> folder. </li><br>
 
 <li> The Python <code class="folder">\Lib\site-packages</code> folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li>
 
 </ol>
 
+So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just mentioned. These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations. They only have each other.
+
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
 <h2> <a name="Create a virtual environment."> Create a virtual environment. </a> </h2>
 
-To get ourselves anice  virtual environment, we have to take several steps.
+To get ourselves a nice virtual environment, we have to take several steps. These will be outlined in the remainder of this post. Here we go ... .
   
 <h3> Decide on a tool (set). </h3>
 
