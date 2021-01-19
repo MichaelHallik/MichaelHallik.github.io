@@ -128,6 +128,6 @@ This step is optional, but recommended. We can set a default target or home dire
 
 We set a default environment directory by creating a user environment variable. I have chosen the following directory myself:
 
-<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" class="postimage" alt="Setting the workon_home environment variable."></a><br>
+<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" class="postimage" alt="Setting the workon_home environment variable." style="border:2px solid black"></a><br>
 
 If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
