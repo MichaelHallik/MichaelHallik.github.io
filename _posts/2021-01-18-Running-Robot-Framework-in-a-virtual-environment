@@ -99,7 +99,7 @@ When such a situation is applicable, install the required Python versions. For t
 
 <a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
-I will not elaborate on the Python installation process, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
+I will not elaborate much on the Python installation process itself, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
 
 Just make sure to add the root (= installation) folder as well as the <code class="folder">\Scripts</folder> sub-folder to the PATH environment variable of your operating system.
 
