@@ -18,7 +18,12 @@ Contents:
 
 <ol>
   
-  <li><a href="#Why virtual environments?"> Why virtual environments? </a>
+  <li><a href="#Why virtual environments?"> Why virtual environments? </a> </li>
+  <li><a href="#WBut what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </li>
+
+</ol>
+
+<br>
 
 <h2> <a name="Why virtual environments?"> Why virtual environments? </a> </h2>
 
@@ -34,7 +39,7 @@ Creating a virtual Python environment for your test automation project (and for 
 <li> Being able to restore your environment, in case of problems related to your environment. <br><br> Let's say, for instance, that you updated a couple of libraries in one step and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment and try again? Later on we will see just how effortless this can be done with a virtual environment.</li>
 </ul>
 
-<h2> But what exactly is a virtual environment? </h2>
+<h2> <a name="But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </h2>
 
 You can see it as a self-contained, isolated Python installation that (as such) is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations). Within that environment, you can create an eco-system of third party libraries/packages that will be specific and dedicated to that environment (although you <i>can</i> share between environments if necessary).
 
