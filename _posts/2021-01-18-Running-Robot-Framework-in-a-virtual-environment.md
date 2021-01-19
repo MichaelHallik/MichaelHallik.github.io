@@ -75,7 +75,9 @@ Now that we have some idea of what a virtual environment is, let's create one! <
 
 <h2> <a name="Create a virtual environment."> Create a virtual environment. </a> </h2>
 
-To get ourselves a nice virtual environment, we have to take several steps. These will be outlined in the remainder of this post. Here we go ... .
+To get ourselves a nice virtual environment, we have to take several steps. These will be outlined in the remainder of this post. Please note that the instructions have been written for Windows (in my case Win 10 Pro). But the whole process is very similar on Linux.
+
+Here we go . . .
 
 <h3> Install one or more Python versions. </h3>
 
@@ -84,6 +86,8 @@ You might have a need to develop, run and test your project code against multipl
 When such a situation is aplicable, install the required Python versions. For the sake of this post, I have installed:
 
 <a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+
+I will not elaborate on the Python installation process, since it is pretty straightforward. Just make sure to add the root (= installation) folder as well as the \Scripts folder to the PATH environment variable of your operating system. The installer can do this for you or you must do it manually (ask Google 'add environment variable <your_os>').
   
 <h3> Decide on a tool (set). </h3>
 
@@ -118,5 +122,5 @@ So, what we did just now is equivalent to:
 <code class="folder">pip install virtualen</code>
 <code class="folder">pip install virtualenvwrapper-win</code>
 
-<h3> Create environment varaible WORK_HOME. </h3>
+<h3> Create environment varaible WORKON_HOME. </h3>
 
