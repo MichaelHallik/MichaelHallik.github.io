@@ -16,13 +16,14 @@ This post will provide you with a thorough rundown. As such, it will also dive s
 
 If you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to <a href="#Create a virtual environment.">Create a virtual environment</a>.
 
-<h2> Contents: </h2>
+<h2> Table of Contents: </h2>
 
 <ol>
   <li><a href="#Why virtual environments?">Why virtual environments?</a> </li>
   <li><a href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a> </li>
   <li><a href="#Create a virtual environment.">Create a virtual environment.</a> </li>
 </ol>
+
 
 <h2> <a name="Why virtual environments?"> Why virtual environments? </a> </h2>
 
