@@ -115,7 +115,7 @@ To install <code class="folder">virtualenv</code>, simply open a command line an
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
-<a href="/assets/images/install_tool.JPG"><img class="postimage" src="/assets/images/install_tool.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
 So, what we did just now is equivalent to:
 
