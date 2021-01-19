@@ -59,7 +59,7 @@ Regardless the tool, all virtual environments basically consist of three compone
 
 <a href="/assets/images/scripts_folder.JPG"><img class="postimage" src="/assets/images/scripts_folder.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
-You can see that the Python executable is also located here. Some of the other tools for virtualization place the Python interpreter elsewhere.<br>
+You can see that the Python executable is also located here. Some of the other tools for virtualization place the Python interpreter elsewhere.<br><br>
 
 <li> The Python <code class="folder">\Lib\site-packages</code> folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li><br>
 
@@ -69,7 +69,7 @@ See again my own environment as an example:<br><br>
 
 </ol>
 
-So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just mentioned. <br><br> These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations.
+So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just explained. <br><br> These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations.
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
