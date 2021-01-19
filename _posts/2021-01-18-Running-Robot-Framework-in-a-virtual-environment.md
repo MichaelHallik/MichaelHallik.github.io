@@ -49,7 +49,7 @@ Once you have created an environment that fullfills the requirements of your spe
 
 Creating a virtual environment generates a (relatively small) directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one my virtual envs, created with virtualenv:
 
-<img>
+<img class="postimage" src="/assets/images/folder_structure.jpg" alt="High-level folder structure created by virtualenv." style="border:5px solid black">
 
 However, regardless the tool, all virtual environments basically consist of the following three fundamental components:
 
