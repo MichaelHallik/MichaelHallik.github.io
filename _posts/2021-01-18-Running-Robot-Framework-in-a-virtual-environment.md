@@ -115,7 +115,7 @@ To install <code class="folder">virtualenv</code>, simply open a command line an
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
-<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" alt="Contents of Scripts folder."></a><br>
+<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip."></a><br>
 
 So, what we did just now is equivalent to:
 
@@ -128,6 +128,6 @@ This step is optional, but recommended. We can set a default target or home dire
 
 We set a default environment directory by creating a user environment variable. I have chosen the following directory myself:
 
-<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" alt="Contents of Scripts folder."></a><br>
+<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" class="postimage" alt="Setting the workon_home environment variable."></a><br>
 
 If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
