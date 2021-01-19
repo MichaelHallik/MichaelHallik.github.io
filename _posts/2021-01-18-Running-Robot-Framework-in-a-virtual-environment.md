@@ -20,7 +20,7 @@ This post will provide you with a thorough rundown. As such, it will also dive s
   <li><a href="#Create a virtual environment.">Create a virtual environment.</a> </li>
 </ol>
 
-If you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth topic. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
+If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
 
 <h2> <a name="Why virtual environments?"> Why virtual environments? </a> </h2>
 
@@ -46,7 +46,7 @@ Once you have created an environment that fullfills the requirements of your spe
 
 <h2> <a name="What does a virtual environment look like?"> What does a virtual environment look like? </a> </h2>
 
-Creating a virtual environment generates a (relatively) small directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one of my virtual environments, created with virtualenv:
+Creating a virtual environment generates a (relatively) small directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one of my virtual environments, created with the Python module <code class="folder">virtualenv</code>:
 
 <a href="/assets/images/folder_structure.jpg"><img class="postimage" src="/assets/images/folder_structure.jpg" alt="High-level folder structure created by virtualenv." style="border:2px solid black"></a>
 
@@ -58,6 +58,8 @@ Regardless the tool, all virtual environments basically consist of three compone
 <li> The Python <code class="folder">\Scripts</code> folder (<code class="folder">\bin</code> on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and/or executables that are associated with them. <br><br> As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. <br><br> For instance, when you invoke <code class="folder">pip install robotframework</code> from the Windows command line, the excutable <code class="folder">pip.exe</code> in the <code class="folder">Scripts</code> folder is called, which acts as a wrapper for the pip module in <code class="folder">\Lib\site-packages</code>. The same goes for the script <code class="folder">ride.py</code>, which is called when you start RIDE (Robot Framework Integrated Development Environment) from the command line and which, in turn, acts as an entry point to the RIDE package in the <code class="folder">\Lib\site-packages</code> folder. </li><br> See this example of the <code class="folder">Scripts</code> folder of my virtual environment:<br><br>
 
 <a href="/assets/images/scripts_folder.JPG"><img class="postimage" src="/assets/images/scripts_folder.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+
+You can see that the Python executable is also located here. Some of the other tools for virtualization place the Python interpreter elsewhere.<br>
 
 <li> The Python <code class="folder">\Lib\site-packages</code> folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li><br>
 
