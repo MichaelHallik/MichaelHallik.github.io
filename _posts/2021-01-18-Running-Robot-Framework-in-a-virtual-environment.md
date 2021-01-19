@@ -28,7 +28,7 @@ If you just want to know the steps to take for running your Robot Framework in a
 Creating a virtual Python environment for your test automation project (and for any kind of development project, for that matter) can be beneficial for many reasons. Among those reasons are:
 
 <ul>
-<li> Avoiding dependency hell. <br><br> A project may contain dependencies towards specific versions of certain third party libraries. This may conflict with dependencies within one or more of your other projects. For instance, it may conflict with a project that might require the same Python version, but at the same time requires divergent versions of the same third-party libraries.</li><br>
+<li> Avoiding dependency hell. <br><br> A project may contain dependencies towards specific versions of Python and/or of certain third party libraries. This may conflict with dependencies within one or more of your other projects. For instance, it may conflict with a project that might require the same Python version, but at the same time requires divergent versions of the same third-party libraries.</li><br>
 
 <li> Keeping your global/base Python installation clean. <br><br> You won't have to clutter your global <code class="folder">site-packages</code> and <code class="folder">Scripts</code> folders when installing third-party libraries and tools for your various projects. Usually an average project will require quite a few packages to be installed. Consequently, the mentioned folders will fill up fast and become rather hulking and unwieldy.</li><br>
 
@@ -47,11 +47,11 @@ Once you have created an environment that fullfills the requirements of your spe
 
 <h2> <a name="What does a virtual environment look like?"> What does a virtual environment look like? </a> </h2>
 
-Creating a virtual environment generates a (relatively small) directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one my virtual envs, created with virtualenv:
+Creating a virtual environment generates a (relatively) small directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one of my virtual environments, created with virtualenv:
 
-<img class="postimage" src="/assets/images/folder_structure.jpg" alt="High-level folder structure created by virtualenv." style="border:5px solid black">
+<img class="postimage" src="/assets/images/folder_structure.jpg" alt="High-level folder structure created by virtualenv." style="border:1px solid black">
 
-However, regardless the tool, all virtual environments basically consist of the following three fundamental components:
+Regardless the tool, all virtual environments basically consist of three components:
 
 <ol>
 <li> A Python excutable (with a version that you specified). <br><br> This might be a copy of the system executable that you based your environment on or a so-called 'symlink' to that system executable. Again, this will depend on the tool used and on the parameters you selected. </li><br>
