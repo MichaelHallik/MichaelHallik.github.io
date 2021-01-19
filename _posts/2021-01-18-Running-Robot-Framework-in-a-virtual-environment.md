@@ -20,7 +20,7 @@ This post will provide you with a thorough rundown. As such, it will also dive s
   <li><a href="#Create a virtual environment.">Create a virtual environment.</a> </li>
 </ol>
 
-If you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the third topic. But please note, that even there you may run into information that may be to detailed for your taste. Well, you just will have to suffer a bit, I guess. <p> &#128124;</p>
+If you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the third topic. But please note, that even there you may run into information that may be to detailed for your taste. Well, you just will have to suffer a bit, I guess. &#128124;
 
 <h2> <a name="Why virtual environments?"> Why virtual environments? </a> </h2>
 
