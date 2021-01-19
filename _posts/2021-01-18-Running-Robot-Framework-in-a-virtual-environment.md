@@ -76,6 +76,14 @@ Now that we have some idea of what a virtual environment is, let's create one! <
 <h2> <a name="Create a virtual environment."> Create a virtual environment. </a> </h2>
 
 To get ourselves a nice virtual environment, we have to take several steps. These will be outlined in the remainder of this post. Here we go ... .
+
+<h3> Install one or more Python versions. </h3>
+
+When creating virtual environments, you might have the need to be able to develop, run and test code against multiple Python versions. Maybe you need or want to explicitly support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not.
+
+When such a requirement is aplicable, install the needed Python versions. For the sake of this post, I have installed:
+
+<a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
   
 <h3> Decide on a tool (set). </h3>
 
@@ -89,14 +97,11 @@ First of all, we need to decide on our tool (set) for creating and managing our 
   <li>And many more ...</li>
 </ul>
 
-I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics.
+I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics. For instance <a href="https://www.pluralsight.com/tech-blog/managing-python-environments/" target="_blank">this one<a> or <a href="https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe" target="_blank">this one.
 
 Here we will simply choose <code class="folder">virtualenv</code>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <code class="folder">virtualenvwrapper</code> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of our environment management.
 
 Finally, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it.
 
-<h3> Install a tool (set). </h3>
+<h3> Install the chosen tool (set). </h3>
 
-<h3> Install one or more Python versions. </h3>
-
-When creating virtual environments, you might have the need to be able to develop, run and test code against multiple Python versions. Maybe you need or want to explicietly support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not.
