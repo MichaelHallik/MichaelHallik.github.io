@@ -56,7 +56,7 @@ Creating a virtual environment generates a (relatively small) directory structur
 
 <li> The Python <code class="folder">\Lib\site-packages</code> folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li>
 
-</ol><br>
+</ol>
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
