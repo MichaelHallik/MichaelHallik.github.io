@@ -1,5 +1,4 @@
 ---
-tags: testposttext
 tags: Python virtualenvironments virtualenv testautomation testframeworks robotframework
 
 ---
@@ -49,7 +48,7 @@ Once you have created an environment that fullfills the requirements of your spe
 
 Creating a virtual environment generates a (relatively) small directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one of my virtual environments, created with virtualenv:
 
-<a href="/assets/images/folder_structure.jpg"><img class="postimage" src="/assets/images/folder_structure.jpg" alt="High-level folder structure created by virtualenv." style="border:3px solid black"></a>
+<a href="/assets/images/folder_structure.jpg"><img class="postimage" src="/assets/images/folder_structure.jpg" alt="High-level folder structure created by virtualenv." style="border:2px solid black"></a>
 
 Regardless the tool, all virtual environments basically consist of three components:
 
