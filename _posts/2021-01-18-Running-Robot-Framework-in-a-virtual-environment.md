@@ -59,7 +59,9 @@ Regardless the tool, all virtual environments basically consist of three compone
 
 <a href="/assets/images/scripts_folder.JPG"><img class="postimage" src="/assets/images/scripts_folder.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
-<li> The Python <code class="folder">\Lib\site-packages</code> folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li> See again my own environment as example:<br><br>
+<li> The Python <code class="folder">\Lib\site-packages</code> folder. <br><br> This folder is used for third-party libraries/packages that are installed. For instance, Robot Framework, RIDE and all installed RF test libraries will reside in this folder. </li><br>
+
+See again my own environment as an example:<br><br>
 
 <a href="/assets/images/site_folder.JPG"><img class="postimage" src="/assets/images/site_folder.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
