@@ -15,13 +15,21 @@ body{
     font-family:Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
 }
 
-/* HTML HEADERS (old color:#97B918) */
+/* HTML HEADERS */
 
-h1,h2,h3,h4,h5,h6{
+h1{
+    color:#97B918;
+}
+
+h2.meta{
+    color:#97B918;
+}
+
+h2,h3,h4,h5,h6{
     color:#63c0f5;
 }
 
-h1{
+h1, h2.meta{
     font-size:30px;
     text-transform: uppercase;
 }
