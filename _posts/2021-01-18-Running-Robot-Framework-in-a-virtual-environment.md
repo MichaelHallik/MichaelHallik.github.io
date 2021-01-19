@@ -12,8 +12,10 @@ A lot has been written on Python virtual environments. There also is an abundanc
 
 However, there isn't much information on running the Robot Framework in such an environment. That is rather odd, since the Robot Framework is the most prominent (generic) test automation framework within the Python eco-system. There are <i>some</i> articles on the topic, but they are all rather sketchy.
 
-This post will provide you with a thorough rundown. As such, it will also dive somewhat into the theory behind virtual environments. I believe knowing the internals of our tool stack makes us more efficient and effective as test (automation) engineers. However, if you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the theory and jump ahead to <a href="#Create a virtual environment.">Create a virtual environment.</a>.
-  
+This post will provide you with a thorough rundown. As such, it will also dive somewhat into the theory behind virtual environments. I believe knowing the internals of our tool stack makes us more efficient and effective as test (automation) engineers.
+
+If you just want to know the steps to take for running your Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to <a href="#Create a virtual environment.">Create a virtual environment</a>.
+
 Contents:
 
 <ol>
