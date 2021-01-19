@@ -61,7 +61,7 @@ Regardless the tool, all virtual environments basically consist of three compone
 
 </ol>
 
-So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just mentioned. These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations. They only have each other.
+So, the three basic types of artifacts that every virtual Python environment is composed of, are: a Python interpreter, a bunch of Python scripts and a bunch of Python packages (libraries). The scripts and the packages are closely related, as was just mentioned. <br><br> These three basic components are, as an independant whole, isolated from any other (virtual or system) Python installations. They only have each other.
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
