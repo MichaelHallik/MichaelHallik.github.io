@@ -73,7 +73,10 @@ To get ourselves a nice virtual environment, we have to take several steps. Thes
 
 First of all, we need to decide on our tool (set) for creating and managing our virtual Python environments. There are quite a few candidates. For instance:
 
-- the venv mpdule, that is Python comes shipped with the venv module. However
+<ul>
+  <li>The <code class="folder">venv</code> module, that comes shipped with Python (i.e., is part of the standard library).</li>
+  <li>The <code class="folder">venv</code> module, that comes shipped with Python (i.e., is part of the standard library).</li>
+  
 
 <h3> Install one or more Python versions. </h3>
 
