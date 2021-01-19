@@ -87,17 +87,37 @@ To get ourselves a nice virtual environment, we have to take several steps.
 
 These will be outlined in the remainder of this post. Please note that the instructions have been written for Windows (in my case Win 10 Pro). But the whole process is very similar on Linux.
 
+Also we assume Python 3.4 or higher.
+
 Here we go . . .
 
 <h3> <a name="Install one or more Python versions."> Install one or more Python versions. </a> </h3>
 
-You might have a need to develop, run and test your project code against multiple Python versions. Maybe you need to support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not. Or some of your projects depend on external libraries that need some specific (for instance older) Python version.
+You might have a need to develop, run and test your project code against multiple Python versions, because your project is required to support multiple Python versions. Maybe your project directly or indirectly depends on a specific, older Python version, while others do not. Or some of your projects depend on external libraries that need some specific (older) Python version.
 
-When such a situation is aplicable, install the required Python versions. For the sake of this post, I have installed:
+When such a situation is applicable, install the required Python versions. For the sake of this post, I have installed:
 
 <a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
-I will not elaborate on the Python installation process, since it is pretty straightforward. Just make sure to add the root (= installation) folder as well as the \Scripts folder to the PATH environment variable of your operating system. The installer can do this for you or you must do it manually (ask Google 'add environment variable <your_os>').
+I will not elaborate on the Python installation process, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
+
+Just make sure to add the root (= installation) folder as well as the <code class="folder">\Scripts</folder> sub-folder to the PATH environment variable of your operating system.
+
+INSERT SCREEN SHOT.
+
+The installer can do this for you or you must do it manually. If you do not know how to do the latter, please query a web search engine: 'modify path variable <your_os>'. Note that for our purposes, it will be sufficient to add the folders to the PATH variable for just <i>one</i> of multiple Python versions (which one is irrelevant in our case). However, having the folders of multiple Python versions added to PATH won't hurt either. Normally, the first entry that is found is used and the other entries are simply ignored by the OS or applications that look for Python. The first entry is always of the Python version that was installed last. But for our purposes none of that matters, as we will see later on. Just have the mentioned folders added to PATH for <i>at least</i> one Python version.
+
+It is recommended, though, to activate the option to install the so-called <a href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">'Python launcher'</a> during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
+
+To check whether a Python version was properly installed, you might do a simple test: immediately after each installation, open a command line and type python -V. That should output the version of the Python installation that was installed most recently.
+
+INSERT SCREEN SHOT.
+
+However, that approach assumes that the folders of that particular Python version were added to PATH. In case they were not, you can use another approach. This assumes you have installed the 'Python launcher' (see earlier remarks). In case you have, you can open a command line after you have installed <i>all</i> of the required Python versions and type: py -0. This will output all installed Python versions on your system:
+
+INSERT SCREEN SHOT.
+
+(The asterisk indicates which Python version the Python launcher will use by default.)
   
 <h3> <a name="Decide on a tool (set)."> Decide on a tool (set). </a> </h3>
 
@@ -117,7 +137,13 @@ Here we will simply choose <code class="folder">virtualenv</code>, as most or al
 
 <h3> <a name="Install the chosen tool (set)."> Install the chosen tool (set). </a> </h3>
 
-Assuming you have installed Python, you probably will have <a href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available, which is one of the most used Python package managers and that comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library.
+For this step you must have modified your PATH environment variable, according to what was said <a href="#Install one or more Python versions.">earlier</a>
+
+Assuming you have followed all instructions, you will now have <a href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most used Python package managers and for that very reason it also comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, pip makes it also very easy for developers to manage any external dependencies of the various modules in their packages. As a matter of fact, we will use that 'feature' of pip to be able to restore and also share our environments later on.
+
+INSERT SCREEN SHOT 'pip -V'
+
+https://www.liquidweb.com/kb/install-pip-windows/
 
 To install <code class="folder">virtualenv</code>, simply open a command line and type:
 
