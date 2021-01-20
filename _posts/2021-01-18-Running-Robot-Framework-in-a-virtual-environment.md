@@ -14,7 +14,7 @@ However, there isn't much information on running the Robot Framework in a virtua
 This post will provide you with a thorough rundown. As such, it will also dive somewhat into the workings of virtual environments. I believe knowing the internals of our tool stack makes us more efficient and effective as test (automation) engineers. Therefore, this article will cover the following topics:
 
 <ol>
-  <li><a href="#Why virtual environments?">Why virtual environments?</a></li>
+  <li><a class="postanchor" href="#Why virtual environments?">Why virtual environments?</a></li>
   <li><a href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a></li>
   <li><a href="#And what does a virtual environment look like?">And what does a virtual environment look like?</a></li>
   <li><a href="#Create virtual environments using virtualenv.">Create a virtual environment using virtualenv.</a>
