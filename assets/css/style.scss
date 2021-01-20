@@ -122,8 +122,13 @@ li.postlink {
 /* Code snippets and the like */
 
 code.folder{
-  background-color: darkgray;
-  color: black;
+  color: white;
+  font-size:small;
+}
+
+code.snippet{
+  background-color: lightslategrey;
+  color: white;
 }
 
 /* The tags just below the title */
@@ -141,14 +146,6 @@ a.postanchor{
 /* Images in the post text. */
 
 img.postimage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Images in the post text, that need to be reduced in size. */
-
-img.small {
   display: block;
   margin-left: auto;
   margin-right: auto;
