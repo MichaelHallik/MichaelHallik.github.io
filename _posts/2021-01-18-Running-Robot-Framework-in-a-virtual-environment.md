@@ -5,7 +5,7 @@ tags: Python virtualenvironments virtualenv testautomation testframeworks robotf
 
 <br>
 
-<h2> Introduction. </h2>
+<h1> Introduction. </h1>
 
 A lot has been written on Python virtual environments. There also is an abundance of information on the web concerning the various Python tools to create and manage these environments.
 
@@ -36,7 +36,7 @@ This post will provide you with a thorough rundown. As such, it will also dive s
 
 If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
 
-<h2> <a name="Why virtual environments?"> Why virtual environments? </a> </h2>
+<h1> <a name="Why virtual environments?"> Why virtual environments? </a> </h1>
 
 Creating a virtual Python environment for your test automation project (and for any kind of development project, for that matter) can be beneficial for many reasons. Among those reasons are:
 
@@ -50,7 +50,7 @@ Creating a virtual Python environment for your test automation project (and for 
 <li> Being able to restore your environment, in case of problems related to your environment. <br><br> Let's say, for instance, that you updated multiple libraries in one, single step and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment and try your updates anew in a less rash fashion? Later on we will see just how effortless this can be done with a virtual environment!</li>
 </ul>
 
-<h2> <a name="But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </h2>
+<h1> <a name="But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </h1>
 
 A virtual environment is a self-contained, isolated Python installation that (as such) is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations). Within that environment, you can create an eco-system of third party libraries/packages that will be specific and dedicated to that environment (although you <i>can</i> share between environments if necessary).
 
@@ -58,7 +58,7 @@ The installed packages will only be accessible to the Python interpreter of that
 
 Once you have created an environment that fullfills the requirements of your specific development project, you can then proceed and bind the environment to that project. Or to multiple projects that have identical requirements.
 
-<h2> <a name="And what does a virtual environment look like?"> And what does a virtual environment look like? </a> </h2>
+<h1> <a name="And what does a virtual environment look like?"> And what does a virtual environment look like? </a> </h1>
 
 Creating a virtual environment generates a (relatively) small directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one of my virtual environments, created with the Python module <code class="folder">virtualenv</code>:
 
@@ -87,7 +87,7 @@ So the three basic types of artifacts, that every virtual Python environment is 
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
-<h2> <a name="Create virtual environments using virtualenv."> Create a virtual environment using virtualenv. </a> </h2>
+<h1> <a name="Create virtual environments using virtualenv."> Create a virtual environment using virtualenv. </a> </h1>
 
 To get ourselves a nice virtual environment, we have to take several steps.
 
@@ -97,7 +97,7 @@ Also we assume <b>Python 3.4 or higher</b>. Anything below that, can and will en
 
 Here we go . . .
 
-<h3> <a name="Install one or more Python versions."> Install one or more Python versions. </a> </h3>
+<h2> <a name="Install one or more Python versions."> Install one or more Python versions. </a> </h2>
 
 You might have a need to develop, run and test your project code against multiple Python versions, because your project is required to support multiple versions. Or maybe your project directly or indirectly depends on a specific, older Python version, while others do not. Or some of your projects depend on external libraries that need some specific (older) Python version.
 
@@ -109,7 +109,7 @@ For the sake of this post, I have installed:
 
 I will not elaborate much on the Python installation process itself, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
 
-<h4> The PATH environment variable. </h4>
+<h3> The PATH environment variable. </h3>
 
 Just make sure to add the root (= installation) folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, I put the following on the PATH:
 
@@ -122,11 +122,11 @@ The installer can do this for you or you must do it manually. If you do not know
 
 Note that for our purposes, it will be sufficient to do this for just <i>one</i> of multiple Python versions (assuming you actually have multiple). In our case it is also irrelevant which one you pick. However, having the folders of multiple Python versions added to PATH won't hurt either. Generally, only the first entries that are found are used by the OS or applications that look for Python, while the other entries are then simply ignored. The first entries that will be found, are always those of the Python version that was installed last. But for our purposes none of that matters, as we will see later on. Just have the mentioned folders added to PATH for <i>at least</i> one Python version.
 
-<h4> The Python Launcher. </h4>
+<h3> The Python Launcher. </h3>
 
 It is recommended to activate the option to install the so-called '<a class="postanchor" href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python launcher</a>' during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
 
-<h4> Validate the installation(s). </h4>
+<h3> Validate the installation(s). </h3>
 
 To check whether a Python version has been properly installed, you might do a simple test: immediately after each installation, open a command line and type python -V. That should output the version of the Python installation that was installed most recently.
 
@@ -136,11 +136,11 @@ However, that approach assumes that the root and \Scripts folders of that partic
 
 The asterisk indicates which Python version the Python launcher will use by default (always the most recent version installed). By the way, it does <i>not</i> indicate which Python version is first in PATH.
   
-<h3> <a name="Decide on a tool (set)."> Decide on a tool (set). </a> </h3>
+<h2> <a name="Decide on a tool (set)."> Decide on a tool (set). </a> </h2>
 
 First of all, we need to decide on our tool (set) for creating and managing our virtual Python environments.
 
-<h4> Candidates. </h4>
+<h3> Candidates. </h3>
 
 There are quite a few candidates. For instance:
 
@@ -152,19 +152,19 @@ There are quite a few candidates. For instance:
   <li>And many more ...</li>
 </ul>
 
-<h4> Differences. </h4>
+<h3> Differences. </h3>
 
 I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics. For instance <a class="postanchor" href="https://www.pluralsight.com/tech-blog/managing-python-environments/" target="_blank">this one</a> or <a class="postanchor"  href="https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe" target="_blank">this one</a>.
 
-<h4> We'll use virtualenv. </h4>
+<h3> We'll use virtualenv. </h3>
 
 Here we will simply choose <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenv</a>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <a class="postanchor"  href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper</a> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of the environment management. Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it. Finally, PyCharm can (re-)use environments that we create manually through <code class="folder">virtualenv</code>. This adds a lot of flexibility when using PyCharm as editor, since the environment options that the IDE itself provides us with, are rather limited.
 
-<h3> <a name="Install the chosen tool (set)."> Install the chosen tool (set). </a> </h3>
+<h2> <a name="Install the chosen tool (set)."> Install the chosen tool (set). </a> </h2>
 
 For this step you must have modified your PATH environment variable in accordance with what has been said <a class="postanchor" href="#Install one or more Python versions.">earlier</a>.
 
-<h4> Introducing pip. </h4>
+<h3> Introducing pip. </h3>
 
 Assuming you have followed all instructions, you will now have <a class="postanchor" href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most used Python package managers and for that very reason it also comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, pip makes it very easy for developers to manage any external dependencies of the various modules in their own package. As a matter of fact, we will use that feature of pip to be able to restore and also share our environments later on.
 
@@ -172,7 +172,7 @@ To see whether you have pip available, open a command line and type:
 
 'pip -V'
 
-<h4> No pip available? </h4>
+<h3> No pip available? </h3>
 
 In case pip is not available, check whether you have Python available: type python -V.
 
@@ -180,7 +180,7 @@ In case Python is not available, check your PATH environment variable (in accord
 
 In the strange case that Python <i>is</i> available, but pip is <i>not</i>, you can try to re-install Python (make sure to use <b>3.4 or higher</b>) or <a class="postanchor"  href="https://www.liquidweb.com/kb/install-pip-windows/" target="_blank">install pip manually</a>.
 
-<h4> Install virtualenvwrapper-win. </h4>
+<h3> Install virtualenvwrapper-win. </h3>
 
 To install <code class="folder">virtualenv</code>, simply open a command line and type:
 
@@ -195,7 +195,7 @@ So, what we did just now is equivalent to:
 <code class="snippet">pip install virtualenv</code><br>
 <code class="snippet">pip install virtualenvwrapper-win</code>
 
-<h3> <a name="Optional: create an environment variable WORKON_HOME."> Optional: create an environment variable WORKON_HOME. </a> </h3>
+<h2> <a name="Optional: create an environment variable WORKON_HOME."> Optional: create an environment variable WORKON_HOME. </a> </h2>
 
 This step is optional, but recommended.
 
@@ -207,7 +207,7 @@ We set a default environment directory by creating a user environment variable. 
 
 If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
 
-<h3> <a name="Create your environments."> Create your environments. </a> </h3>
+<h2> <a name="Create your environments."> Create your environments. </a> </h2>
 
 We are now finally ready to create our very first virtual environment.
 
@@ -215,7 +215,7 @@ I am assuming that you have <a class="postanchor" href="#Optional: create an env
 
 Since we will use <a class="postanchor" href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a>, please note that you'll need to use the 'old school' Windows command prompt (as seen in the screen shots below): virtualenvwrapper-win cannot be run from the Windows PowerShell.
 
-<h4>About the mkvirtualenv command.</h4>
+<h3>About the mkvirtualenv command.</h3>
 
 The command to create a new virtual environment is <code class="folder">mkvirtualenv</code>.
 
@@ -229,7 +229,7 @@ So, in my case, if I would now issue the command <code class="snippet">mkvirtual
 
 However, usually we will want to <i>explicitly</i> specifiy the Python version for our environment.
 
-<h4>Create a virtual environment with a specific Python version.</h4>
+<h3>Create a virtual environment with a specific Python version.</h3>
 
 We can only specify a Python version if we have a system imstallation of that version, as explained earlier. INSERT LINK
 
@@ -278,7 +278,7 @@ Now every Python related command, script, etc. would be executed by the Python i
 
 <a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="Commands after deactivation." width="80%"></a><br>
 
-<h4>Create other required virtual environments.</h4>
+<h3>Create other required virtual environments.</h3>
 
 We can now proceed and create environments that are based on the same and/or other Python versions.
 
