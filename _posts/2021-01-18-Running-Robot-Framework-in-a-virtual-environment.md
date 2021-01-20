@@ -79,7 +79,7 @@ You can see that the Python executable is also located here, which, in my case, 
 
 See again my own environment as an example:<br><br>
 
-<a href="/assets/images/site_folder.JPG"><img class="postimage" src="/assets/images/site_folder.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+<a href="/assets/images/site_folder.JPG"><img src="/assets/images/site_folder.JPG" alt="Contents of Scripts folder." width="80%" style="border:2px solid black"></a><br>
 
 </ol>
 
