@@ -19,12 +19,12 @@ This post will provide you with a thorough rundown. As such, it will also dive s
   <li><a href="#And what does a virtual environment look like?">And what does a virtual environment look like?</a></li>
   <li><a href="#Create virtual environments using virtualenv.">Create a virtual environment using virtualenv.</a>
     <ol type="a">
-      <li><a href="#Install one or more Python versions.">Install one or more Python versions.</a> </li>
-      <li><a href="#Decide on a tool (set).">Decide on a tool (set).</a> </li>
-      <li><a href="#Install the chosen tool (set).">Install the chosen tool (set).</a> </li>
-      <li><a href="#Optional: create an environment variable WORKON_HOME.">Optional: create an environment variable WORKON_HOME.</a> </li>
-      <li><a href="#Create your environments.">Create your environments.</a> </li>
-      <li><a href="#Create your ecosystems.">Create your ecosystems.</a>
+      <li><a href="#Install one or more Python versions.">Install one or more Python versions.</a></li>
+      <li><a href="#Decide on a tool (set).">Decide on a tool (set).</a></li>
+      <li><a href="#Install the chosen tool (set).">Install the chosen tool (set).</a></li>
+      <li><a href="#Optional: create an environment variable WORKON_HOME.">Optional: create an environment variable WORKON_HOME.</a></li>
+      <li><a href="#Create your environments.">Create your environments.</a></li>
+      <li><a href="#Create your ecosystems.">Create your ecosystems.</a></li>
     </ol>
   </li>
   <li><a href="#Run the Robot Framework in a virtual environment.">Run the Robot Framework in a virtual environment.</a></li>
