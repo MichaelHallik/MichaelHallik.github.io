@@ -188,7 +188,7 @@ To install <code class="folder">virtualenv</code>, simply open a command line an
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
-<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip." width="75%"></a><br>
+<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip." width="70%"></a><br>
 
 So, what we did just now is equivalent to:
 
@@ -274,7 +274,7 @@ So, if we were to deactivate the environment, the PATH variable would be restore
 
 Now every Python related command, script, etc. would be executed by the Python interpreter that is first within the PATH environment variable:
 
-<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation."></a><br>
+<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation. width="75%""></a><br>
 
 <h5>Create other required virtual environments.</h5>
 
