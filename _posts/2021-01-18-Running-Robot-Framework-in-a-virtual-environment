@@ -232,19 +232,48 @@ We can only specify a Python version if we have a system imstallation of that ve
 
 Assuming, then, that we have a Python 3.7 system installation, we can simply use the virtualenv -p switch to base a virtual environmen off of that system installation:
 
+mkvirtualenv -p C:\Python\Python37\Python.exe robot-framework-py_37
+
+or shorter:
+
 mkvirtualenv -p 3.7 robot-framework-py_37
 
-INSERT SCREEN SHOT
+<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" class="small" alt="Setting the workon_home environment variable." style="border:2px solid black"></a><br>
 
-Note that command line prompt now has a 'prefix': (robot-framework-py_37). This is an indication of the fact that that environment has not only been created, but has also been<i> activated</i>. This means that any Python command or script will now be executed in the isolated context of this environment.
+Any of these two commands would create a virtual Python 3.7 environment (named 'robot-framework-py_37') into my default target directory. The directory structure will look exactly as described above. INSERT LINK:
 
-Congrats! You now have a virtual Python environment up and running!
+Note that the command line prompt now has a 'prefix': (robot-framework-py_37). This is an indication of the fact that that environment has not only been created, but has also 
+been <i>activated</i>. This means that any Python related command or script within this command line session will now be executed in the (isolated) context of this environment.
+
+Consequently, if we were to invoke pip to install a third-party package, pip would be executed from C:\Python\Python37\Lib\site-packages (in my case).
+
+INSERT SCREEN SHOT (echo pip when activated)
+
+Similarly, all newly installed packages would also be installed into C:\Python\Python37\Lib\site-packages.
 
 
 
-This would create a virtual Python 3.7 environment (named 'robot-framework-py_37') into my default target directory. The directory structure will look exactly as described above. INSERT LINK
+The way this works is that, under the hood, virtualenv has prefixed the PATH variable for the current command line session with the root and \Scripts folders of our virtual environment:
 
-INSERT SCREEN SHOT
+INSERT SCREEN SHOT (echo path)
+
+Because of this on-the-fly manipulation of the PATH var, the directories of our virtual env now are the first directories to be searched when we issue a Python related command.
+
+For instance:
+
+INSERT SCREEN SHOT (python -V)
+
+So, if I were to deactivate the environment, the PATH variable would be restored to it's original state:
+
+INSERT SCREEN SHOT (echo path and python -v)
+
+<h5>Create other required virtual environments.</h5>
+
+We can now proceed and create environments that are based on the same and/or other Python versions.
+
+It doesn't matter whether we have an existing active environment or not. Just issue the mkvirtualenv command. For instance:
+
+
 
       <li><a href="#Create your environments.">Create your environments.</a> </li>
       <li><a href="#Create your ecosystems.">Create your ecosystems.</a>
