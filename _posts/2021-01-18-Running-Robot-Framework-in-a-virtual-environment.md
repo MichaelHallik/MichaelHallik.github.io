@@ -71,7 +71,7 @@ Regardless the tool, all virtual environments basically consist of three compone
 
 <li> The Python <code class="folder">\Scripts</code> folder (<code class="folder">\bin</code> on Unix/Linux). <br><br> This folder is part of every regular Python installation and also of every virtual environment. It is used by third-party modules/packages (which themselves get installed into the \Lib\site-packages folder) to store scripts and/or executables that are associated with them. <br><br> As this folder (together with the root installation folder) gets added to the operating system's PATH variable (provided you chose that option during installation or manually edited PATH afterwards), you can run these scripts/executables from the command line. <br><br> For instance, when you invoke <code class="folder">pip install robotframework</code> from the Windows command line, the excutable <code class="folder">pip.exe</code> in the <code class="folder">Scripts</code> folder is called, which acts as a wrapper for the pip module in <code class="folder">\Lib\site-packages</code>. The same goes for the script <code class="folder">ride.py</code>, which is called when you start RIDE (Robot Framework Integrated Development Environment) from the command line and which, in turn, acts as an entry point to the RIDE package in the <code class="folder">\Lib\site-packages</code> folder. </li><br> Basically, this constellation is there to make sure we can access Python programs through the standard Windows shells, and not having to use the interactive Python interpeter. See this example of the <code class="folder">Scripts</code> folder of my virtual environment:<br><br>
 
-<a href="/assets/images/scripts_folder.JPG"><img src="/assets/images/scripts_folder.JPG" alt="Contents of Scripts folder." width="80%" style="border:2px solid black"></a><br>
+<a href="/assets/images/scripts_folder.JPG"><img src="/assets/images/scripts_folder.JPG" alt="Contents of Scripts folder." class="postimage" width="80%" style="border:2px solid black"></a><br>
 
 You can see that the Python executable is also located here, which, in my case, is a copy of the system Python interpreter and not a symlink.<br><br>
 
@@ -79,7 +79,7 @@ You can see that the Python executable is also located here, which, in my case, 
 
 See again my own environment as an example:<br><br>
 
-<a href="/assets/images/site_folder.JPG"><img src="/assets/images/site_folder.JPG" alt="Contents of Scripts folder." width="80%" style="border:2px solid black"></a><br>
+<a href="/assets/images/site_folder.JPG"><img src="/assets/images/site_folder.JPG" alt="Contents of Scripts folder." class="postimage" width="80%" style="border:2px solid black"></a><br>
 
 </ol>
 
