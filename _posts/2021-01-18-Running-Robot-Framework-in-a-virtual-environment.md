@@ -111,9 +111,12 @@ I will not elaborate much on the Python installation process itself, since it is
 
 <h5> The PATH environment variable. </h5>
 
-Just make sure to add the root (= installation) folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, that looks like this:
+Just make sure to add the root (= installation) folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, I put the following on the PATH:
 
-<a href="/assets/images/PATH.JPG"><img class="postimage" src="/assets/images/PATH.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+<ul>
+  <li>C:\Python39</li>
+  <li>C:\Python39\Scripts</li>
+</ul>
 
 The installer can do this for you or you must do it manually. If you do not know how to do the latter, please query a web search engine: 'modify path variable <your_os>'.
 
@@ -129,7 +132,7 @@ To check whether a Python version has been properly installed, you might do a si
 
 However, that approach assumes that the root and \Scripts folders of that particular Python version were added to PATH during or immediately after installation. In case they were not, you can use another approach. This again assumes that you have installed the 'Python launcher' (see earlier remarks). In case you have, open an command line after you have installed <i>all</i> of the required Python versions and type: py -0. This will output all installed Python versions on your system:
 
-<a href="/assets/images/py_launcher.JPG"><img class="small" src="/assets/images/py_launcher.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+<a href="/assets/images/py_launcher.JPG"><img class="postimage" src="/assets/images/py_launcher.JPG" alt="Contents of Scripts folder." width="65" style="border:2px solid black"></a><br>
 
 The asterisk indicates which Python version the Python launcher will use by default (always the most recent version installed). By the way, it does <i>not</i> indicate which Python version is first in PATH.
   
@@ -185,7 +188,7 @@ To install <code class="folder">virtualenv</code>, simply open a command line an
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
-<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip."></a><br>
+<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip." with="75%"></a><br>
 
 So, what we did just now is equivalent to:
 
@@ -200,7 +203,7 @@ We can set a default target or home directory for our environments. That way, we
 
 We set a default environment directory by creating a user environment variable. I have chosen the following directory myself:
 
-<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" class="small" alt="Setting the workon_home environment variable." style="border:2px solid black"></a><br>
+<a href="/assets/images/env_vars.JPG"><img src="/assets/images/env_vars.JPG" class="small" alt="Setting the workon_home environment variable." class="postimage" width="65%" style="border:2px solid black"></a><br>
 
 If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
 
