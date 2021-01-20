@@ -129,7 +129,7 @@ To check whether a Python version has been properly installed, you might do a si
 
 However, that approach assumes that the root and \Scripts folders of that particular Python version were added to PATH during or immediately after installation. In case they were not, you can use another approach. This again assumes that you have installed the 'Python launcher' (see earlier remarks). In case you have, open an command line after you have installed <i>all</i> of the required Python versions and type: py -0. This will output all installed Python versions on your system:
 
-<a href="/assets/images/py_launcher.JPG"><img class="postimage" src="/assets/images/py_launcher.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+<a href="/assets/images/py_launcher.JPG"><img class="small" src="/assets/images/py_launcher.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
 The asterisk indicates which Python version the Python launcher will use by default (always the most recent version installed). By the way, it does <i>not</i> indicate which Python version is first in PATH.
   
@@ -238,7 +238,7 @@ mkvirtualenv -p 3.7 robot-framework-py_37
 
 Any of these two commands would create a virtual Python 3.7 environment (named 'robot-framework-py_37') into my default target directory.
 
-<a href="/assets/images/first_env.jpg"><img src="/assets/images/first_env.jpg" class="small" alt="Create a virt env."></a><br>
+<a href="/assets/images/first_env.jpg"><img src="/assets/images/first_env.jpg" class="postimage" alt="Create a virt env."></a><br>
 
 The created directory structure will look exactly as described above. <INSERT LINK>
 
