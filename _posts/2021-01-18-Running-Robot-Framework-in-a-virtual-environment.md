@@ -105,7 +105,7 @@ When any such a situation is applicable, install the required Python versions. T
 
 For the sake of this post, I have installed:
 
-<a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." width="85%"style="border:2px solid black"></a><br>
+<a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." width="85%" style="border:2px solid black"></a><br>
 
 I will not elaborate much on the Python installation process itself, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
 
