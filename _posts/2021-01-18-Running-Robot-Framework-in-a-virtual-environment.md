@@ -219,7 +219,9 @@ Since we will use <a class="postanchor" href="https://pypi.org/project/virtualen
 
 The command to create a new virtual environment is <code class="folder">mkvirtualenv</code>.
 
-This command has the following structure: <code class="snippet">mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]</code>
+This command has the following structure:
+
+<code class="snippet">mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]</code>
   
 Although only the latter (name-of-virt-env) is mandatory, typically you will specify at least one or more <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/cli_interface.html" target="_blank">virtualenv options</a> when creating a new virtual env. Any such option will be passed on by virtualenvwrapper-win to virtualenv for processing there.
 
@@ -248,7 +250,7 @@ The created directory structure will look exactly as described above. <INSERT LI
 Note that the command line prompt now has a 'prefix': (robot-framework-py_37). This is an indication of the fact that that environment has not only been created, but has also 
 been <i>activated</i>! This means that from now on any Python related command or script (within the current command line session) will be executed in the (isolated) context of this environment:
 
-<a href="/assets/images/py_version_when_active.JPG"><img src="/assets/images/py_version_when_active.JPG" class="small" alt="Virt env Python version."></a><br>
+<a href="/assets/images/py_version_when_active.JPG"><img src="/assets/images/py_version_when_active.JPG" class="postimage" alt="Virt env Python version."></a><br>
 
 The same applies were we to use the Python interpreter:
 
