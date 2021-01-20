@@ -31,7 +31,8 @@ This post will provide you with a thorough rundown. As such, it will also dive s
   <li><a class="postanchor" href="#Switch between virtual environments.">Switch between virtual environments</a>.</li>
   <li><a class="postanchor" href="#Manage virtual environments.">Manage virtual environments</a>.</li>
   <li><a class="postanchor" href="#Share virtual environments.">Share virtual environments</a>.</li>
-  <li><a class="postanchor" href="#Restore virtual environments.">CRestore virtual environments</a>.</li>
+  <li><a class="postanchor" href="#Restore virtual environments.">Restore virtual environments</a>.</li>
+  <li><a class="postanchor" href="#PyCharm and virtual environments.">PyCharm and virtual environments</a>.</li>
 </ol>
 
 If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
