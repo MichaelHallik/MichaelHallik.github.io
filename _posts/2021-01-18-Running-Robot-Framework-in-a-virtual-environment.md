@@ -213,7 +213,7 @@ We are now finally ready to create our very first virtual environment.
 
 I am assuming that you have <a class="postanchor" href="#Optional: create an environment variable WORKON_HOME.">created the WORKON_HOME environment variable</a>.
 
-Since we will use <a href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a>, please note that you'll need to use the 'old school' Windows command prompt (as seen in the screen shots below): virtualenvwrapper-win cannot be run from the Windows PowerShell.
+Since we will use <a class="postanchor" href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a>, please note that you'll need to use the 'old school' Windows command prompt (as seen in the screen shots below): virtualenvwrapper-win cannot be run from the Windows PowerShell.
 
 <h4>About the mkvirtualenv command.</h4>
 
