@@ -274,7 +274,7 @@ So, if we were to deactivate the environment, the PATH variable would be restore
 
 Now every Python related command, script, etc. would be executed by the Python interpreter that is first within the PATH environment variable:
 
-<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation. width="75%""></a><br>
+<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation." width="75%""></a><br>
 
 <h5>Create other required virtual environments.</h5>
 
