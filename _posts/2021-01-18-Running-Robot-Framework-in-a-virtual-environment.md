@@ -15,23 +15,23 @@ This post will provide you with a thorough rundown. As such, it will also dive s
 
 <ol>
   <li><a class="postanchor" href="#Why virtual environments?">Why virtual environments?</a></li>
-  <li><a href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a></li>
-  <li><a href="#And what does a virtual environment look like?">And what does a virtual environment look like?</a></li>
-  <li><a href="#Create virtual environments using virtualenv.">Create a virtual environment using virtualenv.</a>
+  <li><a class="postanchor" href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a></li>
+  <li><a class="postanchor" href="#And what does a virtual environment look like?">And what does a virtual environment look like?</a></li>
+  <li><a class="postanchor" href="#Create virtual environments using virtualenv.">Create a virtual environment using virtualenv.</a>
     <ol type="a">
-      <li><a href="#Install one or more Python versions.">Install one or more Python versions.</a></li>
-      <li><a href="#Decide on a tool (set).">Decide on a tool (set).</a></li>
-      <li><a href="#Install the chosen tool (set).">Install the chosen tool (set).</a></li>
-      <li><a href="#Optional: create an environment variable WORKON_HOME.">Optional: create an environment variable WORKON_HOME.</a></li>
-      <li><a href="#Create your environments.">Create your environments.</a></li>
-      <li><a href="#Create your ecosystems.">Create your ecosystems.</a></li>
+      <li><a class="postanchor" href="#Install one or more Python versions.">Install one or more Python versions.</a></li>
+      <li><a class="postanchor" href="#Decide on a tool (set).">Decide on a tool (set).</a></li>
+      <li><a class="postanchor" href="#Install the chosen tool (set).">Install the chosen tool (set).</a></li>
+      <li><a class="postanchor" href="#Optional: create an environment variable WORKON_HOME.">Optional: create an environment variable WORKON_HOME.</a></li>
+      <li><a class="postanchor" href="#Create your environments.">Create your environments.</a></li>
+      <li><a class="postanchor" href="#Create your ecosystems.">Create your ecosystems.</a></li>
     </ol>
   </li>
-  <li><a href="#Run the Robot Framework in a virtual environment.">Run the Robot Framework in a virtual environment.</a></li>
-  <li><a href="#Switch between virtual environments.">Switch between virtual environments.</a></li>
-  <li><a href="#Manage virtual environments.">Manage virtual environments.</a></li>
-  <li><a href="#Share virtual environments.">Share virtual environments.</a></li>
-  <li><a href="#Restore virtual environments.">CRestore virtual environments.</a></li>
+  <li><a class="postanchor" href="#Run the Robot Framework in a virtual environment.">Run the Robot Framework in a virtual environment.</a></li>
+  <li><a class="postanchor" href="#Switch between virtual environments.">Switch between virtual environments.</a></li>
+  <li><a class="postanchor" href="#Manage virtual environments.">Manage virtual environments.</a></li>
+  <li><a class="postanchor" href="#Share virtual environments.">Share virtual environments.</a></li>
+  <li><a class="postanchor" href="#Restore virtual environments.">CRestore virtual environments.</a></li>
 </ol>
 
 If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
@@ -124,7 +124,7 @@ Note that for our purposes, it will be sufficient to do this for just <i>one</i>
 
 <h5> The Python Launcher. </h5>
 
-It is recommended to activate the option to install the so-called '<a href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python launcher</a>' during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
+It is recommended to activate the option to install the so-called '<a class="postanchor" href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python launcher</a>' during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
 
 <h5> Validate the installation(s). </h5>
 
@@ -154,19 +154,19 @@ There are quite a few candidates. For instance:
 
 <h5> Differences. </h5>
 
-I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics. For instance <a href="https://www.pluralsight.com/tech-blog/managing-python-environments/" target="_blank">this one</a> or <a href="https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe" target="_blank">this one</a>.
+I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics. For instance <a class="postanchor" href="https://www.pluralsight.com/tech-blog/managing-python-environments/" target="_blank">this one</a> or <a class="postanchor"  href="https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe" target="_blank">this one</a>.
 
 <h5> We'll use virtualenv. </h5>
 
-Here we will simply choose <a href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank"><code class="folder">virtualenv</code></a>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <a href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank"><code class="folder">virtualenvwrapper</code></a> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of the environment management. Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it. Finally, PyCharm can (re-)use environments that we create manually through <code class="folder">virtualenv</code>. This adds a lot of flexibility when using PyCharm as editor, since the environment options that the IDE itself provides us with, are rather limited.
+Here we will simply choose <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenv</a>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <a class="postanchor"  href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper</a> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of the environment management. Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it. Finally, PyCharm can (re-)use environments that we create manually through <code class="folder">virtualenv</code>. This adds a lot of flexibility when using PyCharm as editor, since the environment options that the IDE itself provides us with, are rather limited.
 
 <h3> <a name="Install the chosen tool (set)."> Install the chosen tool (set). </a> </h3>
 
-For this step you must have modified your PATH environment variable in accordance with what has been said <a href="#Install one or more Python versions.">earlier</a>.
+For this step you must have modified your PATH environment variable in accordance with what has been said <a class="postanchor" href="#Install one or more Python versions.">earlier</a>.
 
 <h5> Introducing pip. </h5>
 
-Assuming you have followed all instructions, you will now have <a href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most used Python package managers and for that very reason it also comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, pip makes it very easy for developers to manage any external dependencies of the various modules in their own package. As a matter of fact, we will use that feature of pip to be able to restore and also share our environments later on.
+Assuming you have followed all instructions, you will now have <a class="postanchor" href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most used Python package managers and for that very reason it also comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, pip makes it very easy for developers to manage any external dependencies of the various modules in their own package. As a matter of fact, we will use that feature of pip to be able to restore and also share our environments later on.
 
 To see whether you have pip available, open a command line and type:
 
@@ -176,9 +176,9 @@ To see whether you have pip available, open a command line and type:
 
 In case pip is not available, check whether you have Python available: type python -V.
 
-In case Python is not available, check your PATH environment variable (in accordance with what was said <a href="#Install one or more Python versions.">earlier</a>.
+In case Python is not available, check your PATH environment variable (in accordance with what was said <a class="postanchor" href="#Install one or more Python versions.">earlier</a>.
 
-In the strange case that Python <i>is</i> available, but pip is <i>not</i>, you can try to re-install Python (make sure to use <b>3.4 or higher</b>) or <a href="https://www.liquidweb.com/kb/install-pip-windows/" target="_blank">install pip manually</a>.
+In the strange case that Python <i>is</i> available, but pip is <i>not</i>, you can try to re-install Python (make sure to use <b>3.4 or higher</b>) or <a class="postanchor"  href="https://www.liquidweb.com/kb/install-pip-windows/" target="_blank">install pip manually</a>.
 
 <h5> Install virtualenvwrapper-win. </h5>
 
@@ -211,9 +211,9 @@ If you do not know how to create such a variable, please query a web search engi
 
 We are now finally ready to create our very first virtual environment.
 
-I am assuming that you have <a href="#Optional: create an environment variable WORKON_HOME.">created the WORKON_HOME environment variable</a>.
+I am assuming that you have <a class="postanchor" href="#Optional: create an environment variable WORKON_HOME.">created the WORKON_HOME environment variable</a>.
 
-Since we will use <a href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank"><code class="folder">virtualenvwrapper-win</code></a>, please note that you'll need to use the 'old school' Windows command prompt (as seen in the screen shots below): virtualenvwrapper-win cannot be run from the Windows PowerShell.
+Since we will use <a href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a>, please note that you'll need to use the 'old school' Windows command prompt (as seen in the screen shots below): virtualenvwrapper-win cannot be run from the Windows PowerShell.
 
 <h5>About the mkvirtualenv command.</h5>
 
@@ -221,7 +221,7 @@ The command to create a new virtual environment is <code class="folder">mkvirtua
 
 This command has the following structure: <code class="folder">mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]</code>
   
-Although only the latter (name-of-virt-env) is mandatory, typically you will specify at least one or more <a href="https://virtualenv.pypa.io/en/latest/cli_interface.html" target="_blank">virtualenv options</a> when creating a new virtual env. Any such option will be passed on by virtualenvwrapper-win to virtualenv for processing there.
+Although only the latter (name-of-virt-env) is mandatory, typically you will specify at least one or more <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/cli_interface.html" target="_blank">virtualenv options</a> when creating a new virtual env. Any such option will be passed on by virtualenvwrapper-win to virtualenv for processing there.
 
 So, in my case, if I would now issue the command <code class="folder">mkvirtualenv my-env-name</code>, a virtual env with that name would be based off of the Python installation that would be found first in PATH and placed under the specified name into my WORKON_HOME directory.
 
