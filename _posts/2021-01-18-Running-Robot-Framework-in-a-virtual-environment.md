@@ -167,7 +167,7 @@ Assuming you have followed all instructions, you will now have <a href="https://
 
 To see whether you have pip available, open a command line and type:
 
-INSERT SCREEN SHOT 'pip -V'
+'pip -V'
 
 <h5> No pip available? </h5>
 
@@ -185,7 +185,7 @@ To install <code class="folder">virtualenv</code>, simply open a command line an
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
-<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="small" alt="Installing our tools with pip."></a><br>
+<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip."></a><br>
 
 So, what we did just now is equivalent to:
 
@@ -238,40 +238,40 @@ mkvirtualenv -p 3.7 robot-framework-py_37
 
 Any of these two commands would create a virtual Python 3.7 environment (named 'robot-framework-py_37') into my default target directory.
 
-<a href="/assets/images/first_env.jpg"><img src="/assets/images/first_env.jpg" class="small" alt="Create a virt env." style="border:2px solid black"></a><br>
+<a href="/assets/images/first_env.jpg"><img src="/assets/images/first_env.jpg" class="small" alt="Create a virt env."></a><br>
 
 The created directory structure will look exactly as described above. <INSERT LINK>
 
 Note that the command line prompt now has a 'prefix': (robot-framework-py_37). This is an indication of the fact that that environment has not only been created, but has also 
 been <i>activated</i>! This means that from now on any Python related command or script (within the current command line session) will be executed in the (isolated) context of this environment:
 
-<a href="/assets/images/py_version_when_active.JPG"><img src="/assets/images/py_version_when_active.JPG" class="small" alt="Virt env Python version." style="border:2px solid black"></a><br>
+<a href="/assets/images/py_version_when_active.JPG"><img src="/assets/images/py_version_when_active.JPG" class="small" alt="Virt env Python version."></a><br>
 
 The same applies were we to use the Python interpreter:
 
-<a href="/assets/images/sys_executable_when_active.JPG"><img src="/assets/images/sys_executable_when_active.JPG" class="postimage" alt="Virt env Python interpreter." style="border:2px solid black"></a><br>
+<a href="/assets/images/sys_executable_when_active.JPG"><img src="/assets/images/sys_executable_when_active.JPG" class="postimage" alt="Virt env Python interpreter."></a><br>
 
 Similarly, if we were now to invoke pip to install a third-party package, pip would be executed from C:\Python\Python37\Lib\site-packages:
 
-<a href="/assets/images/pip_version_when_active.JPG"><img src="/assets/images/pip_version_when_active.JPG" class="postimage" alt="Virt env pip is used." style="border:2px solid black"></a><br>
+<a href="/assets/images/pip_version_when_active.JPG"><img src="/assets/images/pip_version_when_active.JPG" class="postimage" alt="Virt env pip is used."></a><br>
 
 Consequently, all such packages would now be installed into C:\Python\Python37\Lib\site-packages:
 
-<a href="/assets/images/site_pack_when_activated.jpg"><img src="/assets/images/site_pack_when_activated.jpg" class="postimage" alt="Virt env site-packages." style="border:2px solid black"></a><br>
+<a href="/assets/images/site_pack_when_activated.jpg"><img src="/assets/images/site_pack_when_activated.jpg" class="postimage" alt="Virt env site-packages."></a><br>
 
 The way this works is that, under the hood, virtualenv has prefixed the PATH variable for the current command line session with the root and \Scripts folders of our virtual environment:
 
-<a href="/assets/images/echo_path_activated.jpg"><img src="/assets/images/echo_path_activated.jpg" class="postimage" alt="Virt env PATH." style="border:2px solid black"></a><br>
+<a href="/assets/images/echo_path_activated.jpg"><img src="/assets/images/echo_path_activated.jpg" class="postimage" alt="Virt env PATH."></a><br>
 
 Because of this on-the-fly manipulation of the PATH var, the directories of our virtual env now are the first directories to be searched when we issue a Python related command. As we just seen in the example commands.
 
 So, if we were to deactivate the environment, the PATH variable would be restored to it's original state:
 
-<a href="/assets/images/echo_path_deactivated.jpg"><img src="/assets/images/echo_path_deactivated.jpg" class="postimage" alt="Virt env site-packages." style="border:2px solid black"></a><br>
+<a href="/assets/images/echo_path_deactivated.jpg"><img src="/assets/images/echo_path_deactivated.jpg" class="small" alt="Virt env site-packages."></a><br>
 
 Now every Python related command, script, etc. would be executed by the Python interpreter that is first within the PATH environment variable:
 
-<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation." style="border:2px solid black"></a><br>
+<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation."></a><br>
 
 <h5>Create other required virtual environments.</h5>
 
@@ -279,7 +279,5 @@ We can now proceed and create environments that are based on the same and/or oth
 
 It doesn't matter whether we have an existing active environment or not. Just issue the mkvirtualenv command. For instance:
 
-
-
-      <li><a href="#Create your environments.">Create your environments.</a> </li>
-      <li><a href="#Create your ecosystems.">Create your ecosystems.</a>
+<li><a href="#Create your environments.">Create your environments.</a> </li>
+<li><a href="#Create your ecosystems.">Create your ecosystems.</a>
