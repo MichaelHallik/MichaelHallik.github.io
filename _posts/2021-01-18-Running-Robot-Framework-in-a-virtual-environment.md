@@ -101,6 +101,8 @@ When any such a situation is applicable, install the required Python versions. F
 
 I will not elaborate much on the Python installation process itself, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
 
+<h4> The PATH environment variable. </h4>
+
 Just make sure to add the root (= installation) folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, that looks like this:
 
 INSERT SCREEN SHOT.
@@ -109,7 +111,11 @@ The installer can do this for you or you must do it manually. If you do not know
 
 Note that for our purposes, it will be sufficient to do this for just <i>one</i> of multiple Python versions (assuming you actually have multiple). In our case it is also irrelevant which one you pick. However, having the folders of multiple Python versions added to PATH won't hurt either. Generally, only the first entries that are found are used by the OS or applications that look for Python, while the other entries are then simply ignored. The first entries that will be found, are always those of the Python version that was installed last. But for our purposes none of that matters, as we will see later on. Just have the mentioned folders added to PATH for <i>at least</i> one Python version.
 
+<h4> The Python Launcher. </h4>
+
 It is recommended to activate the option to install the so-called <a href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">'Python launcher'</a> during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
+
+<h4> Validate the installation(s). </h4>
 
 To check whether a Python version has been properly installed, you might do a simple test: immediately after each installation, open a command line and type python -V. That should output the version of the Python installation that was installed most recently.
 
@@ -123,7 +129,11 @@ The asterisk indicates which Python version the Python launcher will use by defa
   
 <h3> <a name="Decide on a tool (set)."> Decide on a tool (set). </a> </h3>
 
-First of all, we need to decide on our tool (set) for creating and managing our virtual Python environments. There are quite a few candidates. For instance:
+First of all, we need to decide on our tool (set) for creating and managing our virtual Python environments.
+
+<h4> Candidates. </h4>
+
+There are quite a few candidates. For instance:
 
 <ul>
   <li>The <code class="folder">venv</code> module, that comes shipped with Python (i.e., is part of the standard library).</li>
@@ -133,7 +143,11 @@ First of all, we need to decide on our tool (set) for creating and managing our 
   <li>And many more ...</li>
 </ul>
 
+<h4> Differences. </h4>
+
 I will not go into the differences in capabilities nor into the specific comparative pro's and con's of these, as there is a <i>plethora</i> of online posts on these topics. For instance <a href="https://www.pluralsight.com/tech-blog/managing-python-environments/" target="_blank">this one<a> or <a href="https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe" target="_blank">this one.
+
+<h4> We'll use virtualenv. </h4>
 
 Here we will simply choose <code class="folder">virtualenv</code>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <code class="folder">virtualenvwrapper</code> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that greatly enhance the efficiency of the environment management. Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it. Finally, PyCharm can (re-)use environments that we create manually through <code class="folder">virtualenv</code>. This adds a lot of flexibility when using PyCharm as editor, since the environment options that the IDE itself provides us with, are rather limited.
 
@@ -141,17 +155,23 @@ Here we will simply choose <code class="folder">virtualenv</code>, as most or al
 
 For this step you must have modified your PATH environment variable in accordance with what has been said <a href="#Install one or more Python versions.">earlier</a>.
 
+<h4> Introducing pip. </h4>
+
 Assuming you have followed all instructions, you will now have <a href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most used Python package managers and for that very reason it also comes shipped with Python. With pip you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, pip makes it very easy for developers to manage any external dependencies of the various modules in their own package. As a matter of fact, we will use that feature of pip to be able to restore and also share our environments later on.
 
 To see whether you have pip available, open a command line and type:
 
 INSERT SCREEN SHOT 'pip -V'
 
+<h4> No pip available? </h4>
+
 In case pip is not available, check whether you have Python available: type python -V.
 
 In case Python is not available, check your PATH environment variable (in accordance with what was said <a href="#Install one or more Python versions.">earlier</a>.
 
 In the strange case that Python <i>is</i> available, but pip is <i>not</i>, you can try to re-install Python (make sure to use <b>3.4 or higher</b>) or <a href="https://www.liquidweb.com/kb/install-pip-windows/" target="_blank">install pip manually</a>.
+
+<h4> Install virtualenvwrapper-win. </h4>
 
 To install <code class="folder">virtualenv</code>, simply open a command line and type:
 
@@ -168,7 +188,9 @@ So, what we did just now is equivalent to:
 
 <h3> <a name="Optional: create an environment variable WORKON_HOME."> Optional: create an environment variable WORKON_HOME. </a> </h3>
 
-This step is optional, but recommended. We can set a default target or home directory for our environments. Then we do not have to specify a target directory each time we create a new environment. Additionally, we will not have to specify that directory when we activate an environment (activation will be explained later on).
+This step is optional, but recommended.
+
+We can set a default target or home directory for our environments. That way, we do not have to specify a target directory each time we create a new environment. Similarly, we will not have to specify that directory when we activate an environment (activation will be explained later on).
 
 We set a default environment directory by creating a user environment variable. I have chosen the following directory myself:
 
@@ -177,4 +199,6 @@ We set a default environment directory by creating a user environment variable. 
 If you do not know how to create such a variable, please query a web search engine: 'add environment variable <your_os>'.
 
 <h3> <a name="Create a virtual Python environment."> Create a virtual Python environment. </a> </h3>
+
+We are now finally ready to create our very first virtual environment. I am assuming that you have <a href="#Optional: create an environment variable WORKON_HOME.">created the WORKON_HOME environment variable</a>.
 
