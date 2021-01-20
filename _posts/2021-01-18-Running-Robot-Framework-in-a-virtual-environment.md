@@ -113,7 +113,7 @@ I will not elaborate much on the Python installation process itself, since it is
 
 Just make sure to add the root (= installation) folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, that looks like this:
 
-INSERT SCREEN SHOT.
+<a href="/assets/images/PATH.JPG"><img class="postimage" src="/assets/images/PATH.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
 The installer can do this for you or you must do it manually. If you do not know how to do the latter, please query a web search engine: 'modify path variable <your_os>'.
 
@@ -121,17 +121,15 @@ Note that for our purposes, it will be sufficient to do this for just <i>one</i>
 
 <h5> The Python Launcher. </h5>
 
-It is recommended to activate the option to install the so-called <a href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">'Python launcher'</a> during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
+It is recommended to activate the option to install the so-called '<a href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python launcher</a>' during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
 
 <h5> Validate the installation(s). </h5>
 
 To check whether a Python version has been properly installed, you might do a simple test: immediately after each installation, open a command line and type python -V. That should output the version of the Python installation that was installed most recently.
 
-INSERT SCREEN SHOT.
-
 However, that approach assumes that the root and \Scripts folders of that particular Python version were added to PATH during or immediately after installation. In case they were not, you can use another approach. This again assumes that you have installed the 'Python launcher' (see earlier remarks). In case you have, open an command line after you have installed <i>all</i> of the required Python versions and type: py -0. This will output all installed Python versions on your system:
 
-INSERT SCREEN SHOT.
+<a href="/assets/images/py_launcher.JPG"><img class="postimage" src="/assets/images/py_launcher.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
 
 The asterisk indicates which Python version the Python launcher will use by default (always the most recent version installed). By the way, it does <i>not</i> indicate which Python version is first in PATH.
   
@@ -251,29 +249,29 @@ been <i>activated</i>! This means that from now on any Python related command or
 
 The same applies were we to use the Python interpreter:
 
-<a href="/assets/images/sys_executable_when_active.JPG"><img src="/assets/images/sys_executable_when_active.JPG" class="small" alt="Virt env Python interpreter." style="border:2px solid black"></a><br>
+<a href="/assets/images/sys_executable_when_active.JPG"><img src="/assets/images/sys_executable_when_active.JPG" class="postimage" alt="Virt env Python interpreter." style="border:2px solid black"></a><br>
 
 Similarly, if we were now to invoke pip to install a third-party package, pip would be executed from C:\Python\Python37\Lib\site-packages:
 
-<a href="/assets/images/pip_version_when_active.JPG"><img src="/assets/images/pip_version_when_active" class="small" alt="Virt env pip is used." style="border:2px solid black"></a><br>
+<a href="/assets/images/pip_version_when_active.JPG"><img src="/assets/images/pip_version_when_active.JPG" class="postimage" alt="Virt env pip is used." style="border:2px solid black"></a><br>
 
 Consequently, all such packages would now be installed into C:\Python\Python37\Lib\site-packages:
 
-<a href="/assets/images/site_pack_when_activated.jpg"><img src="/assets/images/site_pack_when_activated.jpg" class="small" alt="Virt env site-packages." style="border:2px solid black"></a><br>
+<a href="/assets/images/site_pack_when_activated.jpg"><img src="/assets/images/site_pack_when_activated.jpg" class="postimage" alt="Virt env site-packages." style="border:2px solid black"></a><br>
 
 The way this works is that, under the hood, virtualenv has prefixed the PATH variable for the current command line session with the root and \Scripts folders of our virtual environment:
 
-<a href="/assets/images/echo_path_activated.jpg"><img src="/assets/images/echo_path_activated.jpg" class="small" alt="Virt env PATH." style="border:2px solid black"></a><br>
+<a href="/assets/images/echo_path_activated.jpg"><img src="/assets/images/echo_path_activated.jpg" class="postimage" alt="Virt env PATH." style="border:2px solid black"></a><br>
 
 Because of this on-the-fly manipulation of the PATH var, the directories of our virtual env now are the first directories to be searched when we issue a Python related command. As we just seen in the example commands.
 
 So, if we were to deactivate the environment, the PATH variable would be restored to it's original state:
 
-<a href="/assets/images/echo_path_deactivated.jpg"><img src="/assets/images/echo_path_deactivated.jpg" class="small" alt="Virt env site-packages." style="border:2px solid black"></a><br>
+<a href="/assets/images/echo_path_deactivated.jpg"><img src="/assets/images/echo_path_deactivated.jpg" class="postimage" alt="Virt env site-packages." style="border:2px solid black"></a><br>
 
 Now every Python related command, script, etc. would be executed by the Python interpreter that is first within the PATH environment variable:
 
-<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="small" alt="After deactivation." style="border:2px solid black"></a><br>
+<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation." style="border:2px solid black"></a><br>
 
 <h5>Create other required virtual environments.</h5>
 
