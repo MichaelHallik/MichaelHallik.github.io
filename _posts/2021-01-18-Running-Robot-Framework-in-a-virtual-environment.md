@@ -14,24 +14,24 @@ However, there isn't much information on running the Robot Framework in a virtua
 This post will provide you with a thorough rundown. As such, it will also dive somewhat into the workings of virtual environments. I believe knowing the internals of our tool stack makes us more efficient and effective as test (automation) engineers. Therefore, this article will cover the following topics:
 
 <ol>
-  <li><a class="postanchor" href="#Why virtual environments?">Why virtual environments?</a></li>
-  <li><a class="postanchor" href="#But what exactly is a virtual environment?">But what exactly is a virtual environment?</a></li>
-  <li><a class="postanchor" href="#And what does a virtual environment look like?">And what does a virtual environment look like?</a></li>
-  <li><a class="postanchor" href="#Create virtual environments using virtualenv.">Create a virtual environment using virtualenv.</a>
+  <li><a class="postanchor" href="#Why virtual environments?">Why virtual environments</a>?</li>
+  <li><a class="postanchor" href="#But what exactly is a virtual environment?">But what exactly is a virtual environment</a>?</li>
+  <li><a class="postanchor" href="#And what does a virtual environment look like?">And what does a virtual environment look like</a>?</li>
+  <li><a class="postanchor" href="#Create virtual environments using virtualenv.">Create a virtual environment using virtualenv</a>.
     <ol type="a">
-      <li><a class="postanchor" href="#Install one or more Python versions.">Install one or more Python versions.</a></li>
-      <li><a class="postanchor" href="#Decide on a tool (set).">Decide on a tool (set).</a></li>
-      <li><a class="postanchor" href="#Install the chosen tool (set).">Install the chosen tool (set).</a></li>
-      <li><a class="postanchor" href="#Optional: create an environment variable WORKON_HOME.">Optional: create an environment variable WORKON_HOME.</a></li>
-      <li><a class="postanchor" href="#Create your environments.">Create your environments.</a></li>
-      <li><a class="postanchor" href="#Create your ecosystems.">Create your ecosystems.</a></li>
+      <li><a class="postanchor" href="#Install one or more Python versions.">Install one or more Python versions</a>.</li>
+      <li><a class="postanchor" href="#Decide on a tool (set).">Decide on a tool (set)</a>.</li>
+      <li><a class="postanchor" href="#Install the chosen tool (set).">Install the chosen tool (set)</a>.</li>
+      <li><a class="postanchor" href="#Optional: create an environment variable WORKON_HOME.">Optional: create an environment variable WORKON_HOME</a>.</li>
+      <li><a class="postanchor" href="#Create your environments.">Create your environments</a>.</li>
+      <li><a class="postanchor" href="#Create your ecosystems.">Create your ecosystems</a>.</li>
     </ol>
   </li>
-  <li><a class="postanchor" href="#Run the Robot Framework in a virtual environment.">Run the Robot Framework in a virtual environment.</a></li>
-  <li><a class="postanchor" href="#Switch between virtual environments.">Switch between virtual environments.</a></li>
-  <li><a class="postanchor" href="#Manage virtual environments.">Manage virtual environments.</a></li>
-  <li><a class="postanchor" href="#Share virtual environments.">Share virtual environments.</a></li>
-  <li><a class="postanchor" href="#Restore virtual environments.">CRestore virtual environments.</a></li>
+  <li><a class="postanchor" href="#Run the Robot Framework in a virtual environment.">Run the Robot Framework in a virtual environment</a>.</li>
+  <li><a class="postanchor" href="#Switch between virtual environments.">Switch between virtual environments</a>.</li>
+  <li><a class="postanchor" href="#Manage virtual environments.">Manage virtual environments</a>.</li>
+  <li><a class="postanchor" href="#Share virtual environments.">Share virtual environments</a>.</li>
+  <li><a class="postanchor" href="#Restore virtual environments.">CRestore virtual environments</a>.</li>
 </ol>
 
 If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
