@@ -27,11 +27,11 @@ This post will provide you with a thorough rundown. As such, it will also dive s
       <li><a href="#Create your ecosystems.">Create your ecosystems.</a>
     </ol>
   </li>
-  <li><a href="#Run the Robot Framework in a virtual environment.">Run the Robot Framework in a virtual environment.</a>
-  <li><a href="#Switch between virtual environments.">Switch between virtual environments.</a>
-  <li><a href="#Manage virtual environments.">Manage virtual environments.</a>
-  <li><a href="#Share virtual environments.">Share virtual environments.</a>
-  <li><a href="#Restore virtual environments.">CRestore virtual environments.</a>
+  <li><a href="#Run the Robot Framework in a virtual environment.">Run the Robot Framework in a virtual environment.</a></li>
+  <li><a href="#Switch between virtual environments.">Switch between virtual environments.</a></li>
+  <li><a href="#Manage virtual environments.">Manage virtual environments.</a></li>
+  <li><a href="#Share virtual environments.">Share virtual environments.</a></li>
+  <li><a href="#Restore virtual environments.">CRestore virtual environments.</a></li>
 </ol>
 
 If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
