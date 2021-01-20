@@ -5,7 +5,7 @@ tags: Python virtualenvironments virtualenv testautomation testframeworks robotf
 
 <br>
 
-<h1> Introduction. </h1>
+<h1 class="posts"> Introduction. </h1>
 
 A lot has been written on Python virtual environments. There also is an abundance of information on the web concerning the various Python tools to create and manage these environments.
 
@@ -36,7 +36,7 @@ This post will provide you with a thorough rundown. As such, it will also dive s
 
 If you just want to know the steps to take for operating Robot Framework in a virtual environment, you can skip the first couple of parts and jump ahead to the fourth section. But please note, that even there you may run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124;
 
-<h1> <a name="Why virtual environments?"> Why virtual environments? </a> </h1>
+<h1 class="posts"> <a name="Why virtual environments?"> Why virtual environments? </a> </h1>
 
 Creating a virtual Python environment for your test automation project (and for any kind of development project, for that matter) can be beneficial for many reasons. Among those reasons are:
 
@@ -50,7 +50,7 @@ Creating a virtual Python environment for your test automation project (and for 
 <li> Being able to restore your environment, in case of problems related to your environment. <br><br> Let's say, for instance, that you updated multiple libraries in one, single step and now find yourself overwhelmed by an avalanche of (mostly obscure) exceptions. Wouldn't it be nice to be able to quickly revert to the original (or last know functioning) environment and try your updates anew in a less rash fashion? Later on we will see just how effortless this can be done with a virtual environment!</li>
 </ul>
 
-<h1> <a name="But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </h1>
+<h1 class="posts"> <a name="But what exactly is a virtual environment?"> But what exactly is a virtual environment? </a> </h1>
 
 A virtual environment is a self-contained, isolated Python installation that (as such) is independent from any global/system Python installations (and their configurations) as well as from any other virtual Python environments (and their configurations). Within that environment, you can create an eco-system of third party libraries/packages that will be specific and dedicated to that environment (although you <i>can</i> share between environments if necessary).
 
@@ -58,7 +58,7 @@ The installed packages will only be accessible to the Python interpreter of that
 
 Once you have created an environment that fullfills the requirements of your specific development project, you can then proceed and bind the environment to that project. Or to multiple projects that have identical requirements.
 
-<h1> <a name="And what does a virtual environment look like?"> And what does a virtual environment look like? </a> </h1>
+<h1 class="posts"> <a name="And what does a virtual environment look like?"> And what does a virtual environment look like? </a> </h1>
 
 Creating a virtual environment generates a (relatively) small directory structure. Depending on the tool (and depending on the parameters you apply when creating the environment) there are some variations within this structure. For instance, this is the folder structure for one of my virtual environments, created with the Python module <code class="folder">virtualenv</code>:
 
@@ -87,7 +87,7 @@ So the three basic types of artifacts, that every virtual Python environment is 
 
 Now that we have some idea of what a virtual environment is, let's create one! <br>
 
-<h1> <a name="Create virtual environments using virtualenv."> Create a virtual environment using virtualenv. </a> </h1>
+<h1 class="posts"> <a name="Create virtual environments using virtualenv."> Create a virtual environment using virtualenv. </a> </h1>
 
 To get ourselves a nice virtual environment, we have to take several steps.
 
