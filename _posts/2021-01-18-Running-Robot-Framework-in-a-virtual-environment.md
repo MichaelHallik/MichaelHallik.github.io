@@ -184,7 +184,7 @@ In the strange case that Python <i>is</i> available, but pip is <i>not</i>, you 
 
 To install <code class="folder">virtualenv</code>, simply open a command line and type:
 
-<code class="folder">pip install virtualenvwrapper-win</code>
+<code class="snippet">pip install virtualenvwrapper-win</code>
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
@@ -192,8 +192,8 @@ Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on
 
 So, what we did just now is equivalent to:
 
-<code class="folder">pip install virtualenv</code><br>
-<code class="folder">pip install virtualenvwrapper-win</code>
+<code class="snippet">pip install virtualenv</code><br>
+<code class="snippet">pip install virtualenvwrapper-win</code>
 
 <h3> <a name="Optional: create an environment variable WORKON_HOME."> Optional: create an environment variable WORKON_HOME. </a> </h3>
 
@@ -219,11 +219,11 @@ Since we will use <a class="postanchor" href="https://pypi.org/project/virtualen
 
 The command to create a new virtual environment is <code class="folder">mkvirtualenv</code>.
 
-This command has the following structure: <code class="folder">mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]</code>
+This command has the following structure: <code class="snippet">mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]</code>
   
 Although only the latter (name-of-virt-env) is mandatory, typically you will specify at least one or more <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/cli_interface.html" target="_blank">virtualenv options</a> when creating a new virtual env. Any such option will be passed on by virtualenvwrapper-win to virtualenv for processing there.
 
-So, in my case, if I would now issue the command <code class="folder">mkvirtualenv my-env-name</code>, a virtual env with that name would be based off of the Python installation that would be found first in PATH and placed under the specified name into my WORKON_HOME directory.
+So, in my case, if I would now issue the command <code class="snippet">mkvirtualenv my-env-name</code>, a virtual env with that name would be based off of the Python installation that would be found first in PATH and placed under the specified name into my WORKON_HOME directory.
 
 However, usually we will want to <i>explicitly</i> specifiy the Python version for our environment.
 
