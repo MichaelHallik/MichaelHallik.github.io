@@ -105,7 +105,7 @@ When any such a situation is applicable, install the required Python versions. T
 
 For the sake of this post, I have installed:
 
-<a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." style="border:2px solid black"></a><br>
+<a href="/assets/images/python_versions.JPG"><img class="postimage" src="/assets/images/python_versions.JPG" alt="Contents of Scripts folder." width="85%"style="border:2px solid black"></a><br>
 
 I will not elaborate much on the Python installation process itself, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
 
@@ -132,7 +132,7 @@ To check whether a Python version has been properly installed, you might do a si
 
 However, that approach assumes that the root and \Scripts folders of that particular Python version were added to PATH during or immediately after installation. In case they were not, you can use another approach. This again assumes that you have installed the 'Python launcher' (see earlier remarks). In case you have, open an command line after you have installed <i>all</i> of the required Python versions and type: py -0. This will output all installed Python versions on your system:
 
-<a href="/assets/images/py_launcher.JPG"><img class="postimage" src="/assets/images/py_launcher.JPG" alt="Contents of Scripts folder." width="65" style="border:2px solid black"></a><br>
+<a href="/assets/images/py_launcher.JPG"><img class="postimage" src="/assets/images/py_launcher.JPG" alt="Contents of Scripts folder." width="65%" style="border:2px solid black"></a><br>
 
 The asterisk indicates which Python version the Python launcher will use by default (always the most recent version installed). By the way, it does <i>not</i> indicate which Python version is first in PATH.
   
@@ -188,7 +188,7 @@ To install <code class="folder">virtualenv</code>, simply open a command line an
 
 Since virtualenvwrapper-win is a wrapper for virtualenv and, as such, depends on it, the latter will also be installed:
 
-<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip." with="75%"></a><br>
+<a href="/assets/images/install_tool.JPG"><img src="/assets/images/install_tool.JPG" class="postimage" alt="Installing our tools with pip." width="75%"></a><br>
 
 So, what we did just now is equivalent to:
 
