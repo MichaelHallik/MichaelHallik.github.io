@@ -270,11 +270,11 @@ Because of this on-the-fly manipulation of the PATH var, the directories of our 
 
 So, if we were to deactivate the environment, the PATH variable would be restored to it's original state:
 
-<a href="/assets/images/echo_path_deactivated.jpg"><img src="/assets/images/echo_path_deactivated.jpg" class="small" alt="Virt env site-packages. width="55%""></a><br>
+<a href="/assets/images/echo_path_deactivated.jpg"><img src="/assets/images/echo_path_deactivated.jpg" class="postimage" alt="PATH after deactivation." width="55%"></a><br>
 
 Now every Python related command, script, etc. would be executed by the Python interpreter that is first within the PATH environment variable:
 
-<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="After deactivation." width="80%"></a><br>
+<a href="/assets/images/commands_when_deactivated.jpg"><img src="/assets/images/commands_when_deactivated.jpg" class="postimage" alt="Commands after deactivation." width="80%"></a><br>
 
 <h5>Create other required virtual environments.</h5>
 
