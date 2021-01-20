@@ -34,6 +34,10 @@ h1, h2.meta{
     text-transform: uppercase;
 }
 
+h1.post{
+    color:#63c0f5;
+}
+
 /* TOP NAVIGATION BAR */
 
 /* Add a black background color to the top navigation */
@@ -126,8 +130,7 @@ code.folder{
 }
 
 code.snippet{
-  background-color: lightslategrey;
-  color: white;
+  background-color: dimgrey;
 }
 
 /* The tags just below the title */
@@ -137,7 +140,7 @@ a[href^="/tag/"]{
 }
 
 a.postanchor{
-    color:white;
+    color:black;
 /*  text-shadow:unset; */
 }
 
