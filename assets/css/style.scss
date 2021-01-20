@@ -117,7 +117,7 @@ li.postlink {
   font-size:15px;
 }
 
-/*BLOG POST -> POST */
+/*BLOG POST -> POSTS */
 
 /* Code snippets and the like */
 
@@ -131,6 +131,11 @@ code.folder{
 a[href^="/tag/"]{
     color:#97B918;
 }
+
+a.postanchors{
+    color:##333;
+}
+
 
 /* Images in the post text. */
 
