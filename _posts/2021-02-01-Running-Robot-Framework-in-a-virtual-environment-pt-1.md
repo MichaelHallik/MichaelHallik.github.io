@@ -56,9 +56,9 @@ Consequently, more and more test automation engineers and software development o
 
 <h1 class="post"> Then what is this series of posts about? </h1>
 
-The post you are reading now is the first in a series that will focus on some of the unique Python features that can take our test automation projects to a next level. All of these posts will have extensive hands-on examples.
+The series of posts that you are reading now will be the first of many similar collections. Each series will focus on a unique Python feature that can take our test automation projects to a next level. All of them will have extensive hands-on examples.
 
-In this first post we will look into virtual Python environments: what can they do for us, what are they, how do they work and how to operate them? We will tackle these topics in the form of a series of articles:
+In this first series of eleven posts we will look into virtual Python environments: what are they, what can they do for us, how do they actually work and how to operate them? To accomplish that, we will tackle the following topics:
 
 <ol>
 	<li>Preface.</li>
