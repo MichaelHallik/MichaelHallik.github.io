@@ -89,7 +89,7 @@ Creating a virtual Python environment for your test automation project (and for 
 
 <h1 class="post"> <a name="Next"> Next steps. </a> </h1>
 
-Now that we have some idea of what a virtual environment is, <a class="postanchor" href="/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-3">let's create one in the next part</a>.<br><br>
+Now that we have some idea of what a virtual environment is, <a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-3">let's create one in the next part</a>.<br><br>
 
 <hr style="border-top: 1px dashed"><br>
 <p id="footnote-1">[1] Although you <i>can</i> configure your environments to share certain artifacts. <a class="postanchor" href="javascript:history.back()">(back)</a></p>

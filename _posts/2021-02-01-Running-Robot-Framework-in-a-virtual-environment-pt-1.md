@@ -62,10 +62,10 @@ In this first post we will look into virtual Python environments: what can they 
 
 <ol>
 	<li>Preface.</li>
-	<li><a class="postanchor" href="/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-2">Introduction to virtual environments.</a></li>
-	<li><a class="postanchor" href="/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-3">Installation of the required software.</a></li>
-	<li><a class="postanchor" href="/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-4">Creating virtual environments.</a></li>
-	<li><a class="postanchor" href="/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-5">Creating environment/project ecosystems.</a></li>
+	<li><a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-2">Introduction to virtual environments.</a></li>
+	<li><a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-3">Installation of the required software.</a></li>
+	<li><a class="postanchor" href="/blog/2021/02/04/Running-Robot-Framework-in-a-virtual-environment-pt-4">Creating virtual environments.</a></li>
+	<li><a class="postanchor" href="/blog/2021/02/05/Running-Robot-Framework-in-a-virtual-environment-pt-5">Creating environment/project ecosystems.</a></li>
 	<li><a class="postanchor" href="/_pages/underconstruction">Run Robot tests in a virtual environment.</a></li>
 	<li><a class="postanchor" href="/_pages/underconstruction">Switch between virtual environments.</a></li>
 	<li><a class="postanchor" href="/_pages/underconstruction">Manage virtual environments.</a></li>
@@ -88,4 +88,4 @@ These articles are meant for anyone that agrees with the latter. Everyone else m
 
 But please note that even there you could run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124; -->
 
-Well, if you are game, you can <a class="postanchor" href="/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-2">start reading the second article</a>.
+Well, if you are game, you can <a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-2">start reading the second article</a>.

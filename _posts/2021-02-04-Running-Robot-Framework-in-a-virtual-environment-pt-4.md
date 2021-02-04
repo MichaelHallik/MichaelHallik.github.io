@@ -22,9 +22,9 @@ In his article we will create our first virtual environment and learn a couple o
 	<li><a class="postanchor" href="#Next steps">Next steps.</a></li>
 </ol>
 
-Of course, I am assuming that you have <a class="postanchor" href="http://127.0.0.1:4000/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-3">installed the required software</a>.
+Of course, I am assuming that you have <a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-3">installed the required software</a>.
 
-I am further assuming that you have <a class="postanchor" href="http://127.0.0.1:4000/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-3#Optional:%20create%20an%20environment%20variable%20WORKON_HOME">created the WORKON_HOME environment variable</a>, as was recommended in the previous article. If not, make sure to specify full path names when applicable.
+I am further assuming that you have <a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-3#Optional:%20create%20an%20environment%20variable%20WORKON_HOME">created the WORKON_HOME environment variable</a>, as was recommended in the previous article. If not, make sure to specify full path names when applicable.
 
 Since we will use <a class="postanchor" href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a>, please note that you'll have to use the 'old school' Windows command prompt: <code class="folder">virtualenvwrapper-win</code> cannot be run from  Windows PowerShell.
 
@@ -216,4 +216,4 @@ In the next post, we will create additional virtual environments.
 
 Not only that, we will also populate them with thid-party packages. In other words, we'll create ecosystems within those environments and, thus, for our projects for which we created these environments in the first place.
 
-So please join me for <a class="postanchor" href="/blog/2021/01/18/Running-Robot-Framework-in-a-virtual-environment-pt-5">the next part</a>!
+So please join me for <a class="postanchor" href="/blog/2021/02/05/Running-Robot-Framework-in-a-virtual-environment-pt-5">the next part</a>!
