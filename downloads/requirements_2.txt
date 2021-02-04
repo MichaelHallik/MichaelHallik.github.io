@@ -1,0 +1,26 @@
+# For the robotframework-soaplibrary, we first need to install dependencies.
+
+zeep
+six
+
+# Robot Framework, libraries & RIDE
+
+robotframework
+robotframework-appiumlibrary
+robotframework-databaselibrary
+robotframework-datadriver[XLS]
+robotframework-debuglibrary
+robotframework-difflibrary
+robotframework-faker
+robotframework-jsonlibrary
+robotframework-requests==0.7.2
+robotframework-ride
+robotframework-soaplibrary
+robotframework-seleniumlibrary
+robotframework-sshlibrary
+robotremoteserver
+RESTinstance
+
+# Extension for the XMLLibrary.
+
+lxml==4.4.2
