@@ -68,7 +68,6 @@ In this first series of eleven posts we will look into virtual Python environmen
 	<li><a class="postanchor" href="/blog/2021/02/04/Running-Robot-Framework-in-a-virtual-environment-pt-4">Creating virtual environments.</a></li>
 	<li><a class="postanchor" href="/blog/2021/02/05/Running-Robot-Framework-in-a-virtual-environment-pt-5">Creating environment/project ecosystems.</a></li>
 	<li><a class="postanchor" href="/_pages/underconstruction">Run Robot tests in a virtual environment.</a></li>
-	<li><a class="postanchor" href="/_pages/underconstruction">Switch between virtual environments.</a></li>
 	<li><a class="postanchor" href="/_pages/underconstruction">Manage virtual environments.</a></li>
 	<li><a class="postanchor" href="/_pages/underconstruction">Share virtual environments.</a></li>
 	<li><a class="postanchor" href="/_pages/underconstruction">Restore virtual environments.</a></li>
