@@ -78,7 +78,7 @@ h1.post{
 /* SIDE NAVIGATION BAR */
 
 .sidebar {
-  width: 15%;
+  width: 20%;
   position: fixed;
   z-index: 1;
   top: 10%;
@@ -111,6 +111,10 @@ h1.post{
 
 .intro {
   margin-left: 10%;
+}
+
+div.container {
+  max-width: 70%
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
