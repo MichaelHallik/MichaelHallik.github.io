@@ -2,6 +2,7 @@
 tags: Python virtualenvironments virtualenv testautomation testframeworks robotframework
 title: Python, virtual environments and Robot Framework - Installation of required software
 toc: tocvirtenv.html
+comment_id: 5
 
 ---
 <br>
