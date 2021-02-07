@@ -62,7 +62,7 @@ The series of posts that you are reading now will be the first of many similar c
 In this first series of eleven posts we will look into virtual Python environments: what are they, what can they do for us, how do they actually work and how to operate them? To accomplish that, we will tackle the following topics:
 
 <ol>
-	<li><a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-1">Preface.</a></li>
+	<li><a class="postanchor" href="/blog/2021/02/01/Running-Robot-Framework-in-a-virtual-environment-pt-1">Preface.</a></li>
 	<li><a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-2">Introduction to virtual environments.</a></li>
 	<li><a class="postanchor" href="/blog/2021/02/03/Running-Robot-Framework-in-a-virtual-environment-pt-3">Installation of the required software.</a></li>
 	<li><a class="postanchor" href="/blog/2021/02/04/Running-Robot-Framework-in-a-virtual-environment-pt-4">Creating virtual environments.</a></li>
