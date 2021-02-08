@@ -54,18 +54,35 @@ Note that, apparently, it doesn't matter whether you had an active environment o
 
 Now, let's take a quick look at some components of the newly created environment, just like we did in the previous article:
 
+The Python version:
+
 	(robot-framework_322-py_37) C:\Users\Michael Hallik>python -V
 	Python 3.7.9
+
+Since we installed RF, we can retrieve it's version too:
+
 	(robot-framework_322-py_37) C:\Users\Michael Hallik>robot --version
 	Robot Framework 3.2.2 (Python 3.7.9 on win32)
+
+And if we activate the Python interpreter in our new context:
+
 	(robot-framework_322-py_37) C:\Users\Michael Hallik>python
 	Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)] on win32
+
+Let's look at the location of the Python interpreter:
+
 	>>> import sys
 	>>> sys.executable
 	'C:\\Python-virtual-environments\\robot-framework_322-py_37\\Scripts\\python.exe'
+
+And the location where site-packages will get installed:
+
 	>>> import site
 	>>> site.getsitepackages()
 	['C:\\Python-virtual-environments\\robot-framework_322-py_37', 'C:\\Python-virtual-environments\\robot-framework_322-py_37\\lib\\site-packages']
+
+Finally, let's retrieve the location of our Robot Framework installation:
+
 	>>> import robot
 	>>> print(robot.__path__)
 	['C:\\Python-virtual-environments\\robot-framework_322-py_37\\lib\\site-packages\\robot']
