@@ -60,6 +60,9 @@ Now, let's take a quick look at some components of the newly created environment
 	Robot Framework 3.2.2 (Python 3.7.9 on win32)
 	(robot-framework_322-py_37) C:\Users\Michael Hallik>python
 	Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)] on win32
+	>>> import site
+	>>> site.getsitepackages()
+	['C:\\Python-virtual-environments\\robot-framework_322-py_37', 'C:\\Python-virtual-environments\\robot-framework_322-py_37\\lib\\site-packages']
 	>>> import sys
 	>>> sys.executable
 	'C:\\Python-virtual-environments\\robot-framework_322-py_37\\Scripts\\python.exe'
