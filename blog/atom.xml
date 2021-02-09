@@ -15,6 +15,9 @@ layout: feed
 	</author>
 
 	{% for post in site.posts %}
+		{% if p.tags contains "life" or p.tags contains "personal" or p.tags contains "dutch" %}
+			{% continue %}
+		{% endif %}
 		<entry>
 			<title>{{ post.title }}</title>
 			<link href="http://michaelhallik.github.io{{ post.url }}"/>
