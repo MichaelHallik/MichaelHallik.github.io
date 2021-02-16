@@ -1,22 +1,22 @@
-As testers we are expected to approach the ideal of the homo universalis. A species of humankind that is generally deemed to be extinct.
+<h1)An extinct species</h1>.
 
-There is no other role within the software development domain, that carries with it such a wealth of expectations and demands. Especially, since these expectations and demands exist on so many different planes.
+As testers we are expected to approach or even actualize the ideal of the homo universalis. A species of humankind that is generally deemed to be extinct.
 
-For starters, we need to be well versed within the traditional testing realm (think TMap/ISTQB), which in and onto itself requires years of study and experience to fully master. Not only in terms of involved techniques, processes and patterns, but also in terms of all sorts of tools: test management tools, test design tools, defect management tools, risk analysis tools, etc. All of this is intellectually very challenging and demanding.
+I believe there is no other role within the software development domain, that carries with it such a wealth of expectations and demands. Especially, since these expectations and demands exist on so many different planes.
 
-But on top of that we need to be savvy and versatile test automation engineers as well.
+For starters, we need to be well versed within the traditional testing realm (think TMap/ISTQB), which in and onto itself requires years of study and experience. Not only in terms of the sheer quantity and complexitiy of the involved techniques, processes and patterns, but also in terms of all sorts of tools: test management tools, test design tools, defect management tools, risk analysis tools, etc. Mastering all of this is intellectually very challenging and demanding.
 
-The latter requires us to master, for instance, multiple test automation languages (Java, Python, Javascript and others), database related skills (e.g. multiple DBMS's, SQL) and test APIs (e.g. Selenium, Cypress). Additionally, we need to be adept at all sorts of technical interfaces (e.g. HTTP, REST, SOAP, database-APIs, XPath) and a plethora of various types of automation tools, such as generic test automation tools, ATTD/BDD/TDD tools and all kinds of specialized technical test tools: Robot Framework. Fitnesse, Cucumber, JBehave, POSTMAN, REST-assured, Soap-UI, cURL, HP UFT, Tricentis Tosca, etc., etc., etc.
+Additionally we need to be savvy and versatile test automation engineers as well. That requires us to master, for instance, multiple test automation languages (Java, Python, Javascript and others), database related skills (e.g. multiple DBMS's, SQL) and test APIs (e.g. Selenium, Cypress). Additionally, we need to be adept at all sorts of technical, low-level test automation interfaces (e.g. HTTP, REST, SOAP, database-APIs, XPath) and a plethora of various types of automation tools, such as generic test automation tools, ATTD/BDD/TDD tools and all kinds of specialized technical test tools: Robot Framework, pytest, Fitnesse, Cucumber, JBehave, POSTMAN, REST-assured, Soap-UI, cURL, HP UFT, Tricentis Tosca, etc., etc., etc.
 
 Not only that, increasingly we are expected to be well versed when it comes to CI/CD, both in terms of designing, implementing or (at the very least) integrating with pipelines and in terms of mastering all of the relevant tools. We are getting more and more involved in the practices, patterns, tools and techniques surrounding trends such as Devops and Cloud Native Computing. For instance, we need to know, understand and have experience with regard to containerization and the orchestration thereof. Whether it be AWS, Azure, Jenkins, Bamboo, Docker or Kubernetes: we need to be able to utilize all of them now or at some point in the near future.
 
-Like the icing on a cake, I am then supposed to also happily perform the role of Scrum Master if need be. :-)
+Of course, we also need great communication and other soft skills, for instance to gain commitment end buy-in of management and practitioners with regards to our test (automation) approaches, specifically our test (automation) strategies.
 
-Come to think of it, what is really asked of us, testers, is that we are at once generalists and specialists across the full spectrum of involved areas.
+I am then supposed to also happily perform the role of Scrum Master if need be. :-) 
 
 Like a true homo universalis.
 
-We euphemistically call that T-shaped. But if one starts to really think about it, then very soon one reaches the conclusion that it is nearly impossible to be an effective and valuable generalist with regard to traditional testing, test automation or CI/CD. Not only is it impossible, but when I critically evaluate the expectations and demands (of management and fellow team members alike) regarding my knowledge and skills as a 'tester', then it is evident that they, too, expect me to be an expert in traditional testing, test automation and CI/CD. Not a generalist. Not at all.
+We euphemistically call that T-shaped. But if one starts to really think about it, then very soon one reaches the conclusion that it is nearly impossible to be an effective and valuable generalist with regard to traditional testing, test automation or CI/CD. Not only is it impossible, but when I critically evaluate the expectations and demands (of management and fellow team members alike) regarding my knowledge, skills and experience as a 'tester', then it is evident that they, too, expect me to be an expert in traditional testing, test automation and CI/CD. They don't want me to be a generalist on any of these.
 
 And I want to be an expert! Ever since I started as a junior tester (some twenty-odd years ago), I have been studying my b**t of. And gladly so: I like learning and growing. Still do. So up until now, I had no problem with mastering all this new stuff that got thrown at me.
 
@@ -24,6 +24,6 @@ Having said that, nowadays I every so often feel that it is not only becoming in
 
 And it is definitely not just me. I see my fellow testers struggle with this every day. They are often unwittingly pressurized into their so-called 'T-shaped' roles. At the same time they feel overwhelmed by them, because of the breadth and depth of the required knowledge and skills.
 
-I really feel that we need to debate this situation.
+---
 
-The last days of the homo universalis are finally upon us.
+What people need to realize is that Come to think of it, what is really asked of us, testers, is that we are at once generalists and specialists across the full spectrum of involved areas.
