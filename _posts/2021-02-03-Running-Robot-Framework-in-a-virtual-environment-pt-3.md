@@ -24,7 +24,7 @@ Here we go . . .
 
 <h1 class="post"> <a name="Install one or more Python versions."> Install one or more Python versions. </a> </h1>
 
-We might have a need to develop, run and test your project code against multiple Python versions, because our project is simply required to support multiple versions. Or maybe our project libraries directly or indirectly depend on a specific Python (library) version that other projects do not support.
+We might have a need to develop, run and test our project code against multiple Python versions, because our project is simply required to support multiple versions. Or maybe our project libraries directly or indirectly depend on a specific Python (library) version that other projects do not support.
 
 When any such situation is applicable, install the required Python versions. These Python system installations will then serve as the basis for the various virtual environments that we will create.
 
