@@ -19,7 +19,7 @@ We can create as many environments as are required or desired. Those environment
 
 This time, in the course of creating an environment, we will also install one or more third-party packages with it.
 
-That will effectively create ecosystems for our environments and, thus, for the projects that we subsequently will associate (bind) to those environments.
+That will effectively create ecosystems for our environments and, thus, for the projects that we subsequently will associate with (that is, bind to) those environments.
 
 <h1 class="post"> <a name="Create a second environment."> Create a second environment: The -i switch. </a> </h1>
 
