@@ -117,7 +117,7 @@ For this step you must have modified your PATH environment variable in accordanc
 
 <h2> Introducing pip. </h2>
 
-Assuming you have followed all of the previous instructions, you will now have <a class="postanchor" href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most popular Python package managers and for that very reason it also comes shipped with Python. With <code class="folder">pip</code> you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, <code class="folder">pip</code> makes it very easy for developers to manage any external dependencies of the various modules in their packages they distribute. As a matter of fact, we will use that feature of <code class="folder">pip</code> to be able to restore and also share our environments later on.
+Assuming you have followed all of the previous instructions, you will now have <a class="postanchor" href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most popular Python package managers and for that very reason it also comes shipped with Python. With <code class="folder">pip</code> you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, <code class="folder">pip</code> makes it very easy for developers to manage any external dependencies of the various modules in the packages they distribute. As a matter of fact, we will use that feature of <code class="folder">pip</code> to be able to restore and also share our environments later on.
 
 To see whether you have <code class="folder">pip</code> available, open a command line and type:
 
