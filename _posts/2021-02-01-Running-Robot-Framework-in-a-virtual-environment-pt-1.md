@@ -59,7 +59,7 @@ Consequently, more and more test automation engineers and software development o
 
 The series of posts that you are reading now will be the first of many similar collections. Each series will focus on a unique Python feature that can take our test automation projects to a next level. All of them will have extensive hands-on examples.
 
-In this first series of eleven posts we will look into virtual Python environments: what are they, what can they do for us, how do they actually work and how to operate them? To accomplish that, we will tackle the following topics:
+In this first series of ten posts we will look into virtual Python environments: what are they, what can they do for us, how do they actually work and how to operate them? To accomplish that, we will tackle the following topics:
 
 <ol>
 	<li><a class="postanchor" href="/blog/2021/02/01/Running-Robot-Framework-in-a-virtual-environment-pt-1">Preface.</a></li>

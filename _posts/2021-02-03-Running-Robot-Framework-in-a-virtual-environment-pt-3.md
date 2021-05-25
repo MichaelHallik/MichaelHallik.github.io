@@ -24,7 +24,7 @@ Here we go . . .
 
 <h1 class="post"> <a name="Install one or more Python versions."> Install one or more Python versions. </a> </h1>
 
-We might have a need to develop, run and test your project code against multiple Python versions, because our project is simply required to support multiple versions. Or maybe our project libraries directly or indirectly depend on a specific Python (library) version that other projects do not support.
+We might have a need to develop, run and test our project code against multiple Python versions, because our project is simply required to support multiple versions. Or maybe our project libraries directly or indirectly depend on a specific Python (library) version that other projects do not support.
 
 When any such situation is applicable, install the required Python versions. These Python system installations will then serve as the basis for the various virtual environments that we will create.
 
@@ -117,7 +117,7 @@ For this step you must have modified your PATH environment variable in accordanc
 
 <h2> Introducing pip. </h2>
 
-Assuming you have followed all of the previous instructions, you will now have <a class="postanchor" href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most popular Python package managers and for that very reason it also comes shipped with Python. With <code class="folder">pip</code> you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, <code class="folder">pip</code> makes it very easy for developers to manage any external dependencies of the various modules in their packages they distribute. As a matter of fact, we will use that feature of <code class="folder">pip</code> to be able to restore and also share our environments later on.
+Assuming you have followed all of the previous instructions, you will now have <a class="postanchor" href="https://realpython.com/what-is-pip/" target="_blank">pip</a> available. This is one of the most popular Python package managers and for that very reason it also comes shipped with Python. With <code class="folder">pip</code> you can install external, third-party Python packages. That is, packages that are not part of Python's standard library. Additionally, <code class="folder">pip</code> makes it very easy for developers to manage any external dependencies of the various modules in the packages they distribute. As a matter of fact, we will use that feature of <code class="folder">pip</code> to be able to restore and also share our environments later on.
 
 To see whether you have <code class="folder">pip</code> available, open a command line and type:
 
