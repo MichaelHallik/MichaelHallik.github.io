@@ -25,7 +25,7 @@ To this end, we will be going through the following steps:
 	<li><a class="postanchor" href="#Setting up Robot Framework">Setting up Robot Framework.</a></li>
 	<li><a class="postanchor" href="#Employing encrypted test data">Employing encrypted test data.</a></li>
 	<li><a class="postanchor" href="#Running a sample test case">Running a sample test case.</a></li>
-	<li><a class="postanchor" href="#Masking the log output">Masking the log output.</a></li>
+	<li><a class="postanchor" href="#Some final observations">Some final observations.</a></li>
 	<li><a class="postanchor" href="#Summary">Summary.</a></li>
 </ul>
 
@@ -75,7 +75,7 @@ Since we need a public/private key pair to encrypt and decrypt, we will first ha
 
 <h2 class="post"> <a name="Create a key pair"> Create a key pair </a> </h2>
 
-To generate the pair we must first start a Python shell. For instance, on a Windows system you could open the command prompt (or power shell) and then type 'Python'. When you see the Python prompt in the console, enter the command 'CryptoLibrary'. In the screen shots that will follow, you will notice that I am using a <i>virtual</i> Python environment. So, my prompt may look different than the one you're using.
+To generate the pair we must first start a Python shell. For instance, on a Windows system you could open the command prompt (or power shell) and then type 'Python'. When you see the Python prompt in the console, enter the command 'CryptoLibrary'. In the screen shots that will follow, you will notice that I am using a <a class="postanchor" href="http://localhost:4000/blog/2021/02/01/Running-Robot-Framework-in-a-virtual-environment-pt-1" target="_blank">virtual Python environment</a>. So, my prompt may look different than the one you're using.
 
 After having entered the 'CryptoLibrary' command, we'll be presented with a menu:
 
@@ -99,15 +99,15 @@ Select the menu item 'Generate key pair'. That will present us with a question:
 
 Now, if we <i>had</i> an existing key pair, we could regenerate that existing pair by choosing 'Yes'. Choosing 'No' would always result in the creation of a new key pair, regardless whether we already had or hadn't existing key pairs.
 
-However, due to a defect in the tool, the option 'No' currently does not have an effect at all: it simply does <i>nothing</i>. Moreover, choosing 'Yes' will <i>not</i> result in the regeneration of an existing key pair, but will simply (always) create a <i>new</i> key pair (regardless of whether a key pair does or does not already exist). Please note that I have contacted the author of the library. He assured me he would soon fix this little bug. TODO: foot note with link to issue.
+However, due to a defect in the tool, the option 'No' currently does not have an effect at all: it simply does <i>nothing</i>. Moreover, choosing 'Yes' will <i>not</i> result in the regeneration of an existing key pair, but will simply (always) create a <i>new</i> key pair (regardless of whether a key pair does or does not already exist). Please note that I have contacted the author of the library. He assured me he would soon fix this little bug.<a href="#footnote-1" class="postanchor"><sup>[1]</sup></a>
 
 So, until the defect has been fixed, we will simply have to choose 'Yes' so as to create a new key pair.
 
 We are then asked if we want to save the password to disk. The password in question is meant to protect the private key of the key pair that is about to be generated. We need that private key to be protected, since it is capable of decrypting our encrypted test data. Therefore, we do not want unauthorized usage of the private key! A password helps in preventing such usage.
 
-Creating a password for the private key is mandatory. What we are being asked <i>here</i> is whether we would like to <i>save</i> that password to disk. If we answer 'Yes', two things will happen: the password we will specify will be secured through hashing and that hashed password will then be saved to disk. If we choose 'No', then the password will not be saved to disk and not be hashed. A third effect of not saving the password to disk, is that we will have to specify the (unhashed!) password as an argument when importing the library later on (more on this later). So, choosing 'No' severely decreases the level of security we apply to our private key!
+Creating a password for the private key is mandatory. What we are being asked <i>here</i> is whether we would like to <i>save</i> that password to disk. If we answer 'Yes', two things will happen: the password we will specify will be secured through hashing and that hashed password will then be saved to disk. If we choose 'No', then the password will not be saved to disk and not be hashed. A third effect of not saving the password to disk, is that we will have to specify the (unhashed!) password as an argument when importing the library later on (as we'll see further on). So, choosing 'No' severely decreases the level of security we apply to our private key!
 
-Therefore, let's select 'Yes'. That way our password will be secured, we won't have to remember it <i>and</i> we won't have to specify it later on as an argument in our test code. Rather, the CryptoLibrary will search for a password file in the designated folder and, when found, will extract the password from that file. More details on this later on.
+Therefore, let's select 'Yes'. That way our password will be secured, we won't have to remember it <i>and</i> we won't have to specify it later on as an argument in our test code. Rather, the CryptoLibrary will search for a password file in the designated folder and, when found, will extract the password from that file. More details on this in the remainder of this article.
 
 Two things will happen now: a key pair will be generated (and saved to disk) in the background and, subsequently, we will be prompted to provide the password:
 
@@ -163,7 +163,7 @@ Again, I will not elaborate on all of the available menu options. To familiarize
 
 Here we merely want to encrypt a piece of test data. To this end, choose menu item: 'Encrypt'.
 
-We are then prompted for the test data that we want to encrypt. Note that the prompt specifically states 'password'. However, as mentioned before, we can encrypt <i>any</i> type of test data and not just passwords: TODO: footnote with link to change request.
+We are then prompted for the test data that we want to encrypt. Note that the prompt specifically states 'password'. However, as mentioned before, we can encrypt <i>any</i> type of test data and not just passwords:
 
 <a href="/assets/images/enter_test_data.JPG"><img src="/assets/images/enter_test_data.JPG" class="postimage" alt="Enter test data to encrypt." width="50%"></a><br>
 
@@ -201,7 +201,7 @@ This will then look something like this:
 
 <a href="/assets/images/import_cryptolib.JPG"><img src="/assets/images/import_cryptolib.JPG" class="postimage" alt="Console output." width="60%"></a><br>
 
-We have specified an argument within the import statement. Let's take a look at it and the two other arguments that the library accepts when importing it.
+We have specified an argument within the import statement. Let's take a look at it and the two other (optional) arguments that the library accepts when importing it.
 
 <h2 class="post"> <a name="Import argument: variable_decryption"> Import argument: <i>variable_decryption</i> </a> </h2>
 
@@ -213,7 +213,7 @@ The password for access to the private key can be provided to the CryptoLibrary 
 
 	Library     CryptoLibrary    variable_decryption=True	password=myUnhashedPrivateKeyPassword
 
-However, in <i>our</i> import statement this is not necessary, since we had previously saved our (hashed) password to disk. If no password is provided as import argument, the CryptoLibrary will simply look for a password file in the designated folder and, if found, will use it. As was mentioned before, you can set the folder it should look for through the 'Set key path' menu option of the CryptoLibrary CLI tool. The tool's default folder is:
+However, in <i>our</i> import statement this is not necessary, since we had previously saved our (hashed) password to disk. If no password is provided as import argument, the CryptoLibrary will simply look for a password file in the designated folder and, if found, will use it. As was mentioned before, you can set the folder it should look for through the 'Set key path' menu option of the CryptoLibrary CLI tool. The default folder is:
 
 <code class="snippet">your_Python_root_folder\Lib\site-packages\CryptoLibrary\keys</code>.
 
@@ -225,7 +225,7 @@ Please note that if you provide the password as an import argument, it will take
 
 <a href="/assets/images/error_incorrect_password_import.JPG"><img src="/assets/images/error_incorrect_password_import.JPG" class="postimage" alt="Error on incorrect password." width="75%"></a><br>
 
-Since the password is incorrect, the CryptoLibrary cannot access the private key and thus spits out this error. It would be nice though if it would tell us the actual, underlying root cause, which is that the password didn't check out. TODO: a foot note: with link to issue.
+Since the password is incorrect, the CryptoLibrary cannot access the private key and thus spits out this error. It would be nice though if it would tell us the actual, underlying root cause, which is that the password didn't check out.<a href="#footnote-2" class="postanchor"><sup>[2]</sup></a>
 
 <h2 class="post"> <a name="key_path"> Import argument: <i>key_path</i> </a> </h2>
 
@@ -237,7 +237,7 @@ As was mentioned before, the CryptoLibrary's default folder for storing key file
 
 We can change the default folder through the 'Set key path' option of the CryptoLibrary CLI tool (see above).
 
-Through the 'key_path' argument we can refer the CryptoLibrary to a private key file that is located in a folder different from the currently set (default) folder. This is very useful, since we can thus create multiple key pairs and place them in different folder. We can then proceed and use different public keys to encrypt different pieces of test data. Through the 'key_path' argument in the import statements of our test suites, we can point the CryptoLibrary to the proper private key files that are needed for decryption.
+Through the 'key_path' argument we can refer the CryptoLibrary to a private key file that is located in a folder different from the currently set (default) folder. This is very useful, since we can thus create multiple key pairs and place them in different folders. We can then proceed and use different public keys to encrypt different pieces of test data. Through the 'key_path' argument in the import statements of our test suites, we can point the CryptoLibrary to the proper private key files that are needed for decryption.
 
 The path that we specify as a value to this argument can either be an absolute path or can be a path relative to the file 'cryptoutility.py'. The latter is located at:
 
@@ -249,9 +249,9 @@ The importing of the library was the last of our preparatory steps and we are no
 
 Thus, let's create the following test suite file:
 
-<a href="/downloads/sample_test_suite.robot"><img src="/assets/images/crypto_test_suite.JPG" class="postimage" alt="Console output." width="100%"></a><br>
+(<i>Please note that if you click the image, the sample test suite file will be downloaded onto your device as a .robot text file!</i>)
 
-<i>Please note that if you click the image, the sample test suite file will be downloaded onto your device as a .robot text file!</i>
+<a href="/downloads/sample_test_suite.robot"><img src="/assets/images/crypto_test_suite.JPG" class="postimage" alt="Console output." width="100%"></a><br>
 
 Further note that the test cases contained therein are merely meant as samples, to demonstrate the utilization of the CryptoLibrary. As such they are, naturally, simplistic and not well designed. For instance, normally you should obviously not include low-level, technical steps in your test cases.
 
@@ -335,7 +335,7 @@ Well, our 'variable_decryption' import argument has been set to 'False'.
 
 Further, our variable at line 11 has been renamed to reflect the fact that a cypher will be assigned to it. That is, the CryptoLibrary will no longer automatically (i.e. on-the-fly) decrypt our variable. Note that the cypher itself no longer sports the 'crypt:' prefix.
 
-Finally, line 18 had been added to our our test case: it decrypts the cypher and assign the resulting plaintext password to the ${PWD_AS_PLAINTEXT} variable.
+Finally, line 18 had been added to our test case: it decrypts the cypher and assigns the resulting plaintext password to the ${PWD_AS_PLAINTEXT} variable.
 
 Please note: when 'variable_decryption' is set to 'False', you <i>can</i>, but don't <i>have to</i> remove the 'crypt:' prefixes. That is not required for the CryptoLibrary keywords to work, because any prefix will simply be ignored by them. A possible advantage of not removing the prefixes would be that you don't have to change all of your variables when you toggle 'variable_decryption' from 'True' to 'False' or vice versa.
 
@@ -343,7 +343,7 @@ So, thanks to the CryptoLibrary we can simply add our password to our test code,
 
 But the library does even <i>more</i> for us. Let's take a closer look at that in the following sections.
 
-<h1 class="post"> <a name="Masking the log output"> Masking the log output </a> </h1>
+<h2 class="post"> <a name="Masking the log output"> Masking the log output </a> </h2>
 
 Another artifact that might compromise security is the Robot Framework log file.
 
@@ -381,7 +381,7 @@ Consequently, we always have to assign a cipher to a variable, either in the var
 
 <h2 class="post"> <a name="Masking data in the console output"> Masking data in the console output </a> </h2>
 
-As we have seen, any piece of test data that has been decrypted by the CryptoLibrary will also be masked in the Robot Framework log. Additionally, that data will be masked in the console. For instance, if we were to log our Sauce Demo password, the console would like something like this:
+As we have seen, any piece of test data that has been decrypted by the CryptoLibrary will also be masked in the Robot Framework log. Additionally, that data will be masked in the console. For instance, if we were to log our Sauce Demo password, the console would print something like:
 
 <a href="/assets/images/console_logging.JPG"><img src="/assets/images/console_logging.JPG" class="postimage" alt="Snippet from log file - console logging." width="80%"></a><br>
 
@@ -399,7 +399,7 @@ But the console output would be something like this:
 
 The same happens when other keywords (e.g. 'Wait until page contains') fail.
 
-I have created an issue for this on the library's project page. TODO: footnote with issue.
+I have created an issue for this on the library's project page.<a href="#footnote-3" class="postanchor"><sup>[3]</sup></a>
 
 <h1 class="post"> <a name="Summary"> Summary </a> </h1>
 
@@ -407,4 +407,10 @@ The CryptoLibrary adds an important capability to Robot Framework: to secure sen
 
 It's usage is straightforward and intuitive. The CLI tools that accompany it, add a layer of flexibility and versatility to an already great library.
 
-It is yet another example of the power and enthusiasm of the Robot Framework community and a welcome addition to it's already huge ecosystem!
+It is yet another example of the power and enthusiasm of the Robot Framework community and a welcome addition to an already huge ecosystem!
+<hr style="border-top: 1px dashed"><br>
+<p id="footnote-1">[1] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/15" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/15</a><a class="postanchor" href="javascript:history.back()">(back)</a></p>
+
+<p id="footnote-2">[2] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/16" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/16</a><a class="postanchor" href="javascript:history.back()">(back)</a></p>
+
+<p id="footnote-3">[3] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/18" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/18</a><a class="postanchor" href="javascript:history.back()">(back)</a></p>
