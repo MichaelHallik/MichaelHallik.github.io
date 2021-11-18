@@ -76,16 +76,14 @@ In this first series of ten posts we will look into virtual Python environments:
 
 For the hands-on examples within this series we will be using Robot Framework.
 
-The latter is sort of a bonus by the way, since there isn't much information to be found on the web, on running the Robot Framework in a virtual environment. There are <i>some</i> articles on the topic, but they are all rather sketchy. I will provide you with a more thorough rundown.
+The latter is sort of a bonus by the way, since (at the moment of writing) there isn't much information to be found on the web, on running the Robot Framework in a virtual environment. There are <i>some</i> articles on the topic, but they are all rather sketchy. I will provide you with a more thorough rundown.
 
 Please note that we will take a dive into the inner workings of virtual environments. I know that quite a few people oppose to long posts that deep-dive into their topics. They just want a concise list of steps without any background as to what happens 'under the hood' with each step.
 
 However, I firmly believe that knowing the internals of our tool stacks makes us more efficient and effective as test (automation) engineers.
 
-These articles are meant for anyone that agrees with the latter. Everyone else may return to their daily business of mindlessly pushing buttons. &#128520;
-
 <!-- Skip the first parts and jump ahead to the fourth section, if you just want to learn the steps to take for operating Robot Framework in a virtual environment.
 
 But please note that even there you could run into information that may be too in-depth for your taste. Well, you will just have to suffer a bit, I guess. &#128124; -->
 
-Well, if you are game, you can <a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-2">start reading the second article</a>.
+So, if you are game, you can <a class="postanchor" href="/blog/2021/02/02/Running-Robot-Framework-in-a-virtual-environment-pt-2">start reading the second article</a>.
