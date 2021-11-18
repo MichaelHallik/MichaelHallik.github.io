@@ -101,13 +101,13 @@ Select the menu item 'Generate key pair'. That will present us with a question:
 
 <a href="/assets/images/question_regenerate.JPG"><img src="/assets/images/question_regenerate.JPG" class="postimage" alt="Regenerate the key pair yes/no." width="50%"></a><br>
 
-Now, if we <i>had</i> an existing key pair, we could regenerate that existing pair by choosing 'Yes'. Choosing 'No' would always result in the creation of a new key pair, regardless whether we already had or hadn't existing key pairs.
+This question should actually <i>only</i> come up if we had an <i>existing</i> key pair. However, due to a bug this question currently <i>always</> comes up, so regardless whether we have or have not an existing key pair. Now, if we <i>had</i> an existing key pair, then choosing 'No' would amount to aborting the creation of a new key pair. And choosing 'Yes' would delete the existing pair and then create a new pair (hence 'regenerate').
 
-However, due to a defect in the tool, the option 'No' currently does not have an effect at all: it simply does <i>nothing</i>. Moreover, choosing 'Yes' will <i>not</i> result in the regeneration of an existing key pair, but will simply (always) create a <i>new</i> key pair (regardless of whether a key pair does or does not already exist). Please note that I have contacted the author of the library. He assured me he would soon fix this little bug.<a href="#footnote-1" class="postanchor"><sup>[1]</sup></a>
+Please note that I have contacted the author of the library. He assured me he would soon fix this little bug.<a href="#footnote-1" class="postanchor"><sup>[1]</sup></a>
 
-So, until the defect has been fixed, we will simply have to choose 'Yes' so as to create a new key pair.
+Having said that, we can simply choose 'Yes' in order for our key pair to be created.
 
-We are then asked if we want to save the password to disk. The password in question is meant to protect the private key of the key pair that is about to be generated. We need that private key to be protected, since it is capable of decrypting our encrypted test data. Therefore, we do not want unauthorized usage of the private key! A password helps in preventing such usage.
+bUT ... first we are asked if we want to save the password to disk. The password in question is meant to protect the private key of the key pair that is about to be generated. We need that private key to be protected, since it is capable of decrypting our encrypted test data. Therefore, we do not want unauthorized usage of the private key! A password helps in preventing such usage.<a href="#footnote-2" class="postanchor"><sup>[2]</sup></a>
 
 Creating a password for the private key is mandatory. What we are being asked <i>here</i> is whether we would like to <i>save</i> that password to disk. If we answer 'Yes', two things will happen: the password we will specify will be secured through hashing and that hashed password will then be saved to disk. If we choose 'No', then the password will not be saved to disk and not be hashed. A third effect of not saving the password to disk, is that we will have to specify the (unhashed!) password as an argument when importing the library later on (as we'll see further on). So, choosing 'No' severely decreases the level of security we apply to our private key!
 
@@ -122,7 +122,7 @@ Let's enter our password (twice) and press 'enter'. This will hash the specified
 So, two keys and a password have now been generated and written to disk. Therefore, the console additionally prints the path's to:
 
 - A <i>password_hash.json</i> file containing the (hashed) password that protects the private key.
-- A <i>private_key.json</i> file containing the (hashed) private key.
+- A <i>private_key.json</i> file containing the (AES encrypted) private key.
 - A <i>public_key.key</i> file containing the public key.
 
 Finally, the public key itself is also printed to the console.
@@ -229,7 +229,7 @@ Please note that if you provide the password as an import argument, it will take
 
 <a href="/assets/images/error_incorrect_password_import.JPG"><img src="/assets/images/error_incorrect_password_import.JPG" class="postimage" alt="Error on incorrect password." width="75%"></a><br>
 
-Since the password is incorrect, the CryptoLibrary cannot access the private key and thus spits out this error. It would be nice though if it would tell us the actual, underlying root cause, which is that the password didn't check out.<a href="#footnote-2" class="postanchor"><sup>[2]</sup></a>
+Since the password is incorrect, the CryptoLibrary cannot access the private key and thus spits out this error. It would be nice though if it would tell us the actual, underlying root cause, which is that the password didn't check out.<a href="#footnote-3" class="postanchor"><sup>[3]</sup></a>
 
 <h2 class="post"> <a name="key_path"> Import argument: <i>key_path</i> </a> </h2>
 
@@ -312,7 +312,7 @@ Play the video to see our sample test case run.
 	</video>
 </div>
 
-Now, what if we were to set 'variable_description' to 'False' or remove that import argument altogether? Well, then the CryptoLibrary would no longer automatically and on-the-fly decrypt all variable values that start with 'crypt:'. Consequently, if we were to run the same test case again, then the <i>cipher</i> would be entered into the password field and the login (and thus test case) would fail.
+Now, what if we were to set 'variable_decription' to 'False' or remove that import argument altogether? Well, then the CryptoLibrary would no longer automatically and on-the-fly decrypt all variable values that start with 'crypt:'. Consequently, if we were to run the same test case again, then the <i>cipher</i> would be entered into the password field and the login (and thus test case) would fail.
 
 <div style="display: inline-block">
 	<div style="width: 40%; float: left">
@@ -403,7 +403,7 @@ But the console output would be something like this:
 
 The same happens when other keywords (e.g. 'Wait until page contains') fail.
 
-I have created an issue for this on the library's project page.<a href="#footnote-3" class="postanchor"><sup>[3]</sup></a>
+I have created an issue for this on the library's project page.<a href="#footnote-4" class="postanchor"><sup>[4]</sup></a>
 
 <h1 class="post"> <a name="Summary"> Summary </a> </h1>
 
@@ -413,8 +413,10 @@ It's usage is straightforward and intuitive. The CLI tools that accompany it, ad
 
 It is yet another example of the power and enthusiasm of the Robot Framework community and a welcome addition to an already huge ecosystem!
 <hr style="border-top: 1px dashed"><br>
-<p id="footnote-1">[1] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/15" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/15</a><a class="postanchor" href="javascript:history.back()">(back)</a></p>
+<p id="footnote-1">[1] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/15" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/15</a>.<a class="postanchor" href="javascript:history.back()">(back)</a></p>
 
-<p id="footnote-2">[2] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/16" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/16</a><a class="postanchor" href="javascript:history.back()">(back)</a></p>
+<p id="footnote-2">[2] Although note that this is just a first step. The password file and private key file can still be grabbed by anyone with file access and could then be used to decrypt our data. Therefore, a better idea would be to store the password in an environment variable during test execution and use that variable when importing the library: <code class="snippet">Library CryptoLibrary password=%{private_key_password}</code>. (More on importing later in the post.) Then the password is only available during execution and it will also not be logged. Final note: The password is mainly hashed to ensure the AES password is 256 characters long even though the user might enter a ridiculously short password.<a class="postanchor" href="javascript:history.back()">(back)</a></p>
 
-<p id="footnote-3">[3] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/18" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/18</a><a class="postanchor" href="javascript:history.back()">(back)</a></p>
+<p id="footnote-3">[3] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/16" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/16</a>.<a class="postanchor" href="javascript:history.back()">(back)</a></p>
+
+<p id="footnote-4">[4] See: <a class="postanchor" href="https://github.com/Snooz82/robotframework-crypto/issues/18" target="_blank">https://github.com/Snooz82/robotframework-crypto/issues/18</a>.<a class="postanchor" href="javascript:history.back()">(back)</a></p>
