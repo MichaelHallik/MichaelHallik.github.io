@@ -107,7 +107,7 @@ Please note that I have contacted the author of the library. He assured me he wo
 
 Having said that, we can simply choose 'Yes' in order for our key pair to be created.
 
-bUT ... first we are asked if we want to save the password to disk. The password in question is meant to protect the private key of the key pair that is about to be generated. We need that private key to be protected, since it is capable of decrypting our encrypted test data. Therefore, we do not want unauthorized usage of the private key! A password helps in preventing such usage.<a href="#footnote-2" class="postanchor"><sup>[2]</sup></a>
+But ... first we are asked if we want to save the password to disk. The password in question is meant to protect the private key of the key pair that is about to be generated. We need that private key to be protected, since it is capable of decrypting our encrypted test data. Therefore, we do not want unauthorized usage of the private key! A password helps in preventing such usage.<a href="#footnote-2" class="postanchor"><sup>[2]</sup></a>
 
 Creating a password for the private key is mandatory. What we are being asked <i>here</i> is whether we would like to <i>save</i> that password to disk. If we answer 'Yes', two things will happen: the password we will specify will be secured through hashing and that hashed password will then be saved to disk. If we choose 'No', then the password will not be saved to disk and not be hashed. A third effect of not saving the password to disk, is that we will have to specify the (unhashed!) password as an argument when importing the library later on (as we'll see further on). So, choosing 'No' severely decreases the level of security we apply to our private key!
 
