@@ -45,9 +45,9 @@ Finally, please note that encrypted data is called '<i>ciphertext</i>', while un
 
 <h1 class="post"> <a name="Installing the CryptoLibrary"> Installing the CryptoLibrary </a> </h1>
 
-The CryptoLibrary requires Python 3 or higher.
+The CryptoLibrary requires Python 3.6 or higher.
 
-We can install it using pip (if you have a Python 3 version that is below 3.4, you will first have to install pip separately):
+We can install it using pip:
 
 	pip install robotframework-crypto
 
@@ -75,7 +75,11 @@ Since we need a public/private key pair to encrypt and decrypt, we will first ha
 
 <h2 class="post"> <a name="Create a key pair"> Create a key pair </a> </h2>
 
-To generate the pair we must first start a Python shell. For instance, on a Windows system you could open the command prompt (or power shell) and then type 'Python'. When you see the Python prompt in the console, enter the command 'CryptoLibrary'. In the screen shots that will follow, you will notice that I am using a <a class="postanchor" href="http://localhost:4000/blog/2021/02/01/Running-Robot-Framework-in-a-virtual-environment-pt-1" target="_blank">virtual Python environment</a>. So, my prompt may look different than the one you're using.
+Open up a terminal (e.g. the command prompt or power shell on a Windows system) and enter the command 'CryptoLibrary'. In the screen shots that will follow, you will notice that I am using a <a class="postanchor" href="http://localhost:4000/blog/2021/02/01/Running-Robot-Framework-in-a-virtual-environment-pt-1" target="_blank">virtual Python environment</a>. So, my prompt may look different than the one you're using. If you see:
+
+	'CryptoLibrary' is not recognized as an internal or external command, operable program or batch file.
+
+there could be several underlying reasons. Most probably you failed to add the 'Scripts' folder (as located in the Python root folder) to your PATH environment variable. Please use your search engine skills to solve this little problem.
 
 After having entered the 'CryptoLibrary' command, we'll be presented with a menu:
 
@@ -155,7 +159,7 @@ Now that we have our key pair, we are ready to encrypt test data using the publi
 
 To encrypt test data we will utilize the second CLI tool that comes with the library: the CryptoClient.
 
-Make sure you have a Python shell open and then enter the command 'CryptoClient':
+Make sure you have a terminal window open and then enter the command 'CryptoClient':
 
 <a href="/assets/images/open_cryptoClient.JPG"><img src="/assets/images/open_cryptoClient.JPG" class="postimage" alt="Start the CryptoClient CLI." width="50%"></a><br>
 
