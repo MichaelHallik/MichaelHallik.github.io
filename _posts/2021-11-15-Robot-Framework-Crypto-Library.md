@@ -101,7 +101,7 @@ Select the menu item 'Generate key pair'. That will present us with a question:
 
 <a href="/assets/images/question_regenerate.JPG"><img src="/assets/images/question_regenerate.JPG" class="postimage" alt="Regenerate the key pair yes/no." width="50%"></a><br>
 
-This question should actually <i>only</i> come up if we had an <i>existing</i> key pair. However, due to a bug this question currently <i>always</> comes up, so regardless whether we have or have not an existing key pair. Now, if we <i>had</i> an existing key pair, then choosing 'No' would amount to aborting the creation of a new key pair. And choosing 'Yes' would delete the existing pair and then create a new pair (hence 'regenerate').
+This question should actually <i>only</i> come up if we had an <i>existing</i> key pair. However, due to a bug this question currently <i>always<i/> comes up, so regardless whether we have or have not an existing key pair. Now, if we <i>had</i> an existing key pair, then choosing 'No' would amount to aborting the creation of a new key pair. And choosing 'Yes' would delete the existing pair and then create a new pair (hence 'regenerate').
 
 Please note that I have contacted the author of the library. He assured me he would soon fix this little bug.<a href="#footnote-1" class="postanchor"><sup>[1]</sup></a>
 
