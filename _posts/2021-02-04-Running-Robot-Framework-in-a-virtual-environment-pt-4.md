@@ -12,15 +12,15 @@ comments_id: 6
 In his article we will create our first virtual environment and learn a couple of things about how such an environment works. We will also learn how to activate and deactivate environments and how to switch between them:
 
 <ol>
-	<li><a class="postanchor" href="#About the mkvirtualenv command.">About the mkvirtualenv command</a></li>.
-	<li><a class="postanchor" href="#Create a virtual env with a specific Python version">Create a virtual env with a specific Python version</a>.
+	<li><a class="postanchor" href="#About the mkvirtualenv command.">About the mkvirtualenv command</a>.</li>
+	<li><a class="postanchor" href="#Create a virtual env with a specific Python version">Create a virtual env with a specific Python version.</a>
 	<ol type="a">
-	<li><a class="postanchor" href="#A closer look at our new environment.">A closer look at our new environment</a></li>.
-	<li><a class="postanchor" href="#How is this accomplished?">How is this accomplished</a></li>?
+	<li><a class="postanchor" href="#A closer look at our new environment.">A closer look at our new environment</a>.</li>
+	<li><a class="postanchor" href="#How is this accomplished?">How is this accomplished</a>?</li>
 	</ol>
 	</li>
-	<li><a class="postanchor" href="#Activating and deactivating a virtual environment">Activating and deactivating a virtual environment</a></li>.
-	<li><a class="postanchor" href="#Next steps">Next steps</a></li>.
+	<li><a class="postanchor" href="#Activating and deactivating a virtual environment">Activating and deactivating a virtual environment</a>.</li>
+	<li><a class="postanchor" href="#Next steps">Next steps</a>.</li>
 </ol>
 
 Of course, I am assuming that you have <a class="postanchor" href="/blog/2021/02/03/Running-Robot-Framework-in-a-virtual-environment-pt-3">installed the required software</a>.
