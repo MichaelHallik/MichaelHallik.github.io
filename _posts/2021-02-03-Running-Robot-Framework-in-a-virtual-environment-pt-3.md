@@ -9,18 +9,18 @@ comments_id: 5
 
 <h1 class="post"> <a name="Summary of the steps to take."> Summary of the steps to take. </a> </h1>
 
-To create a virtual Python environment, we first have to install a few things:
+Before we can create a virtual Python environment, we will have to take a few preparatory steps:
 
 <ol type="a">
 	<li><a class="postanchor" href="#Install one or more Python versions.">Install one or more Python versions</a>.</li>
 	<li><a class="postanchor" href="#Decide on a tool (stack).">Decide on a tool (stack)</a>.</li>
 	<li><a class="postanchor" href="#Install the chosen tool (stack).">Install the chosen tool (stack)</a>.</li>
-	<li><a class="postanchor" href="#Next steps">Next steps</a>.</li>
+	<li><a class="postanchor" href="#And then move on">And then move on</a>.</li>
 </ol>
 
 Please note that the instructions have been written with Windows in mind (in my case Win 10 Pro). But the whole process is very similar on Linux/Unix.
 
-Here we go . . .
+Here we go ... .
 
 <h1 class="post"> <a name="Install one or more Python versions."> Install one or more Python versions. </a> </h1>
 
@@ -65,9 +65,9 @@ To check whether a Python version has been properly installed, you can perform a
 
 <code class="snippet">python -V</code>
 
-That should output the version of the Python installation that was installed most recently.
+That will always output the version of the Python installation whose <code class="folder">root</code> and <code class="folder">\Scripts</code> folders are the first on the operating system's PATH variable. Typically (but not necessarily) that will be the Python installation that was installed most recently.
 
-However, that approach assumes that the <code class="folder">Python root</code> and <code class="folder"> \Scripts</code> folders of that particular Python version were added to PATH during or immediately after installation (see earlier remarks). In case they were not, you can use another approach. This one assumes that you have installed the <code class="folder">'Python launcher'</code> (see earlier remarks). In case you have, open a command line <i>after</i> you have installed <i>all</i> of the required Python versions and type:
+To be able to see the versions of <i>all</i> the Python installations on your system, you must use another approach. This one assumes that you have installed the <code class="folder">'Python launcher'</code> (see earlier remarks). In case you have, open a command line <i>after</i> you have installed <i>all</i> of the required Python versions and type:
 
 <code class="snippet">py -0</code>
 
@@ -176,6 +176,6 @@ If you do not know how to create such a variable, please query a web search engi
 
 <code class="snippet">add environment variable [your_os]</code>.
 
-<h1 class="post"> <a name="Next steps"> Next steps. </a> </h1>
+<h1 class="post"> <a name="Let's move on"> Let's move on. </a> </h1>
 
 Well, that was it: we are now finally ready to <a class="postanchor" href="/blog/2021/02/04/Running-Robot-Framework-in-a-virtual-environment-pt-4">create our very first virtual environment</a>.
