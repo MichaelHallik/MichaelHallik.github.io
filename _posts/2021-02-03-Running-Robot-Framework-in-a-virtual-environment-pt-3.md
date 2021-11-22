@@ -53,11 +53,11 @@ The installer can do this for you. Just tick the corresponding check box. If you
 
 Note that for our purposes, it will be sufficient to take this step for just <i>one</i> of multiple Python versions (assuming you have multiple). In our case it is also irrelevant <i>which one</i> you pick.
 
-Reversely, having the folders of multiple (or even all) Python versions added to PATH won't hurt either. Typically, only the first occurrence (of the folder pair) that is found in PATH is used by the OS or applications that look for Python (while possible other entries are then simply ignored). The first occurrence (that will be found) on PATH, is always the folder pair of the Python version that was installed last (and for which you had the installer create PATH entries). But for our purposes none of that matters, as we will see later on. Just have the mentioned two folders added to PATH for <i>at least</i> one Python version.
+Reversely, having the folders of multiple (or even all) Python versions added to PATH won't hurt either. This is because it is always the first occurrence (of the folder pair) that is found in PATH, that will be used by the OS or applications that look for Python. Possible other entries are then simply ignored. The first occurrence on PATH is usually (but not necessarily) the folder pair of the Python version that was installed last. However, for our purposes none of that matters anyway, as we will see later on. Just have the mentioned two folders added to PATH for <i>at least</i> one Python version.
 
 <h2> The Python Launcher. </h2>
 
-It is recommended to activate the option to install the so-called '<a class="postanchor" href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python Launcher</a>' during the installation process. On Windows, this will be in the form of a checkbox within the installer dialog.
+It is recommended to activate the option to install the so-called '<a class="postanchor" href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python Launcher</a>' during the installation process. On Windows, this will be in the form of a check-box within the installer dialog.
 
 <h2> Validate the installation(s). </h2>
 
@@ -109,7 +109,7 @@ I will not go into the differences in capabilities nor into the specific compara
 
 <h2> Introducing virtualenv. </h2>
 
-Here we will simply choose <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenv</a>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). <br><br> Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <a class="postanchor"  href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convencience functions that will greatly enhance the efficiency of our environment management. <br><br> Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of online information for it. <br><br> Finally, <code class="folder">PyCharm</code> can (re-)use environments that we create manually through <code class="folder">virtualenv</code>. This adds a lot of flexibility when using <code class="folder">PyCharm</code> as editor, since the virt env options that the IDE itself provides us with, are rather limited.
+Here we will simply choose <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenv</a>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). <br><br> Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <a class="postanchor"  href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convenience functions that will greatly enhance the efficiency of our environment management activities. <br><br> Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of on-line information for it. <br><br> Finally, IDE's such as <code class="folder">PyCharm</code> and <code class="folder">Visual Studio Code</code> can (re-) use virtual environments that have been created through <code class="folder">virtualenv</code>. This adds a lot of power and flexibility to these editors. Especially, since the virtual environment capabilities that an editor such as PyCharm provides us with natively, are rather limited.
 
 <h1> <a name="Install the chosen tool (stack)."> Install the chosen tool (stack). </a> </h1>
 
@@ -131,13 +131,13 @@ In case <code class="folder">pip</code> is not available, check whether you have
 
 in your console/shell/CLI.
 
-In case you CLI doesn't recognize the issued command, check your PATH environment variable (in accordance with what was said earlier).
+In case your CLI doesn't recognize the issued command, check your PATH environment variable (in accordance with what was said earlier).
 
 If the command is executed, but the returned Python version is <i>below 3.4</i>, then <code class="folder"> pip </code> will not be included in the standard library and you'll have to install it <a class="postanchor" href="https://www.liquidweb.com/kb/install-pip-windows/" target="_blank">manually</a> for that Python version. Or put a suitable Python version as first on your PATH (assuming one is installed).
 
 <h2> Install virtualenvwrapper-win. </h2>
 
-To install <code class="folder">virtualenv</code>, simply open a command line and type:
+To install, simply open a command line and type:
 
 <code class="snippet">pip install virtualenvwrapper-win</code>
 
@@ -178,4 +178,4 @@ If you do not know how to create such a variable, please query a web search engi
 
 <h1 class="post"> <a name="Let's move on"> Let's move on. </a> </h1>
 
-Well, that was it: we are now finally ready to <a class="postanchor" href="/blog/2021/02/04/Running-Robot-Framework-in-a-virtual-environment-pt-4">create our very first virtual environment</a>.
+Well, that was it! We have taken all required preliminary steps and are now (finally) ready to actually <a class="postanchor" href="/blog/2021/02/04/Running-Robot-Framework-in-a-virtual-environment-pt-4">create our very first virtual environment</a>.

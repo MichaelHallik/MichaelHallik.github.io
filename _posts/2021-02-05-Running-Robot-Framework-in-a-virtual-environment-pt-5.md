@@ -11,7 +11,7 @@ comments_id: 7
 
 As was announced at the end of the <a class="postanchor" href="/blog/2021/02/04/Running-Robot-Framework-in-a-virtual-environment-pt-4">previous article</a>, we will now proceed and create some additional environments.
 
-We can create as many environments as are required or desired. Those environments may be based on the same and/or other Python versions. For instance, let's create:
+We can create as many environments as are required or desired. Those environments may be based on the same and/or different Python versions. For instance, let's create:
 
 1. an environment based on the exact same Python base installation as before (3.7.9)
 2. an environment based on another version (3.8.7)
@@ -21,7 +21,17 @@ This time, in the course of creating an environment, we will also install one or
 
 That will effectively create ecosystems for our environments and, thus, for the projects that we subsequently will associate with (that is, bind to) those environments.
 
-<h1 class="post"> <a name="Create a second environment."> Create a second environment: The -i switch. </a> </h1>
+So, in this post we will look at the following:
+
+<ol type="a">
+	<li><a class="postanchor" href="#Create a second environment: The -i switch.">Create a second environment: The -i switch</a>.</li>
+	<li><a class="postanchor" href="#Create a third environment: The -r switch.">Create a third environment: The -r switch</a>.</li>
+	<li><a class="postanchor" href="#Create a fourth environment.">Create a fourth environment</a>.</li>
+	<li><a class="postanchor" href="#Installing packages in existing environments.">Installing packages in existing environments</a>.</li>
+	<li><a class="postanchor" href="#Next steps.">Next steps</a>.</li>
+</ol>
+
+<h1 class="post"> <a name="Create a second environment: The -i switch."> Create a second environment: The -i switch. </a> </h1>
 
 We will base our second environment on the same Python version that we used for our first environment. As long as we provide different environment names, we can base multiple environments on the same Python system installation.
 
@@ -99,7 +109,7 @@ However, a (minor) disadvantage of using the -i switch to install packages, is t
 
 Luckily there is a less cumbersome approach for installing packages together with a new environment. So let's take a look at that.
 
-<h1 class="post"> <a name="Create a third environment."> Create a third environment: The -r switch. </a> </h1>
+<h1 class="post"> <a name="Create a third environment: The -r switch."> Create a third environment: The -r switch. </a> </h1>
 
 Again, we will create an environment <i>and</i> install some third-party packages with it.
 

@@ -9,7 +9,6 @@ comments_id: 4
 
 <h1 class="post"> <a name="Introduction"> Can't we just skip the intro & jump to the good stuff? </a> </h1>
 
-
 But this already <i>is</i> the good stuff! 😉
 
 I consider it good practice to reflect on a new technique, pattern or (in this case) tool, before actually <i>using</I> it. There are several benefits in doing so.<br><br>
