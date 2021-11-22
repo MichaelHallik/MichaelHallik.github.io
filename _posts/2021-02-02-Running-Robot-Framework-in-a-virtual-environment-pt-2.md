@@ -19,12 +19,12 @@ Apart from such practical benefits, I believe that as testers we should have a n
 
 Let's therefore first have a closer look at virtual environments, before putting them to use:
 
-<ul>
+<ol>
 	<li><a class="postanchor" href="#What is a virtual environment?">What is a virtual environment?</a></li>
 	<li><a class="postanchor" href="#What does a virtual environment look like?">What does a virtual environment look like?</a></li>
 	<li><a class="postanchor" href="#Why virtual environments?">Why virtual environments?</a></li>
 	<li><a class="postanchor" href="#Why virtual environments?">Next steps.</a></li>
-</ul>
+</ol>
 
 Note that this is just a first, quick peek under the hood: we will keep on peeking even in the remaining parts of this series of articles, where we will be working with virtual environments.
 

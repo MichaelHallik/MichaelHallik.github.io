@@ -12,10 +12,10 @@ comments_id: 5
 Before we can create a virtual Python environment, we will have to take a few preparatory steps:
 
 <ol type="a">
-	<li><a class="postanchor" href="#Install one or more Python versions.">Install one or more Python versions</a>.</li>
-	<li><a class="postanchor" href="#Decide on a tool (stack).">Decide on a tool (stack)</a>.</li>
-	<li><a class="postanchor" href="#Install the chosen tool (stack).">Install the chosen tool (stack)</a>.</li>
-	<li><a class="postanchor" href="#And then move on">And then move on</a>.</li>
+	<li><a class="postanchor" href="#Install one or more Python versions.">Install one or more Python versions.</a></li>
+	<li><a class="postanchor" href="#Decide on a tool (stack).">Decide on a tool (stack).</a></li>
+	<li><a class="postanchor" href="#Install the chosen tool (stack).">Install the chosen tool (stack).</a></li>
+	<li><a class="postanchor" href="#And then move on">And then move on.</a></li>
 </ol>
 
 Please note that the instructions have been written with Windows in mind (in my case Win 10 Pro). But the whole process is very similar on Linux/Unix.
