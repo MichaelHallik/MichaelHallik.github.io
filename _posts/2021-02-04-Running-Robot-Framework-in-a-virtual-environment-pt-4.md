@@ -13,7 +13,7 @@ In his article we will create our first virtual environment and learn a couple o
 
 We will also learn how to activate and deactivate environments and how to switch between them.
 
-We will therefore look at the following:
+Therefore this post consists of the following topics:
 
 <ol>
 	<li><a class="postanchor" href="#About the mkvirtualenv command.">About the mkvirtualenv command.</a></li>
