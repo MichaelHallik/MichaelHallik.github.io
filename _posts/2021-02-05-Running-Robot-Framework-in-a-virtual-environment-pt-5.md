@@ -28,7 +28,7 @@ So, in this post we will look at the following:
 	<li><a class="postanchor" href="#Create a third environment: The -r switch.">Create a third environment: The -r switch.</a></li>
 	<li><a class="postanchor" href="#Create a fourth environment.">Create a fourth environment.</a></li>
 	<li><a class="postanchor" href="#Installing packages in existing environments.">Installing packages in existing environments.</a></li>
-	<li><a class="postanchor" href="#Next steps.">Next steps</a>.</li>
+	<li><a class="postanchor" href="#Next steps.">Next steps.</a></li>
 </ol>
 
 <h1 class="post"> <a name="Create a second environment: The -i switch."> Create a second environment: The -i switch. </a> </h1>
