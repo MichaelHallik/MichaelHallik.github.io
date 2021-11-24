@@ -164,7 +164,7 @@ Note that, depending on your specific set-up, one or more other dependencies (su
 
 <h2> <a name="Optional: create an environment variable WORKON_HOME"> Optional: create an environment variable WORKON_HOME. </a></h2>
 
-This step is optional, but recommended.
+This step is optional, but definitely recommended.
 
 We can set a default target (i.e. home) directory for our environments. That way, we will not have to specify a target directory every time we create a new environment. Similarly, we will not have to specify that directory whenever we activate an environment (activation will be explained in the next article).
 
