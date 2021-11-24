@@ -36,28 +36,26 @@ For the sake of this post, I have installed the following versions:
 
 I will not elaborate much on the Python installation process itself, since it is pretty straightforward and since you can easily find the answer to any question (and the solution to any problem) you might have on the web.
 
-However, please make sure to add at least one Python installation to your operating system's PATH and to install the <code class="folder">Python Launcher</code>, as described in the following two sections.
+However, please make sure to add (at least) one Python installation to your operating system's PATH. The installer can do this for you. Just tick the corresponding check box within the installer dialog.
+
+Also make sure to activate the option to install the '<a class="postanchor" href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python Launcher</a>'. Again, the installer can do this for you if you tick the relevant check box. Preferably install it with the highest of your chosen Python versions.
 
 <h2> The PATH environment variable. </h2>
 
-We need to add the Python <code class="folder">root (= installation)</code> folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, I put the following on the PATH:
+As was just mentioned, we need to add the Python <code class="folder">root (= installation)</code> folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, I put the following on the PATH:
 
 <ul>
   <li><code class="folder">C:\Python39</code></li>
   <li><code class="folder">C:\Python39\Scripts</code></li>
 </ul>
 
-The installer can do this for you. Just tick the corresponding check box. If you don't, you must perform this action manually after the installer is finished. If you do not know how to do the latter, please query a web search engine:
+As was also just described, the installer can do this for you. Just just had to tick the corresponding check box. If you didn't, you must perform this action manually afterwards. If you do not know how to do the latter, please query a web search engine:
 
 <code class="snippet">modify path variable [your_os]</code>.
 
 Note that for our purposes, it will be sufficient to take this step for just <i>one</i> of multiple Python versions (assuming you have multiple). In our case it is also irrelevant <i>which one</i> you pick.
 
 Reversely, having the folders of multiple (or even all) Python versions added to PATH won't hurt either. This is because it is always the first occurrence (of the folder pair) that is found in PATH, that will be used by the OS or applications that look for Python. Possible other entries are then simply ignored. The first occurrence on PATH is usually (but not necessarily) the folder pair of the Python version that was installed last. However, for our purposes none of that matters anyway, as we will see later on. Just have the mentioned two folders added to PATH for <i>at least</i> one Python version.
-
-<h2> The Python Launcher. </h2>
-
-It is recommended to activate the option to install the so-called '<a class="postanchor" href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python Launcher</a>' during the installation process. On Windows, this will be in the form of a check-box within the installer dialog.
 
 <h2> Validate the installation(s). </h2>
 
@@ -67,7 +65,7 @@ To check whether a Python version has been properly installed, you can perform a
 
 That will always output the version of the Python installation whose <code class="folder">root</code> and <code class="folder">\Scripts</code> folders are the first on the operating system's PATH variable. Typically (but not necessarily) that will be the Python installation that was installed most recently.
 
-To be able to see the versions of <i>all</i> the Python installations on your system, you must use another approach. This one assumes that you have installed the <code class="folder">'Python launcher'</code> (see earlier remarks). In case you have, open a command line <i>after</i> you have installed <i>all</i> of the required Python versions and type:
+To be able to see the versions of <i>all</i> the Python installations on your system, you must use another approach. This one assumes that you have installed the <code class="folder">'Python launcher'</code> (as described earlier). In case you have, open a command line after you have installed all of the required Python versions and type:
 
 <code class="snippet">py -0</code>
 
@@ -84,6 +82,8 @@ This will output all installed Python versions on your system:<br>
 	-3.7-64
 
 The asterisk indicates which Python version the Python launcher will use by default (always the most recent version of Python it can find). By the way, it does <i>not</i> indicate which Python version is first in PATH. This <i>could</i> be the same version. But it is by no means necessarily so.
+
+Tip: if you issue the command <code class="snippet">py -0p</code> (so with an added 'p') then the output will also include the paths to the various Python installations.
   
 <h1> <a name="Decide on a tool (stack)."> Decide on a tool (stack). </a> </h1>
 
@@ -109,7 +109,7 @@ I will not go into the differences in capabilities nor into the specific compara
 
 <h2> Introducing virtualenv. </h2>
 
-Here we will simply choose <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenv</a>, as most or all of the other candidates either are too simple (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). <br><br> Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <a class="postanchor"  href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convenience functions that will greatly enhance the efficiency of our environment management activities. <br><br> Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of on-line information for it. <br><br> Finally, IDE's such as <code class="folder">PyCharm</code> and <code class="folder">Visual Studio Code</code> can (re-) use virtual environments that have been created through <code class="folder">virtualenv</code>. This adds a lot of power and flexibility to these editors. Especially, since the virtual environment capabilities that an editor such as PyCharm provides us with natively, are rather limited.
+Here we will simply choose <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/index.html" target="_blank">virtualenv</a>, as most or all of the other candidates either are (too) simplistic (e.g. <code class="folder">venv</code>) or boast way too much other functionality (e.g. <code class="folder">pipenv</code> and <code class="folder">anaconda</code>). <br><br> Moreover, <code class="folder">virtualenv</code> comes accompanied with a module named <a class="postanchor"  href="https://pypi.org/project/virtualenvwrapper-win/" target="_blank">virtualenvwrapper-win</a> that, as it's name suggests, serves as a wrapper to <code class="folder">virtualenv</code>. This wrapper provides us with all kinds of convenience functions that will greatly enhance the efficiency of our environment management activities. <br><br> Also, <code class="folder">virtualenv</code> is a <i>very</i> popular tool and you will therefore find lot's of on-line information for it. <br><br> Finally, IDE's such as <code class="folder">PyCharm</code> and <code class="folder">Visual Studio Code</code> can (re-) use virtual environments that have been created through <code class="folder">virtualenv</code>. This adds a lot of power and flexibility to these editors. Especially, since the virtual environment capabilities that an editor such as PyCharm provides us with natively, are rather limited.
 
 <h1> <a name="Install the chosen tool (stack)."> Install the chosen tool (stack). </a> </h1>
 
