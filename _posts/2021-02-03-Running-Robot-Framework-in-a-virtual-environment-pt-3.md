@@ -42,18 +42,18 @@ Also make sure to activate the option to install the '<a class="postanchor" href
 
 <h2> The PATH environment variable. </h2>
 
-As was just mentioned, we need to add the Python <code class="folder">root (= installation)</code> folder as well as the <code class="folder">\Scripts</code> sub-folder to the PATH environment variable of your operating system. In my case, I put the following on the PATH:
+As was just mentioned, we need to have the Python <code class="folder">root (= installation)</code> folder as well as the <code class="folder">\Scripts</code> sub-folder on the PATH environment variable of your operating system. In my case, I put the following on the PATH:
 
 <ul>
   <li><code class="folder">C:\Python39</code></li>
   <li><code class="folder">C:\Python39\Scripts</code></li>
 </ul>
 
-As was also just described, the installer can do this for you. Just just had to tick the corresponding check box. If you didn't, you must perform this action manually afterwards. If you do not know how to do the latter, please query a web search engine:
+The installer will have done this for you, if you had ticked the corresponding check box. If the latter is not the case, you will now have to perform this action manually. If you do not know how to do the latter, please query a web search engine:
 
 <code class="snippet">modify path variable [your_os]</code>.
 
-Note that for our purposes, it will be sufficient to take this step for just <i>one</i> of multiple Python versions (assuming you have multiple). In our case it is also irrelevant <i>which one</i> you pick.
+Note that for our purposes, it will be sufficient to take this step for just <i>one</i> of multiple Python versions. In our case it is also irrelevant <i>which one</i> that is.
 
 Reversely, having the folders of multiple (or even all) Python versions added to PATH won't hurt either. This is because it is always the first occurrence (of the folder pair) that is found in PATH, that will be used by the OS or applications that look for Python. Possible other entries are then simply ignored. The first occurrence on PATH is usually (but not necessarily) the folder pair of the Python version that was installed last. However, for our purposes none of that matters anyway, as we will see later on. Just have the mentioned two folders added to PATH for <i>at least</i> one Python version.
 
