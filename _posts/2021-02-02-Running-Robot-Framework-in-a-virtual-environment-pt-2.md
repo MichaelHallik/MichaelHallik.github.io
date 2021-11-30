@@ -66,10 +66,10 @@ See again my own virtual environment as an example:<br><br>
 So the three basic types of artifacts, that every virtual Python environment is composed of, are:
 
 <li>a Python interpreter</li>
-<li>a bunch of Python scripts</li>
-<li>a bunch of Python packages (libraries)</li>
+<li>a bunch of scripts/executables</li>
+<li>a bunch of Python packages</li>
 
-The scripts and the packages are closely related, as was just explained. <br><br> These three basic components are, as an independent whole, isolated from any other (virtual or system) Python installation.
+The scripts/executables and the packages are closely related, as was just explained. <br><br> These three basic components are, as an independent whole, isolated from any other (virtual or system) Python installation.
 
 <h1 class="post"> <a name="Why virtual environments?"> Why virtual environments? </a> </h1>
 

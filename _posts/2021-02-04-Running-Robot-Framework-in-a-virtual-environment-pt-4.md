@@ -45,7 +45,7 @@ This command has the following structure:
 
 <code class="snippet">mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]</code>
   
-Although only the latter (i.e. name-of-virt-env) is mandatory, typically you will specify at least one or more <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/cli_interface.html" target="_blank">virtualenv options</a> when creating a new virtual environment. Any such option will be passed on by <code class="folder">virtualenvwrapper-win</code> to <code class="folder">virtualenv</code> for processing there.
+Although only the latter (i.e. name-of-virt-env) is mandatory, you will generally specify at least one <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/cli_interface.html" target="_blank">virtualenv options</a> when creating a new virtual environment. Any such option will be passed on by <code class="folder">virtualenvwrapper-win</code> to <code class="folder">virtualenv</code> for processing there.
 
 If I were to issue the command <i>without</i> any <code class="folder">virtualenv</code> options:
 
