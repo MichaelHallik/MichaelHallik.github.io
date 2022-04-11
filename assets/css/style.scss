@@ -205,6 +205,21 @@ img.postimage {
   border: 2px solid #97B918;
 }
 
+/*  figure { */
+/*    border: 1px #cccccc solid; */
+/*    padding: 4px; */
+/*    margin: auto */
+/*  } */
+
+figcaption {
+  background-color: #7A7777;
+  color: black;
+/*  font-style: italic; */
+  font-size:11px;
+  padding: 2px;
+  text-align: center;
+}
+
 /* Footnotes. */
 
 p[id*=footnote] {
