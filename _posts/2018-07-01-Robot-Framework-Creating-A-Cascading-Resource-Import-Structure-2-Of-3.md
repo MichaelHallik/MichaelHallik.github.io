@@ -1,6 +1,6 @@
 ---
 tags: testautomation testframeworks robotframework RF_testlibraries importing
-title: Robot Framework Creating A Cascading Resource Import Structure 2 Of 3
+title: Creating A Cascading Resource Import Structure for Robot Framework - 2 Of 3
 comments_id: 12
 
 ---
