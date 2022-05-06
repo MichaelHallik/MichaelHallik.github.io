@@ -49,7 +49,7 @@ Generally you will then proceed to create your own, user defined resources. For 
 
 The latter is accomplished by reusing the functions that are available in the (standard and external) test libraries. However, this requires each resource file to import every test library that is to be reused in that file. If you need to create a user keyword library containing functions that should get input XML from disk, call various SOAP services and  validate the response XML, you will have to import at least three libraries within that resource file: SoapLibrary, XML library and OperatingSystem library. Moreover, in almost all cases of creating user keyword files you will employ several of the basic RF convenience libraries, such as the Collections and String libraries.
 
-Accordingly, it is not uncommon to have more that five library import statements in a single resource file.
+Accordingly, it is not uncommon to have more than five library import statements in a single resource file.
 
 The more resource files you create, the more of these import statements you will end up with.
 
@@ -67,9 +67,9 @@ Typically, in the previous phase of test code development, you will have created
 
 After that first round of development, you will, in most cases, start to reuse the created resource files. Typically, you will create a layer of user keyword files that function at the <a class="postanchor" href="https://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/" target="_blank">workflow level</a> and that will be <i>reusing</i> the keywords created at the technical activity level.
 
-Finally, these workflow level keyword files may themselves be reused (and thus imported) by a final, thin layer of ‘wrapper’ keywords that implement <a class="postanchor" href="https://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/" target="_blank">end-to-end business flows</a>.
+Finally, these workflow level keyword files may themselves be reused (and thus imported) by a final, thin layer of ‘wrapper’ keywords that implement <a class="postanchor" href="https://gojko.net/2010/04/13/how-to-implement-ui-testing-without-shooting-yourself-in-the-foot-2/" target="_blank">(end-to-end) business flows</a>.
 
-Similar to what has been said in the previous section you can (and most probably will) end up with <i>multiple</i> import statements throughout your workflow-activity-level resource files (as well as throughout the mentioned 'end-to-end' layer).
+Similar to what has been said in the previous section you can (and most probably will) end up with <i>multiple</i> import statements throughout your workflow level resource files as well as throughout the mentioned (end-to-end) business layer.
 
 The number of statements may vary, depending on the functional (and technical) richness and complexity of your domain on the one hand and the specific design that you applied to your test automation solution on the other hand.
 
@@ -79,7 +79,7 @@ Typically though, that number will be sizable.
 
 When you are done building your test automation solution (i.e. the domain-specific part of your test automation framework), you will then start to create/add your automated test designs.
 
-Assuming the layering just outlined, you will use the domain-specific resource files that reside in the upper (end-to-end and/or workflow) layer to create your test designs. These keywords form the domain specific language in terms of which you can formulate your tests (please see <a class="postanchor" href="https://xebia.com/blog/robot-framework-and-the-keyword-driven-approach-to-test-automation-part-2-of-3/" target="_blank">this post</a>).
+Assuming the layering just outlined, you will use the domain-specific resource files that reside in the upper (workflow and business) layers to create your test designs. These keywords form the domain specific language in terms of which you can formulate your tests (please see <a class="postanchor" href="https://xebia.com/blog/robot-framework-and-the-keyword-driven-approach-to-test-automation-part-2-of-3/" target="_blank">this post</a>).
 
 Test cases in RF are implemented as test suite files (see <a class="postanchor" href="https://xebia.com/creating-cascading-resource-import-structure-robot-framework-pt-13-introduction-resource-sharing/" target="_blank">part 1</a>). To be able to use your domain-specific keywords in a test case, the containing test suite file will have to import the relevant user defined resource files. The exact number of import statements in a test suite file is therefore dependent on the number of user keyword libraries that are required to specify all of the test cases that are to be contained in that test suite.
 
@@ -91,7 +91,7 @@ A test suite <i>folder</i> may feature its own set of import statements.
 
 Specifically, it will require one or more of these statements when the need arises for suite-level setup and/or teardown routines. And/or in the case of having to specify default test setup/teardown routines.
 
-These setup/teardown routines will, typically, be domain-specific. Therefore these routines will generally have been implemented through one or more user keywords, within one or more user keyword files. Therefore, all of the relevant resource files need to be imported within a logical test suite.
+These setup/teardown routines will, typically, be domain-specific. Therefore these routines will generally have been implemented through one or more user keywords, within one or more user keyword files. Consequently, all of the relevant resource files need to be imported within a logical test suite.
 
 <h1 class="post"> <a name="But there is no inheritance of ‘higher-level’ import statements">But there is no inheritance of ‘higher-level’ import statements</a> </h1>
 
