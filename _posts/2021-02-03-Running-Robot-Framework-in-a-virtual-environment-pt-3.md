@@ -40,7 +40,7 @@ However, please make sure to add (at least) one Python installation to your oper
 
 Also make sure to activate the option to install the '<a class="postanchor" href="https://docs.python.org/3/using/windows.html#launcher" target="_blank">Python Launcher</a>'. Again, the installer can do this for you if you tick the relevant check box. Preferably install it with the highest of your chosen Python versions.
 
-<h2> The PATH environment variable. </h2>
+<h2> <a name="The PATH environment variable."> The PATH environment variable. </a> </h2>
 
 As was just mentioned, we need to have the Python <code class="folder">root (= installation)</code> folder as well as the <code class="folder">\Scripts</code> sub-folder on the PATH environment variable of your operating system. In my case, I put the following on the PATH:
 
