@@ -14,7 +14,7 @@ Amongst other online resources, I consulted the <a class="postanchor" href="http
 
 However, I also searched for a <i>schematic</i> overview of types. Although there are quite a few of these schematics, I found none of them satisfactory to my needs.
 
-Therefore I decided to create my own overview, which I want to publish here. It is based on the page that I just referenced with the hyperlink. So it's based on the source instead of on secondary literature.
+Therefore I decided to create my own overview, which I want to publish here. It is based on the page that I just referenced with the hyperlink. So it's based on the primary source instead of on secondary literature.
 
 Please note that this overview is by no means complete. Although I believe that the types that are the most relevant to test automation are in there, I will expand the drawing in the future and update this page with it.
 
@@ -22,7 +22,9 @@ In the meanwhile, I think the overview in it's current form can be helpful.
 
 <h1 class="post"> <a name="Introduction."> Overview of Python built-in data types. </a> </h1>
 
-If you find errors in this schema, please let me know in a comment below. Once more: the overview is not (yet) complete. It is a work in progress.
+If you find errors in this schema, please let me know in a comment below.
+
+Once more: the overview is not (yet) complete. It is a work in progress.
 
 <figure>
 	<a href="/assets/images/python_built_in_types.JPG"><img src="/assets/images/python_built_in_types.JPG" class="postimage" alt="A schematic overview of Python built-in types." width="100%"></a><br>
