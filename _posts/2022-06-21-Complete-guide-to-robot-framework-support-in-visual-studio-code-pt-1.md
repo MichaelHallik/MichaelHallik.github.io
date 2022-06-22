@@ -248,19 +248,23 @@ If you don't want to wait for the next article, you may find the following onlin
 
 <p style="color:#433434;"><u>Robot Framework Language Server (VSC extension):</u></p>
 
-<a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/tree/master/robotframework-ls" target="_blank">On GitHub.</a> <br>
-<a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/tree/master/robotframework-ls/docs" target="_blank">GitHub - Specifically for FAQs, configuration and for reporting issues.</a> <br>
-<a class="postanchor" href="https://pypi.org/project/robotframework-lsp/" target="_blank">On PyPi.</a> <br>
-<a class="postanchor" href="https://robocorp.com/docs/developer-tools/visual-studio-code/lsp-extension" target="_blank">At RoboCorp.</a> <br>
-<a class="postanchor" href="https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp" target="_blank">On the VSC Marketplace.</a> <br>
-<a class="postanchor" href="https://open-vsx.org/extension/robocorp/robotframework-lsp" target="_blank">In the VSC OpenVSX registry.</a> <br>
-<a class="postanchor" href="https://robotframework.slack.com/channels/#lsp" target="_blank">On Slack.</a> [<a class="postanchor" href="https://robotframework.slack.com/archives/CM0J4A7R9 " target="_blank"><i>Alternative URL.</i></a>] <br>
-<a class="postanchor" href="https://forum.robotframework.org/" target="_blank">In case you have questions or problems, go to the RF Forum.</a>
+<ul style="list-style-type:square;">
+	<li><a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/tree/master/robotframework-ls" target="_blank">On GitHub.</a></li>
+	<li><a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/tree/master/robotframework-ls/docs" target="_blank">GitHub - Specifically for FAQs, configuration and for reporting issues.</a></li>
+	<li><a class="postanchor" href="https://pypi.org/project/robotframework-lsp/" target="_blank">On PyPi.</a></li>
+	<li><a class="postanchor" href="https://robocorp.com/docs/developer-tools/visual-studio-code/lsp-extension" target="_blank">At RoboCorp.</a></li>
+	<li><a class="postanchor" href="https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp" target="_blank">On the VSC Marketplace.</a></li>
+	<li><a class="postanchor" href="https://open-vsx.org/extension/robocorp/robotframework-lsp" target="_blank">In the VSC OpenVSX registry.</a></li>
+	<li><a class="postanchor" href="https://robotframework.slack.com/channels/#lsp" target="_blank">On Slack.</a> [<a class="postanchor" href="https://robotframework.slack.com/archives/CM0J4A7R9 " target="_blank"><i>Alternative URL.</i></a>]</li>
+	<li><a class="postanchor" href="https://forum.robotframework.org/" target="_blank">In case you have questions or problems, go to the RF Forum.</a></li>
+</ul>
 
 <p style="color:#433434;"><u>VSC itself:</u></p>
 
-<a class="postanchor" href="https://code.visualstudio.com/docs" target="_blank">Documentation section of the VSC home page.</a> <br>
-<a class="postanchor" href="https://robocorp.com/docs/developer-tools/visual-studio-code/overview" target="_blank">At RoboCorp.</a>
+<ul style="list-style-type:square;">
+	<li><a class="postanchor" href="https://code.visualstudio.com/docs" target="_blank">Documentation section of the VSC home page.</a></li>
+	<li><a class="postanchor" href="https://robocorp.com/docs/developer-tools/visual-studio-code/overview" target="_blank">At RoboCorp.</a></li>
+</ul>
 
 Of course, there are many, many more resources. You may find them by submitting some basic search queries to your favorite search engine.
 
