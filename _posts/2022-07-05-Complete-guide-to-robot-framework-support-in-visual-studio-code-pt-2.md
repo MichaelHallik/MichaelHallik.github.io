@@ -290,7 +290,7 @@ If you want to know how the (de-) activation of a virt env is accomplished techn
 To install test libraries, such as the BrowserLibrary or SoapLibrary, you can also use <code class="folder">pip install</code>. Here we will do so, but in combination with using a <a class="postanchor" href="https://pip.pypa.io/en/latest/user_guide/#requirements-files" target="_blank">requirements file</a> (click the image to download it):
 
 <figure>
-	<a href="/downloads/requirements_vsc_install.txt" download="requirements_vsc_install.txt"><img src="/assets/images/8_2_requirements-txt_00.JPG" class="postimage" alt="Contents of the requirements file." width="70%"></a>
+	<a href="/downloads/requirements_vsc_install.txt" download="requirements_vsc_install.txt"><img src="/assets/images/8_2_requirements-txt_00.JPG" class="postimage" alt="Contents of the requirements file." width="70%">
 	<br>
 	<figcaption>Contents of the requirements file. <br><br> Click the image to download the plain text requirements file.</figcaption>
 </figure>
@@ -464,7 +464,7 @@ Since we may write test automation code in Python, let's first install the Pytho
 <div style="display: inline-block">
 	<div style="width: 100%; float: center">
 		<figure>
-			<img id="img_31" onClick="enlargeImage(this.id)" src="/assets/images/10_1_extensions_py-03.JPG" class="postimage" alt="Assign the relevant path to the 'Robot > Python: Executable' setting." width="50%"></a>
+			<img id="img_31" onClick="enlargeImage(this.id)" src="/assets/images/10_1_extensions_py-03.JPG" class="postimage" alt="Assign the relevant path to the 'Robot > Python: Executable' setting." width="50%">
 			<br>
 			<figcaption style="margin-right: 25%; margin-left: 25%">
 				Installation finished. Note that we do not need to install Python, since we have done that already.
@@ -519,7 +519,7 @@ To this end, we'll use the well-known <a class="postanchor" href="https://toward
 <div style="display: inline-block">
 	<div style="width: 50%; float: left">
 		<figure>
-			<a href="/downloads/fizzbuzz.py" download="fizzbuzz.py"><img src="/assets/images/10_4_extensions_py-cfg-00.JPG" class="postimage" alt="Contents of the Python example file." width="100%"></a>
+			<a href="/downloads/fizzbuzz.py" download="fizzbuzz.py"><img src="/assets/images/10_4_extensions_py-cfg-00.JPG" class="postimage" alt="Contents of the Python example file." width="100%">
 			<br>
 			<figcaption>
 				The contents of our Python example file.
