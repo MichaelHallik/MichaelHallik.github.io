@@ -63,7 +63,7 @@ The Language Server is central to Robot Framework support in VSC. It is doing al
 
 <h3 class="post"> <a name="For starters: what is a language server.">For starters: <i>what</i> is a language server? </a> </h3>
 
-Well, a language server is exactly thát:
+Well, a language server is exactly <i>that</i>:
 
 a software component that provides services pertaining to a specific programming language.
 
@@ -71,7 +71,7 @@ For instance, one that exposes Python-specific services. Or one that adds Java-s
 
 <h3 class="post"> <a name="Okay ... but ... what kind of services does it provide."> Okay ... but ... what <i>kind</i> of services does it provide? </a> </h3>
 
-Basically: services that aid a developer in delivering code móre efficiently and  léss error prone.
+Basically: services that aid a developer in delivering code more efficiently and less error prone.
 
 That is, services such as:
 
@@ -159,7 +159,7 @@ Let's first take a closer look at JSON-RPC and subsequently go over the LSP.
 
 JSON-RPC is a <a class="postanchor" href="https://www.techtarget.com/searchapparchitecture/definition/Remote-Procedure-Call-RPC" target="_blank">Remote Procedure Call (RPC)</a> protocol that uses JSON to define and structure data that is to be exchanged through specific types of messages between application nodes in a distributed environment.
 
-For this goal JSON-RPC defines <i>three</i> message patterns: 'request', 'response' and 'notification'. Each type of message has a very simple JSON structure. For instance, a request will be in the form of a JSON object that holds four items: two strings, one structured value (which may be an object ór an array) and a value that can be either a string, a number or null. For example:
+For this goal JSON-RPC defines <i>three</i> message patterns: 'request', 'response' and 'notification'. Each type of message has a very simple JSON structure. For instance, a request will be in the form of a JSON object that holds four items: two strings, one structured value (which may be an object or an array) and a value that can be either a string, a number or null. For example:
 
 	{"jsonrpc": "2.0", "method": "add", "params": {"first_nr": 5, "second_nr": 7}, "id": 1}
 
@@ -234,7 +234,7 @@ The Language Server Protocol was originally developed by Microsoft.
 
 However, in cooperation with a couple of other companies they turned it into an open standard. That means that anyone can create a language server based on the protocol specification.
 
-As was mentioned earlier, Fabio Zadrozny did exactly thát: at the request of <a class="postanchor" href="https://robocorp.com/" target="_blank">RoboCorp</a> (who funded the project), he developed a language server and subsequently used it to implement Robot Framework support for both  <a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/blob/master/robotframework-intellij/README.md" target="_blank">PyCharm</a> ánd <a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/tree/master/robotframework-ls" target="_blank">VSC</a> in the form of two extensions.<a href="#footnote-3" class="postanchor"><sup>[3]</sup></a>
+As was mentioned earlier, Fabio Zadrozny did exactly that: at the request of <a class="postanchor" href="https://robocorp.com/" target="_blank">RoboCorp</a> (who funded the project), he developed a language server and subsequently used it to implement Robot Framework support for both  <a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/blob/master/robotframework-intellij/README.md" target="_blank">PyCharm</a> <i>and</i> <a class="postanchor" href="https://github.com/robocorp/robotframework-lsp/tree/master/robotframework-ls" target="_blank">VSC</a> in the form of two extensions.<a href="#footnote-3" class="postanchor"><sup>[3]</sup></a>
 
 The Robot Framework Language Server and the VSC extension were then <a class="postanchor" href="https://www.youtube.com/watch?v=aZN5_rvGohg" target="_blank">presented by Fabio</a> during RoboCon 2021.
 

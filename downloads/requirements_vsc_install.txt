@@ -1,0 +1,24 @@
+# For the SOAPLibrary, we first need to install dependencies:
+zeep
+six
+
+# Robot Framework test libraries:
+# robotframework-databaselibrary
+robotframework
+robotframework-browser
+robotframework-crypto
+robotframework-datadriver[XLS]
+robotframework-difflibrary
+robotframework-faker
+robotframework-jsonlibrary
+robotframework-jsonvalidator
+robotframework-requests
+robotframework-soaplibrary
+robotframework-seleniumlibrary
+robotremoteserver
+RESTinstance
+
+# Extension for the XMLLibrary:
+lxml
+
+# Database drivers

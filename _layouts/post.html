@@ -1,37 +1,44 @@
 {% include head.html %}
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="postModal" class="modal">
+			<div id="closeContainer" style="float: right">
+				<span class="close" onclick="closeMod()">CLOSE</span>
+			</div>
+			<img id="modalImg" class="modal-content" style="float: center"></img>
+		</div>
+		<section class="intro">
+			<div class="container">
+				<h1 align="center"><b>{{ page.title }}</b></h1><br>
+				<h2 class="meta" align="center" style="border:2px; border-style:solid; border-color:#97B918;">{{ page.date | date_to_string }}</h2><br>
+				<center>
+					<span>[
+						{% for tag in page.tags %}
+							{% capture tag_name %}{{ tag }}{% endcapture %}
+							<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
+						{% endfor %}
+					]</span>
+				</center>
+				{{ content }}
+			</div>
+		</section>
+		
+		<section class="single">
+			<div class="wrap">
+				{% if page.comments_id %}
+					{% include comments.html %}
+				{% endif %}
+			</div>
+		</section>
 
-			<section class="intro">
-				<div class="container">
-					<h1 align="center"><b>{{ page.title }}</b></h1><br>
-					<h2 class="meta" align="center" style="border:2px; border-style:solid; border-color:#97B918;">{{ page.date | date_to_string }}</h2><br>
-					<center>
-						<span>[
-							{% for tag in page.tags %}
-								{% capture tag_name %}{{ tag }}{% endcapture %}
-								<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
-							{% endfor %}
-						]</span>
-					</center>
-					{{ content }}
-				</div>
-			</section>
-			
-			<section class="single">
-				<div class="wrap">
-					{% if page.comments_id %}
-						{% include comments.html %}
-					{% endif %}
-				</div>
-			</section>
-
-			<section class="single">
-				<div class="wrap">
-					{% if page.toc %}
-						{% include {{ page.toc }} %}
-					{% endif %}
-				</div>
-			</section>
-
-		</body>
-
-	</html>
+		<section class="single">
+			<div class="wrap">
+				{% if page.toc %}
+					{% include {{ page.toc }} %}
+				{% endif %}
+			</div>
+		</section>
+	</body>
+</html>

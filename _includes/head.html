@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-	<html>
-	
-		<head>
-			
-			<br>
-			<title>{{ page.title }}</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-			
-			{% if site.tags != "" %}
-				{% include collecttags.html %}
-			{% endif %}
-			
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RHT4FE54K"></script>
-			<script>
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'G-7RHT4FE54K');
-			</script>
-			
-		</head>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/style_modal.css">
+		<script type = "text/javascript" src="/assets/js/post_js.js"></script>
 		
-		<body>
-
-			<div class="topnav">
-				{% assign page_array = site.pages | sort:"title" %}
-				{% for p in page_array %}
-					{% if p.url contains "css" or p.url contains "atom" or p.url contains "tag" or p.url contains "construction" %}
-						{% continue %}
-					{% endif %}
-					<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">|{{ p.title | upcase }}|</a>
-				{% endfor %}
-				{% if page.url contains "/blog/20" %}
-					<style>
-						.topnav a[href*="/blog/"] {
-						  background-color: #97B918;
-						  color: white;
-						}
-					</style>
+		{% if site.tags != "" %}
+			{% include collecttags.html %}
+		{% endif %}
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RHT4FE54K"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-7RHT4FE54K');
+		</script>
+	</head>
+	<body>
+		<div class="topnav">
+			{% assign page_array = site.pages | sort:"title" %}
+			{% for p in page_array %}
+				{% if p.url contains "css" or p.url contains "atom" or p.url contains "tag" or p.url contains "construction" %}
+					{% continue %}
 				{% endif %}
-			</div>
-		<br><br>
+				<a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">|{{ p.title | upcase }}|</a>
+			{% endfor %}
+			{% if page.url contains "/blog/20" %}
+				<style>
+					.topnav a[href*="/blog/"] {
+					  background-color: #97B918;
+					  color: white;
+					}
+				</style>
+			{% endif %}
+		</div>

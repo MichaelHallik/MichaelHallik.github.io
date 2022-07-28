@@ -39,17 +39,17 @@ Let's get started.
 
 The command to create a new virtual environment with <code class="folder">virtualenvwrapper-win</code> is:
 
-<code class="snippet">mkvirtualenv</code>
+	mkvirtualenv
 
 This command has the following structure:
 
-<code class="snippet">mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]</code>
+	mkvirtualenv [mkvirtualenv options] [virtualenv options] [name-of-virt-env]
   
 Although only the latter (i.e. name-of-virt-env) is mandatory, you will generally specify at least one <a class="postanchor" href="https://virtualenv.pypa.io/en/latest/cli_interface.html" target="_blank">virtualenv options</a> when creating a new virtual environment. Any such option will be passed on by <code class="folder">virtualenvwrapper-win</code> to <code class="folder">virtualenv</code> for processing there.
 
 If I were to issue the command <i>without</i> any <code class="folder">virtualenv</code> options:
 
-<code class="snippet">mkvirtualenv my-env-name</code>
+	mkvirtualenv my-env-name
 
 then a virtual environment would be based off from <i>whatever Python system installation is first on my OS'es PATH</i> and would be placed under the specified name into my <code class="folder">WORKON_HOME directory</code>. In my case, the Python version that is first in PATH, is Python 3.9.
 
@@ -61,11 +61,11 @@ We can only specify a Python version for our environment if we have a system ins
 
 Assuming, then, for instance, that we have a Python 3.7 system installation, we can simply use the <code class="folder">virtualenv -p switch</code> to base a virtual environment off of that specific installation:
 
-<code class="snippet">mkvirtualenv -p C:\Python\Python37\Python.exe robot-framework-py_37</code>
+	mkvirtualenv -p C:\Python\Python37\Python.exe robot-framework-py_37
 
 or shorter:
 
-<code class="snippet">mkvirtualenv -p 3.7 robot-framework-py_37</code>
+	mkvirtualenv -p 3.7 robot-framework-py_37
 
 Any of these two commands would create a virtual Python 3.7 environment (named '<code class="folder">robot-framework-py_37</code>') into my default target directory. Like so:
 
