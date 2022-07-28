@@ -532,7 +532,7 @@ To this end, we'll use the well-known <a class="postanchor" href="https://toward
 	</div>
 	<div style="width: 50%; float: right">
 		<figure>
-			<img id="img_35" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-01.JPG" class="postimage" alt="An example of Python code completion." width="100%">
+			<img id="img_35" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-01.jpg" class="postimage" alt="An example of Python code completion." width="100%">
 			<br>
 			<figcaption>
 				Let's try the code-completion feature, for instance by importing some random module.
@@ -546,7 +546,7 @@ To this end, we'll use the well-known <a class="postanchor" href="https://toward
 <div style="display: inline-block">
 	<div style="width: 50%; float: left">
 		<figure>
-			<img id="img_36" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-02.JPG" class="postimage" alt="An exanple of Python code analysis and validation." width="100%">
+			<img id="img_36" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-02.jpg" class="postimage" alt="An exanple of Python code analysis and validation." width="100%">
 			<br>
 			<figcaption>
 				We choose the 'import' keyword and then try to import the requests module.
@@ -557,7 +557,7 @@ To this end, we'll use the well-known <a class="postanchor" href="https://toward
 	</div>
 	<div style="width: 50%; float: right">
 		<figure>
-			<img id="img_37" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-03.JPG" class="postimage" alt="The VSC terminal." width="100%">
+			<img id="img_37" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-03.jpg" class="postimage" alt="The VSC terminal." width="100%">
 			<br>
 			<figcaption>
 				But what exactly is the matter?
@@ -573,7 +573,7 @@ To this end, we'll use the well-known <a class="postanchor" href="https://toward
 <div style="display: inline-block">
 	<div style="width: 50%; float: left">
 		<figure>
-			<img id="img_38" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-04.JPG" class="postimage" alt="On hover information." width="100%">
+			<img id="img_38" onClick="enlargeImage(this.id)" src="/assets/images/10_4_extensions_py-cfg-04.jpg" class="postimage" alt="On hover information." width="100%">
 			<br>
 			<figcaption>
 				Another method of getting more information on the error at hand is by hovering over the offending code.
